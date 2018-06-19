@@ -1,0 +1,108 @@
+.b-green-button {
+    @extend %button-md;
+}
+.b-grey-link {
+    font-family: 'Montserrat', sans-serif;
+    color: $GRAY;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.b-yellow-button {
+    @extend %button-yellow;
+    &__spr-gos-uslugi {
+        display: inline-block;
+        line-height: 1.2;
+        vertical-align: middle;
+        @include makeSprite(25px, 28px, 'spr-gos-logo.png');
+        margin-right: 12px;
+    }
+    &__label {
+        display: inline-block;
+        line-height: 1.2;
+        vertical-align: middle;
+    }
+}
+
+@include mobile {
+    .b-yellow-button {
+        &__spr-gos-uslugi { 
+            display: none;
+        }
+    }
+}
+
+  
+.b-phone {
+    font-size: 0;
+    height: 40px;
+    line-height: 40px;
+    @extend %reset-link;
+    &__icon {
+        @extend %reset-link;
+        @include makeSprite(40px, 40px, 'spr-phone.png');
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 32px;
+    }
+    &__content {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: $BLACK;
+        font-size: 28px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+@include tablet {
+    .b-phone {
+        &__content {
+            font-size: 24px;
+        }
+        &__icon {
+            width: 35px;
+            height: 35px;
+            margin-right: 14px;
+            font-size: 24px;
+        }
+    }
+}
+
+
+.b-logout-btn {
+    display: block;
+    width: 104px;
+    white-space: nowrap;
+    font-size: 0;
+    line-height: 24px;
+    height: 24px;
+    &__icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        @include makeSprite(26px, 24px, 'spr-logout.png');
+    }
+    &__content {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1.2;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: $BLACK;
+    }
+}
+
+@include mobile { 
+    .b-logout-btn  {
+        &__content {
+            display: none;
+        }
+        &__icon {
+            margin-right: 0;
+            width: 21px;
+            height: 20px;
+        }
+    }
+}

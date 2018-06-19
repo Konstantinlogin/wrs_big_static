@@ -1,0 +1,45 @@
+.t-PageBody--login {
+    background-color: #f7f7f7$i;    
+}
+.b-body {
+    box-sizing: border-box;
+    &--login {
+        padding: 20px;
+        width: 100%;
+        // background-color: #f7f7f7;
+        .b-header {
+
+        }
+    }
+}
+
+.b-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    &--540 {
+        max-width: 540px;
+    }
+}
+
+.lo-flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 132px - 52px);
+    padding-top: 80px;
+    justify-content: center;
+}
+
+@include mobile {
+    .lo-flex-wrapper {
+        display: block;
+        padding-top: 42px;
+    }
+    .b-body {
+
+        &--login {
+            padding: 0;
+            width: 100%;
+        }
+    }
+ }

@@ -1,0 +1,91 @@
+%button {
+    user-select: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 600;
+    -webkit-appearance: none;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 25px;
+    background-image: -moz-linear-gradient( -90deg, rgb(143,218,11) 0%, rgb(76,160,13) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb(143,218,11) 0%, rgb(76,160,13) 100%);
+    background-image: -ms-linear-gradient( -90deg, rgb(143,218,11) 0%, rgb(76,160,13) 100%);
+    outline: none;
+    &:focus {
+        box-shadow: 0 0 0 1px $BLACK inset$i;
+    }
+}
+%button-md {
+    @extend %button;
+    height: 50px;
+    font-size: 16px;
+    line-height: 46px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+%button-yellow {
+    user-select: none;
+    -webkit-appearance: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: $BLACK;
+    font-weight: 600;
+    text-align: center;
+    height: 50px;
+    line-height: 46px;
+    padding-left: 18px;
+    padding-right: 18px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    background-image: -moz-linear-gradient( -90deg, rgb(236,163,0) 0%, rgb(254,213,0) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb(236,163,0) 0%, rgb(254,213,0) 100%);
+    background-image: -ms-linear-gradient( -90deg, rgb(236,163,0) 0%, rgb(254,213,0) 100%);
+    outline: none;
+    &:focus {
+        box-shadow: 0 0 0 1px $BLACK inset$i;
+    }
+}
+
+%form-input {
+    background: transparent$i;
+    border-radius: 0px$i;
+    box-shadow: none$i;
+    border-left: none$i;
+    border-right: none$i;
+    border-top: none$i;
+    border-bottom: 2px solid;
+    font-size: 16px$i;
+    font-family: 'Montserrat', sans-serif$i;
+    font-weight: 500;
+    color: $BLACK$i;
+    border-color: $GRAY$i;
+    height: 38px$i;
+    line-height: 32px$i;
+    padding: 0$i;
+    &::placeholder { 
+        font-family: 'Montserrat', sans-serif$i;
+        font-weight: 500$i;
+        color: $BLACK$i;
+        text-transform: none$i;
+    }
+    &:focus {
+        border-color: $BLACK$i;
+        background: transparent$i;
+    }
+    &.form-input-icon {
+        padding-left: 30px$i;
+    } 
+    &.form-input-icon-date {
+        background: url($IMAGE_PATH + 'spr-calendar.png') no-repeat left$i;
+        background-size: 18px$i;
+    }
+}
+
+
+
+%reset-link {
+    text-decoration: none;
+    border: none;
+}

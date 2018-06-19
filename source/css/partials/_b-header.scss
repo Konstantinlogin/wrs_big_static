@@ -1,0 +1,74 @@
+.b-header {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1);
+    min-height: 132px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 8px 60px 8px 50px;
+    box-sizing: border-box;
+    &__logout-btn {
+        position: absolute;
+        right: 60px;
+        width: 104px;
+    }
+    &__logo {
+        margin-right: 130px;
+    }
+    &__menu-btn {
+        display: none;
+        font-size: 0;
+        -webkit-appearance: none;
+        border: none;
+        background-color: transparent;
+        @include makeSprite(19px, 18px, 'spr-menu-btn.png');
+    }
+}
+
+@include tablet {
+    .b-header {
+        &__logo {
+            margin-right: 16px;
+        }
+ 
+    }
+}
+@include mobile { 
+    .b-header  {
+        position: relative;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+        height: 91px;
+        min-height: 91px;
+        &__phone {
+            display: none;
+        }
+        &__logo {
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-right: 0; 
+        }
+        &__logout-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 6px;
+            width: 21px;
+        }
+        &__menu-btn {
+            position: absolute;
+            display: block;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 6px;
+        }
+    }
+}

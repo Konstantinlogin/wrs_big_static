@@ -1,0 +1,44 @@
+  
+.b-logo {
+    font-size: 0;
+    white-space: nowrap;
+    height: 80px;
+    line-height: 80px;
+    &__title {
+        user-select: none;
+        font-family: 'Montserrat', sans-serif;
+        color: $BLACK;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.2;
+        width: 115px;
+        white-space: normal;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &__image {
+        margin-right: 21px;
+        font-size: 0;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 80px;
+        @include makeSprite(80px, 80px, 'logo_big.png');
+        box-shadow: 5.657px 5.657px 40px 0px rgba(0, 0, 0, 0.4);
+    }
+}
+
+@include mobile {
+    .b-logo {
+        height: 45px;
+        line-height: 45px;
+        &__title {
+            display: none;
+        }
+        &__image {
+            width: 45px;
+            height: 45px;
+            border-radius: 45px;
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.t-PageBody--login {
+    .t-Form--stretchInputs .t-Form-fieldContainer .t-Form-inputContainer, .t-Form-fieldContainer--stretchInputs .t-Form-inputContainer  {
+        display: block$i;
+    }
+    .t-Login-title {
+        font-family: 'Montserrat', sans-serif$i;
+        font-weight: 600$i;
+        font-size: 24px;
+    }
+    .b-yellow-button, .b-green-button {
+        width: 100%;
+    }
+
+    // Форма регистрации
+
+    .b-register-form, .b-login-form {
+        padding: 50px 70px 46px 70px;
+        &__bottom {
+            width: 100%;
+            text-align: center;
+        }
+        .t-Login-header {
+            padding: 0$i;
+            margin-bottom: 62px$i;
+        }
+        .t-Form-inputContainer {
+            padding-bottom: 40px$i;
+            position: relative;
+            &:last-child {
+
+            }
+        }
+        .t-Form-error {
+            padding-top: 8px$i;
+            font-family: 'Montserrat', sans-serif$i;
+            font-size: 10px$i;
+        }
+        .t-Login-title {
+            margin: 0;
+        }
+        .text_field {
+            @extend %form-input;
+        }
+        .b-green-button, .b-yellow-button {
+            margin-bottom: 20px;
+        }
+        .apex-item-checkbox {
+            position: relative;
+            input {
+                visibility: hidden;
+                position: absolute;
+                z-index: -1;
+            }
+            label {
+                position: relative;
+                display: inline-block;
+                box-sizing: border-box;
+                padding-left: 32px;
+                font-size: 10px;
+                color:  $GRAY;
+                font-family: 'Montserrat', sans-serif$i;
+                font-weight: 300;
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    box-sizing: border-box;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid $GRAY;
+                    border-radius: 2px;
+                }
+            }
+            input:checked ~ label {
+                &:before {
+                    border: none;
+                    @include makeSprite(16px, 16px, 'spr-ckbx-checked.png');
+                }
+            }
+        }
+    }
+}
+@include mobile {
+    .t-PageBody--login {
+        padding: 0 20px;
+        .t-Login-title {
+            font-size: 16px;
+        }
+        .b-register-form, .b-login-form {
+            padding: 0 30px 46px 30px;
+            background: transparent;
+            .text_field {
+                text-align: center;
+                // height: 30px$i;
+                border-bottom: 1px solid;
+            }
+            .t-Login-header {
+                margin-bottom: 33px$i;
+            }
+            .t-Form-inputContainer {
+                padding-bottom: 12px$i;
+            }
+            .t-Form-error {
+                text-align: center;
+            }
+        }
+    }
+}

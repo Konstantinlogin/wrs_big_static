@@ -1,0 +1,18 @@
+@mixin makeSprite($width, $height, $name) {
+    width: $width;
+    height: $height;
+    background: url($IMAGE_PATH + $name) no-repeat center;
+    background-size: contain;
+}
+
+@mixin tablet {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
