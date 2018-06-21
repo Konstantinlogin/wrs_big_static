@@ -84,7 +84,6 @@
         }
     }
     .b-login-form {
-        
         .t-Form-inputContainer {
             padding-bottom: 56px$i;
         }
@@ -137,6 +136,7 @@
             font-weight: 700;
         }  
     }
+    @import "_form-recovery.scss";
 }
 @include mobile {
     .t-PageBody--login {

@@ -48,7 +48,7 @@
   .b-yellow-button:focus {
     box-shadow: 0 0 0 1px #010101 inset !important; }
 
-.t-PageBody--login .b-register-form .text_field, .t-PageBody--login .b-register-form .password, .t-PageBody--login .b-login-form .text_field, .t-PageBody--login .b-login-form .password {
+.t-PageBody--login .b-register-form .text_field, .t-PageBody--login .b-register-form .password, .t-PageBody--login .b-login-form .text_field, .t-PageBody--login .b-login-form .password, .t-PageBody--login .b-recovery-form .text_field, .t-PageBody--login .b-recovery-form .password {
   background: transparent !important;
   border-radius: 0px !important;
   box-shadow: none !important;
@@ -64,27 +64,27 @@
   height: 38px !important;
   line-height: 32px !important;
   padding: 0 !important; }
-  .t-PageBody--login .b-register-form .text_field::-webkit-input-placeholder, .t-PageBody--login .b-register-form .password::-webkit-input-placeholder, .t-PageBody--login .b-login-form .text_field::-webkit-input-placeholder, .t-PageBody--login .b-login-form .password::-webkit-input-placeholder {
+  .t-PageBody--login .b-register-form .text_field::-webkit-input-placeholder, .t-PageBody--login .b-register-form .password::-webkit-input-placeholder, .t-PageBody--login .b-login-form .text_field::-webkit-input-placeholder, .t-PageBody--login .b-login-form .password::-webkit-input-placeholder, .t-PageBody--login .b-recovery-form .text_field::-webkit-input-placeholder, .t-PageBody--login .b-recovery-form .password::-webkit-input-placeholder {
     font-family: "Montserrat", sans-serif !important;
     font-weight: 500 !important;
     color: #010101 !important;
     text-transform: none !important; }
-  .t-PageBody--login .b-register-form .text_field:-ms-input-placeholder, .t-PageBody--login .b-register-form .password:-ms-input-placeholder, .t-PageBody--login .b-login-form .text_field:-ms-input-placeholder, .t-PageBody--login .b-login-form .password:-ms-input-placeholder {
+  .t-PageBody--login .b-register-form .text_field:-ms-input-placeholder, .t-PageBody--login .b-register-form .password:-ms-input-placeholder, .t-PageBody--login .b-login-form .text_field:-ms-input-placeholder, .t-PageBody--login .b-login-form .password:-ms-input-placeholder, .t-PageBody--login .b-recovery-form .text_field:-ms-input-placeholder, .t-PageBody--login .b-recovery-form .password:-ms-input-placeholder {
     font-family: "Montserrat", sans-serif !important;
     font-weight: 500 !important;
     color: #010101 !important;
     text-transform: none !important; }
-  .t-PageBody--login .b-register-form .text_field::placeholder, .t-PageBody--login .b-register-form .password::placeholder, .t-PageBody--login .b-login-form .text_field::placeholder, .t-PageBody--login .b-login-form .password::placeholder {
+  .t-PageBody--login .b-register-form .text_field::placeholder, .t-PageBody--login .b-register-form .password::placeholder, .t-PageBody--login .b-login-form .text_field::placeholder, .t-PageBody--login .b-login-form .password::placeholder, .t-PageBody--login .b-recovery-form .text_field::placeholder, .t-PageBody--login .b-recovery-form .password::placeholder {
     font-family: "Montserrat", sans-serif !important;
     font-weight: 500 !important;
     color: #010101 !important;
     text-transform: none !important; }
-  .t-PageBody--login .b-register-form .text_field:focus, .t-PageBody--login .b-register-form .password:focus, .t-PageBody--login .b-login-form .text_field:focus, .t-PageBody--login .b-login-form .password:focus {
+  .t-PageBody--login .b-register-form .text_field:focus, .t-PageBody--login .b-register-form .password:focus, .t-PageBody--login .b-login-form .text_field:focus, .t-PageBody--login .b-login-form .password:focus, .t-PageBody--login .b-recovery-form .text_field:focus, .t-PageBody--login .b-recovery-form .password:focus {
     border-color: #010101 !important;
     background: transparent !important; }
-  .t-PageBody--login .b-register-form .form-input-icon.text_field, .t-PageBody--login .b-register-form .form-input-icon.password, .t-PageBody--login .b-login-form .form-input-icon.text_field, .t-PageBody--login .b-login-form .form-input-icon.password {
+  .t-PageBody--login .b-register-form .form-input-icon.text_field, .t-PageBody--login .b-register-form .form-input-icon.password, .t-PageBody--login .b-login-form .form-input-icon.text_field, .t-PageBody--login .b-login-form .form-input-icon.password, .t-PageBody--login .b-recovery-form .form-input-icon.text_field, .t-PageBody--login .b-recovery-form .form-input-icon.password {
     padding-left: 30px !important; }
-  .t-PageBody--login .b-register-form .form-input-icon-date.text_field, .t-PageBody--login .b-register-form .form-input-icon-date.password, .t-PageBody--login .b-login-form .form-input-icon-date.text_field, .t-PageBody--login .b-login-form .form-input-icon-date.password {
+  .t-PageBody--login .b-register-form .form-input-icon-date.text_field, .t-PageBody--login .b-register-form .form-input-icon-date.password, .t-PageBody--login .b-login-form .form-input-icon-date.text_field, .t-PageBody--login .b-login-form .form-input-icon-date.password, .t-PageBody--login .b-recovery-form .form-input-icon-date.text_field, .t-PageBody--login .b-recovery-form .form-input-icon-date.password {
     background: url("../images/spr-calendar.png") no-repeat left !important;
     background-size: 18px !important; }
 
@@ -356,25 +356,13 @@
   .b-container .container, .b-container .row {
     overflow: visible !important; }
 
-.lo-flex-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: -webkit-calc(100% - 132px - 52px);
-  height: calc(100% - 132px - 52px);
-  padding-top: 80px;
+.lo-login-wrapper {
+  padding-top: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
 
 @media (max-width: 767px) {
-  .lo-flex-wrapper {
-    display: block;
-    padding-top: 42px; }
   .b-body--login {
     padding: 0;
     width: 100%; } }
@@ -674,6 +662,127 @@
     text-align: center;
     width: 100%;
     font-weight: 700; }
+
+.t-PageBody--login .b-recovery-form {
+  margin-top: 40px;
+  max-width: 540px;
+  padding: 56px 70px 46px 70px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1) !important; }
+  .t-PageBody--login .b-recovery-form .t-Login-header {
+    padding: 0 !important;
+    margin-bottom: 60px !important; }
+  .t-PageBody--login .b-recovery-form .t-Form-inputContainer {
+    position: relative; }
+  .t-PageBody--login .b-recovery-form .t-Form-fieldContainer {
+    margin-bottom: 17px; }
+    .t-PageBody--login .b-recovery-form .t-Form-fieldContainer:first-child {
+      margin-bottom: 39px; }
+  .t-PageBody--login .b-recovery-form .t-Form-error {
+    padding-top: 8px !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 10px !important; }
+  .t-PageBody--login .b-recovery-form .t-Login-title {
+    margin: 0; }
+  .t-PageBody--login .b-recovery-form .b-green-button {
+    margin-top: 10px; }
+  .t-PageBody--login .b-recovery-form .b-green-button, .t-PageBody--login .b-recovery-form .b-yellow-button {
+    margin-bottom: 20px; }
+  .t-PageBody--login .b-recovery-form .t-Login-links {
+    margin-top: 5px; }
+  .t-PageBody--login .b-recovery-form .apex-item-checkbox {
+    position: relative; }
+    .t-PageBody--login .b-recovery-form .apex-item-checkbox input {
+      visibility: hidden;
+      position: absolute;
+      z-index: -1; }
+    .t-PageBody--login .b-recovery-form .apex-item-checkbox label {
+      position: relative;
+      display: inline-block;
+      box-sizing: border-box;
+      padding-left: 32px;
+      font-size: 10px;
+      color: #b3b3b3;
+      font-family: "Montserrat", sans-serif !important;
+      font-weight: 300; }
+      .t-PageBody--login .b-recovery-form .apex-item-checkbox label:before {
+        content: '';
+        display: inline-block;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #b3b3b3;
+        border-radius: 2px; }
+    .t-PageBody--login .b-recovery-form .apex-item-checkbox input:checked ~ label:before {
+      border: none;
+      width: 16px;
+      height: 16px;
+      background: url("../images/spr-ckbx-checked.png") no-repeat center;
+      background-size: contain; }
+  .t-PageBody--login .b-recovery-form__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    text-align: center; }
+  .t-PageBody--login .b-recovery-form__link-left {
+    margin-right: 43px;
+    margin-bottom: 8px;
+    margin-left: 23px; }
+
+@media (max-width: 767px) {
+  .t-PageBody--login .t-Login-title {
+    font-size: 16px; }
+  .t-PageBody--login .b-recovery-form {
+    margin-top: 23px;
+    padding: 0 30px 46px 30px;
+    background: transparent;
+    box-shadow: none !important; }
+    .t-PageBody--login .b-recovery-form .text_field {
+      text-align: center; }
+    .t-PageBody--login .b-recovery-form .t-Login-links + .container .row .col {
+      margin-top: 8px !important; }
+    .t-PageBody--login .b-recovery-form .t-Form-fieldContainer {
+      margin-bottom: 8px; }
+      .t-PageBody--login .b-recovery-form .t-Form-fieldContainer:first-child {
+        margin-bottom: 0; }
+    .t-PageBody--login .b-recovery-form .text_field, .t-PageBody--login .b-recovery-form .password {
+      border-bottom: 1px solid; }
+    .t-PageBody--login .b-recovery-form .t-Login-header {
+      margin-bottom: 33px !important; }
+    .t-PageBody--login .b-recovery-form .t-Form-inputContainer {
+      padding: 0 0 1.4rem; }
+    .t-PageBody--login .b-recovery-form .t-Form-error {
+      text-align: center; }
+    .t-PageBody--login .b-recovery-form .b-green-button {
+      margin-top: 24px; }
+    .t-PageBody--login .b-recovery-form .b-green-button, .t-PageBody--login .b-recovery-form .b-yellow-button {
+      height: 44px;
+      line-height: 42px;
+      font-size: 14px; }
+    .t-PageBody--login .b-recovery-form__bottom {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .t-PageBody--login .b-recovery-form__link-left {
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 19px; }
+    .t-PageBody--login .b-recovery-form__link-left, .t-PageBody--login .b-recovery-form__link-right {
+      font-size: 12px; } }
 
 @media (max-width: 767px) {
   .t-PageBody--login {

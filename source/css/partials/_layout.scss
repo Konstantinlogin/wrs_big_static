@@ -25,21 +25,13 @@
     }
 }
 
-.lo-flex-wrapper {
-    display: flex;
-    flex-direction: column;
-    height: calc(100% - 132px - 52px);
-    padding-top: 80px;
+.lo-login-wrapper {
+    padding-top: 20px;
     justify-content: center;
 }
 
 @include mobile {
-    .lo-flex-wrapper {
-        display: block;
-        padding-top: 42px;
-    }
     .b-body {
-
         &--login {
             padding: 0;
             width: 100%;
