@@ -20,6 +20,9 @@
     &--540 {
         max-width: 540px;
     }
+    .container, .row {
+        overflow: visible$i;
+    }
 }
 
 .lo-flex-wrapper {

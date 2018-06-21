@@ -48,7 +48,7 @@
   .b-yellow-button:focus {
     box-shadow: 0 0 0 1px #010101 inset !important; }
 
-.t-PageBody--login .b-register-form .text_field, .t-PageBody--login .b-login-form .text_field {
+.t-PageBody--login .b-register-form .text_field, .t-PageBody--login .b-register-form .password, .t-PageBody--login .b-login-form .text_field, .t-PageBody--login .b-login-form .password {
   background: transparent !important;
   border-radius: 0px !important;
   box-shadow: none !important;
@@ -64,27 +64,27 @@
   height: 38px !important;
   line-height: 32px !important;
   padding: 0 !important; }
-  .t-PageBody--login .b-register-form .text_field::-webkit-input-placeholder, .t-PageBody--login .b-login-form .text_field::-webkit-input-placeholder {
+  .t-PageBody--login .b-register-form .text_field::-webkit-input-placeholder, .t-PageBody--login .b-register-form .password::-webkit-input-placeholder, .t-PageBody--login .b-login-form .text_field::-webkit-input-placeholder, .t-PageBody--login .b-login-form .password::-webkit-input-placeholder {
     font-family: "Montserrat", sans-serif !important;
     font-weight: 500 !important;
     color: #010101 !important;
     text-transform: none !important; }
-  .t-PageBody--login .b-register-form .text_field:-ms-input-placeholder, .t-PageBody--login .b-login-form .text_field:-ms-input-placeholder {
+  .t-PageBody--login .b-register-form .text_field:-ms-input-placeholder, .t-PageBody--login .b-register-form .password:-ms-input-placeholder, .t-PageBody--login .b-login-form .text_field:-ms-input-placeholder, .t-PageBody--login .b-login-form .password:-ms-input-placeholder {
     font-family: "Montserrat", sans-serif !important;
     font-weight: 500 !important;
     color: #010101 !important;
     text-transform: none !important; }
-  .t-PageBody--login .b-register-form .text_field::placeholder, .t-PageBody--login .b-login-form .text_field::placeholder {
+  .t-PageBody--login .b-register-form .text_field::placeholder, .t-PageBody--login .b-register-form .password::placeholder, .t-PageBody--login .b-login-form .text_field::placeholder, .t-PageBody--login .b-login-form .password::placeholder {
     font-family: "Montserrat", sans-serif !important;
     font-weight: 500 !important;
     color: #010101 !important;
     text-transform: none !important; }
-  .t-PageBody--login .b-register-form .text_field:focus, .t-PageBody--login .b-login-form .text_field:focus {
+  .t-PageBody--login .b-register-form .text_field:focus, .t-PageBody--login .b-register-form .password:focus, .t-PageBody--login .b-login-form .text_field:focus, .t-PageBody--login .b-login-form .password:focus {
     border-color: #010101 !important;
     background: transparent !important; }
-  .t-PageBody--login .b-register-form .form-input-icon.text_field, .t-PageBody--login .b-login-form .form-input-icon.text_field {
+  .t-PageBody--login .b-register-form .form-input-icon.text_field, .t-PageBody--login .b-register-form .form-input-icon.password, .t-PageBody--login .b-login-form .form-input-icon.text_field, .t-PageBody--login .b-login-form .form-input-icon.password {
     padding-left: 30px !important; }
-  .t-PageBody--login .b-register-form .form-input-icon-date.text_field, .t-PageBody--login .b-login-form .form-input-icon-date.text_field {
+  .t-PageBody--login .b-register-form .form-input-icon-date.text_field, .t-PageBody--login .b-register-form .form-input-icon-date.password, .t-PageBody--login .b-login-form .form-input-icon-date.text_field, .t-PageBody--login .b-login-form .form-input-icon-date.password {
     background: url("../images/spr-calendar.png") no-repeat left !important;
     background-size: 18px !important; }
 
@@ -353,6 +353,8 @@
   width: 100%; }
   .b-container--540 {
     max-width: 540px; }
+  .b-container .container, .b-container .row {
+    overflow: visible !important; }
 
 .lo-flex-wrapper {
   display: -webkit-box;
@@ -569,17 +571,23 @@
 .t-PageBody--login .b-yellow-button, .t-PageBody--login .b-green-button {
   width: 100%; }
 
-.t-PageBody--login .b-register-form, .t-PageBody--login .b-login-form {
+.t-PageBody--login .b-register-form {
+  max-width: 540px;
   padding: 50px 70px 46px 70px; }
+  .t-PageBody--login .b-register-form .t-Form-inputContainer {
+    padding-bottom: 40px !important;
+    position: relative; }
+
+.t-PageBody--login .b-register-form, .t-PageBody--login .b-login-form {
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1) !important; }
   .t-PageBody--login .b-register-form__bottom, .t-PageBody--login .b-login-form__bottom {
     width: 100%;
     text-align: center; }
   .t-PageBody--login .b-register-form .t-Login-header, .t-PageBody--login .b-login-form .t-Login-header {
     padding: 0 !important;
-    margin-bottom: 62px !important; }
-  .t-PageBody--login .b-register-form .t-Form-inputContainer, .t-PageBody--login .b-login-form .t-Form-inputContainer {
-    padding-bottom: 40px !important;
-    position: relative; }
+    margin-bottom: 51px !important; }
   .t-PageBody--login .b-register-form .t-Form-error, .t-PageBody--login .b-login-form .t-Form-error {
     padding-top: 8px !important;
     font-family: "Montserrat", sans-serif !important;
@@ -621,20 +629,107 @@
       background: url("../images/spr-ckbx-checked.png") no-repeat center;
       background-size: contain; }
 
+.t-PageBody--login .b-login-form {
+  padding: 77px 0 46px 70px;
+  width: 100%;
+  max-width: 1224px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .t-PageBody--login .b-login-form .t-Form-inputContainer {
+    padding-bottom: 56px !important; }
+  .t-PageBody--login .b-login-form .t-Login-body .t-Form-fieldContainer:last-of-type .t-Form-inputContainer {
+    padding-bottom: 34px !important; }
+  .t-PageBody--login .b-login-form__left {
+    width: 40%;
+    padding-right: 45px; }
+  .t-PageBody--login .b-login-form__right {
+    width: 60%;
+    padding-right: 45px;
+    box-sizing: border-box; }
+  .t-PageBody--login .b-login-form__bg {
+    position: relative;
+    left: 13px;
+    top: 10px;
+    width: 100%;
+    background-image: url("../images/login_bg.jpg");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 327px; }
+  .t-PageBody--login .b-login-form__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 32px; }
+  .t-PageBody--login .b-login-form__link-left {
+    margin-right: 44px;
+    margin-bottom: 8px; }
+  .t-PageBody--login .b-login-form .text_field, .t-PageBody--login .b-login-form .password {
+    text-align: center;
+    width: 100%;
+    font-weight: 700; }
+
 @media (max-width: 767px) {
   .t-PageBody--login {
     padding: 0 20px; }
     .t-PageBody--login .t-Login-title {
       font-size: 16px; }
     .t-PageBody--login .b-register-form, .t-PageBody--login .b-login-form {
-      padding: 0 30px 46px 30px;
-      background: transparent; }
-      .t-PageBody--login .b-register-form .text_field, .t-PageBody--login .b-login-form .text_field {
-        text-align: center;
+      background: transparent;
+      box-shadow: none !important; }
+      .t-PageBody--login .b-register-form .text_field, .t-PageBody--login .b-register-form .password, .t-PageBody--login .b-login-form .text_field, .t-PageBody--login .b-login-form .password {
         border-bottom: 1px solid; }
       .t-PageBody--login .b-register-form .t-Login-header, .t-PageBody--login .b-login-form .t-Login-header {
         margin-bottom: 33px !important; }
       .t-PageBody--login .b-register-form .t-Form-inputContainer, .t-PageBody--login .b-login-form .t-Form-inputContainer {
         padding-bottom: 12px !important; }
       .t-PageBody--login .b-register-form .t-Form-error, .t-PageBody--login .b-login-form .t-Form-error {
-        text-align: center; } }
+        text-align: center; }
+    .t-PageBody--login .b-register-form {
+      padding: 0 30px 46px 30px; }
+      .t-PageBody--login .b-register-form .b-green-button {
+        margin-top: 24px; }
+      .t-PageBody--login .b-register-form .b-green-button, .t-PageBody--login .b-register-form .b-yellow-button {
+        height: 44px;
+        line-height: 42px;
+        font-size: 14px; }
+      .t-PageBody--login .b-register-form__bottom {
+        margin-top: 28px; }
+    .t-PageBody--login .b-login-form {
+      padding: 0 30px 46px 30px;
+      display: block; }
+      .t-PageBody--login .b-login-form .b-green-button {
+        max-width: 100% !important;
+        height: 40px !important;
+        line-height: 40px !important;
+        font-size: 14px !important; }
+      .t-PageBody--login .b-login-form__bottom {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      .t-PageBody--login .b-login-form__link-left {
+        margin-right: 0;
+        margin-bottom: 26px; }
+      .t-PageBody--login .b-login-form__link-left, .t-PageBody--login .b-login-form__link-right {
+        font-size: 14px; }
+      .t-PageBody--login .b-login-form .t-Form-inputContainer {
+        padding-bottom: 10px !important; }
+      .t-PageBody--login .b-login-form .t-Login-body .t-Form-fieldContainer:last-of-type .t-Form-inputContainer {
+        padding-bottom: 10px !important; }
+      .t-PageBody--login .b-login-form .t-Login-buttons {
+        margin-top: 37px; }
+      .t-PageBody--login .b-login-form__left {
+        width: 100%;
+        padding: 0; }
+      .t-PageBody--login .b-login-form__right {
+        display: none; } }
