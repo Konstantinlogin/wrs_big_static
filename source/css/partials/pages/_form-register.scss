@@ -1,0 +1,111 @@
+.b-register-form {
+    max-width: 540px;
+    padding: 50px 70px 46px 70px;
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1)$i;
+    &__bottom {
+        width: 100%;
+        text-align: center;
+    }
+    .t-Form-fieldContainer {
+        margin-bottom: 18px;
+    }
+    .t-Form-inputContainer {
+        // padding-bottom: 40px$i;
+        position: relative;
+    }
+    .t-Login-header {
+        padding: 0$i;
+        margin-bottom: 51px$i;
+    }
+    .t-Form-error {
+        padding-top: 8px$i;
+        font-family: 'Montserrat', sans-serif$i;
+        font-size: 10px$i;
+    }
+    .t-Login-title {
+        margin: 0;
+    }
+    .text_field, .password {
+        @extend %form-input;
+    }
+    .b-green-button, .b-yellow-button {
+        margin-bottom: 20px;
+    }
+    .apex-item-checkbox {
+        position: relative;
+        input {
+            visibility: hidden;
+            position: absolute;
+            z-index: -1;
+        }
+        label {
+            position: relative;
+            display: inline-block;
+            box-sizing: border-box;
+            padding-left: 32px;
+            font-size: 10px;
+            color:  $GRAY;
+            font-family: 'Montserrat', sans-serif$i;
+            font-weight: 300;
+            &:before {
+                content: '';
+                display: inline-block;
+                box-sizing: border-box;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 16px;
+                height: 16px;
+                border: 1px solid $GRAY;
+                border-radius: 2px;
+            }
+        }
+        input:checked ~ label {
+            &:before {
+                border: none;
+                @include makeSprite(16px, 16px, 'spr-ckbx-checked.png');
+            }
+        }
+    }
+}
+
+@include mobile {
+    .t-Login-title {
+        font-size: 16px;
+    }
+    .b-register-form {
+        margin-top: 4px;
+        background: transparent;
+        box-shadow: none$i;
+        .text_field, .password {
+            border-bottom: 1px solid;
+        }
+        .t-Login-header {
+            margin-bottom: 33px$i;
+        }
+        .t-Form-fieldContainer {
+            margin-bottom: 0;
+        }
+        .t-Form-inputContainer {
+            padding-bottom: 12px$i;
+        }
+        .t-Form-error {
+            text-align: center;
+        }
+        padding: 0 30px 46px 30px;
+        .b-green-button {
+            margin-top: 24px;
+        }
+        .b-green-button, .b-yellow-button {
+            height: 44px;
+            line-height: 42px;
+            font-size: 14px;
+        }
+        &__bottom {
+            margin-top: 28px;
+        }
+    }
+}

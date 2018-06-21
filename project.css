@@ -559,13 +559,6 @@
 .t-PageBody--login .b-yellow-button, .t-PageBody--login .b-green-button {
   width: 100%; }
 
-.t-PageBody--login .b-register-form {
-  max-width: 540px;
-  padding: 50px 70px 46px 70px; }
-  .t-PageBody--login .b-register-form .t-Form-inputContainer {
-    padding-bottom: 40px !important;
-    position: relative; }
-
 .t-PageBody--login .b-register-form, .t-PageBody--login .b-login-form {
   margin-left: auto;
   margin-right: auto;
@@ -662,6 +655,91 @@
     text-align: center;
     width: 100%;
     font-weight: 700; }
+
+.t-PageBody--login .b-register-form {
+  max-width: 540px;
+  padding: 50px 70px 46px 70px;
+  margin-top: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1) !important; }
+  .t-PageBody--login .b-register-form__bottom {
+    width: 100%;
+    text-align: center; }
+  .t-PageBody--login .b-register-form .t-Form-fieldContainer {
+    margin-bottom: 18px; }
+  .t-PageBody--login .b-register-form .t-Form-inputContainer {
+    position: relative; }
+  .t-PageBody--login .b-register-form .t-Login-header {
+    padding: 0 !important;
+    margin-bottom: 51px !important; }
+  .t-PageBody--login .b-register-form .t-Form-error {
+    padding-top: 8px !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 10px !important; }
+  .t-PageBody--login .b-register-form .t-Login-title {
+    margin: 0; }
+  .t-PageBody--login .b-register-form .b-green-button, .t-PageBody--login .b-register-form .b-yellow-button {
+    margin-bottom: 20px; }
+  .t-PageBody--login .b-register-form .apex-item-checkbox {
+    position: relative; }
+    .t-PageBody--login .b-register-form .apex-item-checkbox input {
+      visibility: hidden;
+      position: absolute;
+      z-index: -1; }
+    .t-PageBody--login .b-register-form .apex-item-checkbox label {
+      position: relative;
+      display: inline-block;
+      box-sizing: border-box;
+      padding-left: 32px;
+      font-size: 10px;
+      color: #b3b3b3;
+      font-family: "Montserrat", sans-serif !important;
+      font-weight: 300; }
+      .t-PageBody--login .b-register-form .apex-item-checkbox label:before {
+        content: '';
+        display: inline-block;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #b3b3b3;
+        border-radius: 2px; }
+    .t-PageBody--login .b-register-form .apex-item-checkbox input:checked ~ label:before {
+      border: none;
+      width: 16px;
+      height: 16px;
+      background: url("../images/spr-ckbx-checked.png") no-repeat center;
+      background-size: contain; }
+
+@media (max-width: 767px) {
+  .t-PageBody--login .t-Login-title {
+    font-size: 16px; }
+  .t-PageBody--login .b-register-form {
+    margin-top: 4px;
+    background: transparent;
+    box-shadow: none !important;
+    padding: 0 30px 46px 30px; }
+    .t-PageBody--login .b-register-form .text_field, .t-PageBody--login .b-register-form .password {
+      border-bottom: 1px solid; }
+    .t-PageBody--login .b-register-form .t-Login-header {
+      margin-bottom: 33px !important; }
+    .t-PageBody--login .b-register-form .t-Form-fieldContainer {
+      margin-bottom: 0; }
+    .t-PageBody--login .b-register-form .t-Form-inputContainer {
+      padding-bottom: 12px !important; }
+    .t-PageBody--login .b-register-form .t-Form-error {
+      text-align: center; }
+    .t-PageBody--login .b-register-form .b-green-button {
+      margin-top: 24px; }
+    .t-PageBody--login .b-register-form .b-green-button, .t-PageBody--login .b-register-form .b-yellow-button {
+      height: 44px;
+      line-height: 42px;
+      font-size: 14px; }
+    .t-PageBody--login .b-register-form__bottom {
+      margin-top: 28px; } }
 
 .t-PageBody--login .b-recovery-form {
   margin-top: 40px;

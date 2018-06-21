@@ -10,16 +10,6 @@
     .b-yellow-button, .b-green-button {
         width: 100%;
     }
-
-    .b-register-form {
-        max-width: 540px;
-        padding: 50px 70px 46px 70px;
-        .t-Form-inputContainer {
-            padding-bottom: 40px$i;
-            position: relative;
-        }
-    }
-      
     .b-register-form, .b-login-form {
         margin-left: auto;
         margin-right: auto;
@@ -136,6 +126,7 @@
             font-weight: 700;
         }  
     }
+    @import "_form-register.scss";
     @import "_form-recovery.scss";
 }
 @include mobile {
