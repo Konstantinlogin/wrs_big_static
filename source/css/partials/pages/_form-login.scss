@@ -1,0 +1,177 @@
+.b-login-form {
+    margin-top: 90px;
+    padding: 77px 0 66px 54px;
+    width: 100%;
+    max-width: 1224px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1)$i;
+    &__bottom {
+        width: 100%;
+        text-align: center;
+    }
+    .t-Form-fieldContainer {
+        &:first-of-type {
+            margin-bottom: 37px;
+        }
+    }
+    .t-Form-fieldContainer {
+        margin-bottom: 25px;
+    }
+    .t-Login-header {
+        padding: 0$i;
+        margin-bottom: 51px$i;
+    }
+    .t-Form-error {
+        padding-top: 8px$i;
+        font-family: 'Montserrat', sans-serif$i;
+        font-size: 10px$i;
+    }
+    .t-Login-title {
+        margin: 0;
+    }
+    .text_field, .password {
+        @extend %form-input;
+    }
+    .b-green-button, .b-yellow-button {
+        margin-bottom: 9px;
+    }
+    .apex-item-checkbox {
+        position: relative;
+        input {
+            visibility: hidden;
+            position: absolute;
+            z-index: -1;
+        }
+        label {
+            position: relative;
+            display: inline-block;
+            box-sizing: border-box;
+            padding-left: 32px;
+            font-size: 10px;
+            color:  $GRAY;
+            font-family: 'Montserrat', sans-serif$i;
+            font-weight: 300;
+            &:before {
+                content: '';
+                display: inline-block;
+                box-sizing: border-box;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 16px;
+                height: 16px;
+                border: 1px solid $GRAY;
+                border-radius: 2px;
+            }
+        }
+        input:checked ~ label {
+            &:before {
+                border: none;
+                @include makeSprite(16px, 16px, 'spr-ckbx-checked.png');
+            }
+        }
+    }
+    &__left {
+        width: 40%;
+        padding-right: 45px;
+    }
+    &__right {
+        width: 60%;
+        padding-right: 45px;
+        box-sizing: border-box;
+    }
+    &__bg {
+        position: relative;
+        left: 21px;
+        top: 29px;
+        width: 100%;
+        background-image: url($IMAGE_PATH + 'login_bg.jpg');
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+        height: 327px;
+    }
+    &__bottom {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 32px;
+        max-width: 374px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__link-left {
+        padding-right: 8px;
+        margin-bottom: 8px;
+    }
+    .text_field, .password {
+        text-align: center;
+        width: 100%;
+        font-weight: 700;
+    }  
+}
+
+@include mobile {
+    .b-login-form {
+        padding: 0 30px 46px 30px;
+        display: block;
+        margin-top: 23px;
+        background: transparent;
+        box-shadow: none$i;
+        .text_field, .password {
+            border-bottom: 1px solid;
+        }
+        .t-Login-header {
+            margin-bottom: 33px$i;
+        }
+        .t-Form-inputContainer {
+            padding-bottom: 12px$i;
+        }
+        .t-Form-error {
+            text-align: center;
+        }
+
+        .t-Form-fieldContainer {
+            &:first-of-type {
+                margin-bottom: 0;
+            }
+        }
+        .t-Form-fieldContainer {
+            margin-bottom: 0;
+        }
+        .b-green-button {
+            max-width: 100%$i;
+            height: 40px$i;
+            line-height: 40px$i;
+            font-size: 14px$i;
+        }
+        &__bottom {
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__link-left {
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+        &__link-left, &__link-right {
+            font-size: 12px;
+        }
+        .t-Form-inputContainer {
+            padding-bottom: 10px$i;
+        }
+        .t-Login-buttons {
+            margin-top: 37px;
+        }
+        &__left {
+            width: 100%;
+            padding: 0;
+        }
+        &__right {
+            display: none;
+        }
+
+    } 
+}
