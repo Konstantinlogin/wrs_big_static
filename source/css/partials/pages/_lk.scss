@@ -1,9 +1,24 @@
-.b-body-lk {
+.b-body {
+    &--lk {
+        .b-header__phone {
+            display: none;
+            @media screen and (min-width: 1145px) {
+                display: inline-block;
+            }
+        }
+    }
+}
+.b-body-lk { //TODO: переименовать в контейнер
     display: flex;
     &__navigation {
         .t-Body-nav {
             position: relative;
             top: 0$i;
+            box-shadow: none$i;
+            background: transparent$i;
+            ul {
+                background-color: transparent$i;
+            }
         }
         .t-TreeNav > ul {
             display: block$i;
