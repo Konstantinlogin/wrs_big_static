@@ -1,0 +1,12 @@
+.b-body-lk {
+    display: flex;
+    &__navigation {
+        .t-Body-nav {
+            position: relative;
+            top: 0$i;
+        }
+        .t-TreeNav > ul {
+            display: block$i;
+        }
+    }
+}
