@@ -13,10 +13,12 @@
 }
 .b-lk-content {
     display: flex;
-    &__navigation, &__main {
-        padding-top: 50px;
+    align-items: flex-start;
+    &__main {
+        margin-top: 50px$i;
     }
     &__navigation {
+        padding-top: 50px;
         box-sizing: border-box;
         padding-right: 20px;
         width: 418px;
@@ -26,7 +28,13 @@
         }
     }
     &__main {
+        display: block;
+        box-sizing: border-box;
+        background-color: #FFF;
+        border-radius: 5px;
+        box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1);
         width: calc(100% - 418px);
+        padding-bottom: 40px;
         @media screen and (max-width: 1366px) {
             width: 65%;
         }
@@ -57,7 +65,7 @@
         }
         &__main {
             width: 100%;
-            padding-top: 0;
+            margin-top: 0$i;
         }
     } 
 }
