@@ -7,6 +7,7 @@ const TypedocWebpackPlugin = require('typedoc-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const autoprefixer = require('autoprefixer');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 let env = process && process.env && process.env.NODE_ENV;
 let dev = !(env && env === 'production');
@@ -32,7 +33,11 @@ let webpack_path = [
 ];
 
 let plugins = [
-
+    new BrowserSyncPlugin({
+        host: 'localhost',
+        port: 3000,
+        server: {baseDir: ['./']}
+    }),
 ];
 
 if (env === 'analizer') {
