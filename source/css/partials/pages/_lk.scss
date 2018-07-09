@@ -8,20 +8,24 @@
         }
     }
 }
-.b-body-lk { //TODO: переименовать в контейнер
+.b-lk-content {
     display: flex;
+    &__navigation, &__main {
+        padding-top: 50px;
+    }
     &__navigation {
-        .t-Body-nav {
-            position: relative;
-            top: 0$i;
-            box-shadow: none$i;
-            background: transparent$i;
-            ul {
-                background-color: transparent$i;
-            }
-        }
-        .t-TreeNav > ul {
-            display: block$i;
+        box-sizing: border-box;
+        padding-right: 20px;
+        width: 418px;
+        @media screen and (max-width: 1366px) {
+            width: 35%;
         }
     }
+    &__main {
+        width: calc(100% - 418px);
+        @media screen and (max-width: 1366px) {
+            width: 65%;
+        }
+    }
+
 }
