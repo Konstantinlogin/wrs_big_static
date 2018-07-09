@@ -6,6 +6,9 @@
                 display: inline-block;
             }
         }
+        .t-Body-topButton {
+            display: none$i;
+        }
     }
 }
 .b-lk-content {
@@ -17,6 +20,7 @@
         box-sizing: border-box;
         padding-right: 20px;
         width: 418px;
+        padding-bottom: 40px;
         @media screen and (max-width: 1366px) {
             width: 35%;
         }
@@ -27,5 +31,33 @@
             width: 65%;
         }
     }
+}
 
+@include tablet {
+    .b-lk-content {
+        &__navigation {
+            width: 40%;
+        }
+        &__main {
+            width: 60%;
+        }
+    }
+}
+
+@include mobile {
+    .b-body {
+        &--lk {
+            padding-top: 0;
+        }
+    }
+    .b-lk-content {
+        &__navigation {
+            width: auto;
+            padding-top: 20px;
+        }
+        &__main {
+            width: 100%;
+            padding-top: 0;
+        }
+    } 
 }

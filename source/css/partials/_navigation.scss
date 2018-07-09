@@ -200,3 +200,55 @@
         font-size: 14px;
     }
 }
+
+@include tablet {
+    .b-menu {
+        &__list {
+            margin-left: 0;
+        }
+        &__icon {
+            left: 0;
+        }
+    }
+}
+
+@include mobile {
+    .b-lk-navigation {
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: block;
+        position: fixed;
+        background-color: #FFF;
+        width: 100%;
+        height: 80%;
+        @supports (height: calc(100% - 90px)){
+            height: calc(100% - 90px);
+        }
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        z-index: -1;
+        overflow: auto;
+        &.open {
+            opacity: 1;
+            z-index: 99999;
+            transition: 0.5s;
+        }
+    }
+    .b-menu {
+        &__list-item {
+            margin-bottom: 20px;
+            &.active {
+                // margin-bottom: 0;
+            }
+        }
+        &__link {
+            padding-left: 85px;
+        }
+        &__sub-list {
+            margin-left: 85px;
+            padding-top: 20px;
+        }
+    }
+}
