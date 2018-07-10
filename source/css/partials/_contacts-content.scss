@@ -1,0 +1,15 @@
+.b-contacts-content {
+	display: flex;
+	justify-content: space-between;
+	&__main {
+		box-sizing: border-box;
+		padding: 60px 0 60px 60px;
+	}
+	&__map {
+		box-sizing: border-box;
+		width: calc(100% - 421px);
+	}
+	&__title-h1, &__section {
+		margin-bottom: 91px;
+	}
+}
