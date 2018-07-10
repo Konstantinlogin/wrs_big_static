@@ -1,15 +1,72 @@
 .b-contacts-content {
-	display: flex;
-	justify-content: space-between;
+	@media screen and (min-width: 1024px) { 
+		display: flex;
+		justify-content: space-between;
+	}
 	&__main {
 		box-sizing: border-box;
-		padding: 60px 0 60px 60px;
+		width: 100%;
+		padding: 20px;
+		@media screen and (min-width: 768px) {
+			padding: 60px 20px 60px 60px;
+		}
+		@media screen and (min-width: 1024px) {
+			width: 50%;
+		}
+		@media screen and (min-width: 1366px) {
+			width: auto;
+		}
 	}
 	&__map {
 		box-sizing: border-box;
-		width: calc(100% - 421px);
+		width: 100%;
+		height: 400px;
+		@media screen and (min-width: 1024px) {
+			width: 50%;
+			height: auto;
+		}
+		@media screen and (min-width: 1366px) {
+			width: calc(100% - 421px);
+		}
+		overflow: hidden;
+		border-radius: 0 5px 5px 0px
 	}
 	&__title-h1, &__section {
-		margin-bottom: 91px;
+		margin-bottom: 20px;
+		@media screen and (min-width: 1024px) {
+			margin-bottom: 91px;
+		}
 	}
+	&__text {
+		line-height: 1.5;
+	}
+	&__section {
+		position: relative;
+		box-sizing: border-box;
+		padding-left: 54px;
+		br {
+			@media screen and (max-width: 1024px) {
+				display: none;
+			}
+		}
+	}
+	&__icon {
+		position: absolute;
+		left: 0;
+		&:not(.ic-email) {
+			top: 4px;
+		}
+		&.ic-email {
+			top: 0;
+		}
+	}
+}
+.ic-address {
+	@include makeSprite(15px, 18px, 'ic_contacts_pin.png');
+}
+.ic-phone {
+	@include makeSprite(18px, 18px, 'ic_contacts_phone.png');
+}
+.ic-email {
+	@include makeSprite(18px, 18px, 'ic_contacts_email.png');
 }
