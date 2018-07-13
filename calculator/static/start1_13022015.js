@@ -310,22 +310,7 @@ jQuery(function (){
 			$("#all").html(number_format(calcAll(),0,' ',' ' ));
 		//}
 	}	
-			
-	$('.sex input[type=radio]').Custom({
-		customStyleClass: 'checkbox',
-		customHeight: '19',
-		enableHover: true,
-	});
-	$('.user-type__row input[type=checkbox]').Custom({
-		customStyleClass: 'checkbox',
-		customHeight: '15',
-		enableHover: true
-	});
-	$('.wrap-check input[type=checkbox]').Custom({
-		customStyleClass: 'checkbox',
-		customHeight: '15',
-		enableHover: true
-	});
+
 					
 	if ($('.drag-slider').length) {
 
