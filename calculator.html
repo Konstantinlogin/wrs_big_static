@@ -1,48 +1,25 @@
+<!DOCTYPE html>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<html lang="ru">
 <head>
     <title>Калькулятор</title>
+    <script src="https://mnpf-akvilon.ru/p/libraries/apex/minified/desktop_all.min.js?v=4.2.6.00.03"
+            type="text/javascript"></script>
+    <script src="https://mnpf-akvilon.ru/p/libraries/apex/minified/legacy.min.js?v=4.2.6.00.03"
+            type="text/javascript"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Content-Style-Type" content="text/css" />
-    <meta name="Description" content="services_programs_calc">
-    <meta name="Keywords" content="services_programs_calc">
-
-    <link rel="stylesheet" href="https://mnpf-akvilon.ru/p/css/apex.min.css?v=4.2.6.00.03" type="text/css" />
-    <link rel="stylesheet" href="https://mnpf-akvilon.ru/p/libraries/jquery-ui/1.8.22/themes/base/jquery-ui.min.css" type="text/css" />
-
-
-
-
-    <script type="text/javascript">
-        var apex_img_dir = "https://mnpf-akvilon.ru/p/", htmldb_Img_Dir = apex_img_dir;
-    </script>
-    <script src="https://mnpf-akvilon.ru/p/libraries/apex/minified/desktop_all.min.js?v=4.2.6.00.03" type="text/javascript"></script>
-    <script src="https://mnpf-akvilon.ru/p/libraries/apex/minified/legacy.min.js?v=4.2.6.00.03" type="text/javascript"></script>
-
-
-
-
-
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-    <link href="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/style.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/favicon.ico" type="image/x-icon" />
-    <script src="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/js/jquery.maskedinput-1.3.1.min_.js" type="text/javascript"></script >
-    <!--[if lt IE 9]>
-    <style>
-        .tabs ul li > div{border:1px solid #000;}
-    </style>
-    <![endif]-->
+    <link rel="shortcut icon" href="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/favicon.ico"
+          type="image/x-icon"/>
+    <script src="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/js/jquery.maskedinput-1.3.1.min_.js"
+            type="text/javascript"></script>
 
 
 </head>
 <body id="sun_wlsb">
 <div class="wrp">
-    <form action="wwv_flow.accept" method="post" name="wwv_flow" id="wwvFlowForm" novalidate >
-        <input type="hidden" name="p_flow_id" value="13754" id="pFlowId" /><input type="hidden" name="p_flow_step_id" value="10" id="pFlowStepId" /><input type="hidden" name="p_instance" value="12072860981849" id="pInstance" /><input type="hidden" name="p_page_submission_id" value="2831242227404" id="pPageSubmissionId" /><input type="hidden" name="p_request" value="" id="pRequest" /><link rel="stylesheet" href="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/calc/css/screen.css?v=100"/>
+
+        <link rel="stylesheet" href="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/calc/css/screen.css?v=100"/>
         <link rel="stylesheet" href="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/calc/css/jquery-ui.min.css"/>
         <script src="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/calc/js/html5shiv.js?v=100"></script>
 
@@ -51,330 +28,232 @@
         <script src="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/calc/js/jquery-ui.min.js"></script>
         <script src="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/calc/js/jquery.custom-radio-checkbox.min.js"></script>
         <script src="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/calc/js/start1_13022015.js"></script>
-
         <script src="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/js/jquery-ui-1.11.1.js"></script>
-        <link rel="stylesheet" href="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/style1.css">
 
-        <script>
-            $(function() {
-                $( "#menu_accordion" ).accordion({
-                    heightStyle: "content",
-                    active:0
-                });
-            });
-        </script>
-        <div id="main">
-            <!-- HEADER -->
-            <div id="header">
-                <div class="phone">
-                    звонок по россии бесплатный
-                    <div>8 800 250 72 60</div>
-                </div>
-                <div class="email">
-                    получить логин и пароль<br />
-                    <a href="https://lk.mnpf-akvilon.ru" target="_blank">Личный кабинет</a>
-                </div><ul class="fixedMenu">
-                <li><a href="o_perevode" class="item1"><span>Услуги фонда</span></a></li>
-                <li><a href="ofic_docs" class="item2"><span>Официальные документы</span></a></li>
-                <li><a href="faq_ops" class="item3"><span>задать вопрос</span></a></li>
-                <li><a href="https://lk.mnpf-akvilon.ru" class="item4"><span>Личный кабинет</span></a></li>
-                <li><a href="about_akvilon" class="item5"><span>как работает НПФ?</span></a></li>
-                <li><a href="calculator" class="item6"><span>пенсионный калькулятор</span></a></li>
-            </ul><div class="tabs">
-                <ul>
-                    <li><a href="about_akvilon">О&nbsp;Фонде</a></li>
-                    <li><a href="raskrytie_informacii">Раскрытие&nbsp;информации</a></li>
-                    <li><a href="o_perevode">Услуги и предложения</a></li>
-                    <li><a href="fiz_lica">Обновить данные</a></li>
-                    <li><a href="vse_novosti?year=2016">Пресс-центр</a></li>
-                    <li><a href="contacti">Контакты</a></li>
-                </ul>
-            </div>
-                <div class="logo-nav"><a href="mainakv"><h1 class="logo"><span ></span></h1></a></div>
-                <ul class="nav_bar"></ul>
-            </div>
-            <!-- CONTENT -->
-            <div id="content">
-                <div id="breadcrumb" class="clear"><div id="R184704254777523701"  class="fleft"><a href="mainakv" class="breadcrumb">Главная</a><a href="calculator" class="breadcrumb current">Пенсионный калькулятор</a></div><input type="hidden" name="p_arg_names" value="220911453022343448" /><input type="hidden" name="p_t01" id="P0_DESCRIPTION" value="services_programs_calc"></div>
-                <h1 class="title">Калькулятор</h1>
-                <input type="hidden" name="p_arg_names" value="181242667635303248" /><input type="hidden" name="p_t02" id="P10_SPK" value=""><input type="hidden" name="p_arg_names" value="183894455157886369" /><input type="hidden" name="p_t03" id="P10_SEX" value="">
-                <div class="main_center">
-                    <div class="right-panel">
-                        <div id="messages"></div>
+        <div class="main_center">
+            <div class="right-panel">
 
-                        <script type="text/javascript">
-                            var g_yield_npf = 6.56;
-                            var g_yield_pfr = 6.84;
-                            var g_fv = 4558.93;
-                        </script>
-                        <div class="pension_calculator clearfix">
 
-                            <div class="left-side">
+                <div class="pension_calculator clearfix">
 
-                                <div class="calculator-row clearfix">
-                                    <div class="row__title">Ваш пол:</div>
-                                    <div class="sex clearfix" id="sex">
-                                        <input type="radio" id="man" onChange="javascript:setSex();" value="M" name="p_t03"/>
-                                        <label for="man">мужской</label>
-                                        <input type="radio" id="woman" onChange="javascript:setSex();" value="F" name="p_t03" checked/>
-                                        <label for="woman">женский</label>
-                                    </div>
+                    <div class="left-side">
+
+                        <div class="calculator-row clearfix">
+                            <div class="row__title">Ваш пол:</div>
+                            <div class="sex clearfix" id="sex">
+                                <input type="radio" id="man" onChange="javascript:setSex();" value="M" name="p_t03"/>
+                                <label for="man">мужской</label>
+                                <input type="radio" id="woman" onChange="javascript:setSex();" value="F" name="p_t03"
+                                       checked/>
+                                <label for="woman">женский</label>
+                            </div>
+                        </div>
+                        <div class="calculator-row clearfix">
+                            <div class="line-decor"></div>
+                            <div class="row__title">Ваш возраст:</div>
+                            <div class="wrap__drag-slider clearfix">
+                                <div id="slider_age" class="drag-slider your-age" data-min="14" data-max="70"
+                                     data-step="1" data-value="10"></div>
+                                <div class="wrap-parameter">
+                                    <div class="min">14</div>
+                                    <div class="middle" id="middle_age">42</div>
+                                    <div class="max" id="max_age">70</div>
                                 </div>
-                                <div class="calculator-row clearfix">
-                                    <div class="line-decor"></div>
-                                    <div class="row__title">Ваш возраст:</div>
-                                    <div class="wrap__drag-slider clearfix">
-                                        <div id="slider_age" class="drag-slider your-age" data-min="14" data-max="70" data-step="1" data-value="10"></div>
-                                        <div class="wrap-parameter"><div class="min">14</div><div class="middle" id="middle_age">42</div><div class="max" id="max_age">70</div></div>
-                                        <input type="text" readonly class="amount"/>
-                                    </div>
+                                <input type="text" readonly class="amount"/>
+                            </div>
+                        </div>
+
+                        <div class="tit">
+                            Обязательное пенсионное страхование
+                        </div>
+                        <div class="calculator-row clearfix" style="padding-bottom:2em">
+                            <div class="line-decor"></div>
+                            <div class="row__title">Размер пенсионных накоплений</div>
+                            <div class="wrap__drag-slider clearfix">
+                                <div id="slider_cash" class="drag-slider cash" data-min="0" data-max="1000000"
+                                     data-step="1000" data-value="10"></div>
+                                <div class="wrap-parameter">
+                                    <div class="min">0</div>
+                                    <div class="max">1 000 000</div>
                                 </div>
-
-                                <div class="tit">
-                                    Обязательное пенсионное страхование
-                                </div>
-                                <div class="calculator-row clearfix" style="padding-bottom:2em">
-                                    <div class="line-decor"></div>
-                                    <div class="row__title">Размер	пенсионных	накоплений</div>
-                                    <div class="wrap__drag-slider clearfix">
-                                        <div id="slider_cash" class="drag-slider cash" data-min="0" data-max="1000000" data-step="1000" data-value="10"></div>
-                                        <div class="wrap-parameter">
-                                            <div class="min">0</div>
-                                            <div class="max">1 000 000</div>
-                                        </div>
-                                        <input type="text" readonly class="amount"/>
-                                        <div class="wrap-check clearfix">
-                                            <input type="checkbox" id="check3" onChange="dontKnow()"/><label for="check3">Не знаю</label>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                                <div class="calculator-row clearfix">
-                                    <div class="line-decor"></div>
-                                    <div class="row__title">В каком году Вы начали	работать?</div>
-                                    <div class="wrap__drag-slider clearfix">
-                                        <div id="slider_work_year" class="drag-slider work_year" data-min="1985" data-max="2016" data-step="1" data-value="10"></div>
-                                        <div class="wrap-parameter"><div class="min">1985</div><div class="max">2016</div></div>
-                                        <input type="text" readonly class="amount"/>
-                                    </div>
-
-                                </div>
-                                <div class="calculator-row clearfix">
-                                    <div class="line-decor"></div>
-                                    <div class="row__title">Ваша ежемесячная зарплата <font color="red">*</font> </div>
-                                    <div class="wrap__drag-slider clearfix">
-                                        <div id="slider_salary" class="drag-slider salary" data-min="0" data-max="1000000" data-step="1000" data-value="10"></div>
-                                        <div class="wrap-parameter"><div class="min">0</div><div class="max">1 000 000</div></div>
-                                        <input type="text" readonly class="amount"/>
-                                    </div>
-                                </div>
-
-
-
-
-                                <div class="user-type">
-                                    <div class="user-type__row clearfix">
-
-                                        <input type="checkbox" id="check1" onChange="javascript:sofHideShow();"/><label for="check1">Являюсь участником программы государственного софинансирования</label>
-                                    </div>
-
-
-
-                                </div>
-
-                                <div id="sofBox">
-                                    <div class="calculator-row clearfix">
-                                        <div class="line-decor"></div>
-                                        <div class="row__title">Сумма годового взноса:</div>
-                                        <div class="wrap__drag-slider clearfix">
-                                            <div id="slider_sumYearVz" class="drag-slider sumYearVz" data-min="2000" data-max="12000" data-step="1000" data-value="12000"></div>
-                                            <div class="wrap-parameter"><div class="min">2000</div><div class="max">12 000</div></div>
-                                            <input type="text" readonly class="amount"/>
-                                        </div>
-
-                                    </div>
-                                    <div class="calculator-row clearfix" >
-                                        <div class="line-decor"></div>
-                                        <div class="row__title">Количество лет уплаты:</div>
-                                        <div class="wrap__drag-slider clearfix">
-                                            <div id="slider_years_pay" class="drag-slider years_pay" data-min="1" data-max="10" data-step="1" data-value="10"></div>
-                                            <div class="wrap-parameter"><div class="min">1</div><div class="max">10</div></div>
-                                            <input type="text" readonly class="amount"/>
-                                        </div>
-
-                                    </div>
+                                <input type="text" readonly class="amount"/>
+                                <div class="wrap-check clearfix">
+                                    <input type="checkbox" id="check3" onChange="dontKnow()"/><label for="check3">Не
+                                    знаю</label>
                                 </div>
 
                             </div>
 
-                            <div class="right-side">
-
-                                <div class="graph clearfix">
-                                    <div class="legend">
-
-                                        <div class="current_sof" id="current_sof">
-                                            <div class="ico"></div>
-                                            <div>Софинансирование</div><div class="sum" id="sof_sum">1 000</div><div>руб.</div>
-                                        </div>
-                                        <div class="current_acc">
-                                            <div class="ico"></div>
-                                            <div>Накопительная часть</div><div class="sum" id="acc_sum">4 236</div><div>руб.</div>
-                                        </div>
-                                        <div class="current_ins">
-                                            <div class="ico"></div>
-                                            <div>Страховая часть</div><div class="sum" id="ins_sum">6 030</div><div>руб.</div>
-                                        </div>
-                                    </div>
-                                    <div class="wrap-column mean-pension">
-                                        <div class="wrap-column__inner">
-
-                                            <div class="column-title">Средняя пенсия в России в 2016 году <strong>	13 132 руб. </strong></div>
-
-                                            <div class="column1"></div>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="wrap-column total-pension">
-
-                                        <div class="wrap-column__inner">
-
-                                            <div class="column-title">Размер Вашей пенсии составит:	<strong><span id="sum">10 266</span> руб.</strong></div>
-
-                                            <div class="column2" id="column2"></div>
-
-                                            <div class="column3">
-
-                                                <!--<div class="current">Страховая часть <span id="ins_sum">6 030</span> руб.</div>-->
-
-                                            </div>
-
-                                            <div id="column4" class="column4">
-
-                                                <!--<div class="current" id="current4">Софинансирование <span id="sof_sum">1 000</span> руб.</div>-->
-
-                                            </div>
-
-                                            <div id="column5" class="column5">
-
-                                                <!--<div class="current" id="current5">негосударственное пенсионное обеспечение<span id="npo_sum">2 000</span> руб.</div>-->
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
+                        </div>
+                        <div class="calculator-row clearfix">
+                            <div class="line-decor"></div>
+                            <div class="row__title">В каком году Вы начали работать?</div>
+                            <div class="wrap__drag-slider clearfix">
+                                <div id="slider_work_year" class="drag-slider work_year" data-min="1985" data-max="2016"
+                                     data-step="1" data-value="10"></div>
+                                <div class="wrap-parameter">
+                                    <div class="min">1985</div>
+                                    <div class="max">2016</div>
                                 </div>
+                                <input type="text" readonly class="amount"/>
+                            </div>
 
-                                <div class="radial-shadow"></div>
-
-                                <div class="total">
-                                    <p>Расчетная сумма пенсионных накоплений <br/>	(кроме страховой части) на дату окончания трудового периода.</p>
-                                    <div class="number"><span id="all">965 851</span> рублей</div>
-
-                                    <i>Эти накопления могут быть выплачены правопреемникам</i>
+                        </div>
+                        <div class="calculator-row clearfix">
+                            <div class="line-decor"></div>
+                            <div class="row__title">Ваша ежемесячная зарплата <font color="red">*</font></div>
+                            <div class="wrap__drag-slider clearfix">
+                                <div id="slider_salary" class="drag-slider salary" data-min="0" data-max="1000000"
+                                     data-step="1000" data-value="10"></div>
+                                <div class="wrap-parameter">
+                                    <div class="min">0</div>
+                                    <div class="max">1 000 000</div>
                                 </div>
+                                <input type="text" readonly class="amount"/>
+                            </div>
+                        </div>
 
-                                <div class="total" style="padding-top: 15px;">
-                                    <p style="font-size: 12px;">Приведенный расчет является ориентировочным.
-                                        <br/>Не является офертой и не гарантирует доходность в будущем.
-                                        <br/>При расчете используется показатель доходности за 2015г.
-                                        <br/>(Доходность ОПС - 6,56%)</p><br/>
-                                    <p><font color="red">*</font> Расчет страховой пенсии производится с учетом максимальной налогооблагаемой базы 796 тыс. руб.</p>
-                                </div>
+
+                        <div class="user-type">
+                            <div class="user-type__row clearfix">
+
+                                <input type="checkbox" id="check1" onChange="javascript:sofHideShow();"/><label
+                                    for="check1">Являюсь участником программы государственного софинансирования</label>
                             </div>
 
 
                         </div>
 
-                    </div>
-                    <div class="left-panel">
-                        <div id="menu_accordion">
-                            <h3>Oбязательное пенсионное страхование</h3>
-                            <div>
-                                <div class="region sidebar sidebaralt1" id="R84738406244736896" >
-                                    <h3 class="green">Обязательное пенсионное страхование</h3>
-                                    <div class="buttons">&nbsp;&nbsp;&nbsp;</div>
-                                    <div class="regionbody clear overflow"> <ul class="hierarchical-expanded"><li><a href="o_perevode">Как перевести пенсионные накопления в ОАО «МНПФ «АКВИЛОН»</a></li><li class="current"><a href="calculator" class="current">Калькулятор</a></li><li><a href="mat_kapital">Материнский капитал</a></li><li><a href="pens_vyplati">Назначение пенсионых выплат</a></li><li><a href="pravopreemstvo">Правопреемство</a></li><li><a href="fiz_lica">Сообщить об изменении персональных данных клиента</a></li><li><a href="faq_ops">Ответы на часто задаваемые вопросы</a></li></ul></div> </div>
-                            </div>
-
-
-                            <h3>Негосударственное пенсионное обеспечение</h3>
-                            <div>
-                                <div class="region sidebar sidebaralt1" id="R84738007124736895" >
-                                    <h3 class="green">Негосударственное пенсионное обеспечение</h3>
-                                    <div class="buttons">&nbsp;&nbsp;&nbsp;</div>
-                                    <div class="regionbody clear overflow"> <ul class="hierarchical-expanded"><li><a href="npo_stat_klientom">Как это работает</a></li><li><a href="npo_dogovor">Заключить договор</a></li><li><a href="pens_vznosy">Как платить пенсионные взносы</a></li><li><a href="nalogovyj_vychet">Социальный налоговый вычет</a></li><li><a href="pensija">Назначение и выплата пенсий</a></li><li><a href="pravopreemstvo_npo">Правопреемство</a></li><li><a href="fiz_lica">Сообщить об изменении персональных данных клиента</a></li><li><a href="faq_npo">Задать вопрос</a></li></ul></div> </div>
-                            </div>
-
-
-                            <h3>Корпоративные пенсионные программы</h3>
-                            <div>
-                                <div class="region sidebar sidebaralt1" id="R84737610018736894" >
-                                    <h3 class="green">Корпоративные пенсионные программы</h3>
-                                    <div class="buttons">&nbsp;&nbsp;&nbsp;</div>
-                                    <div class="regionbody clear overflow"> <ul class="hierarchical-expanded"><li><a href="korp_programmy">Корпоративные программы</a></li><li><a href="jur_lica">Сообщить об изменении данных клиента</a></li><li><a href="faq_kp">Задать вопрос</a></li></ul></div>
+                        <div id="sofBox">
+                            <div class="calculator-row clearfix">
+                                <div class="line-decor"></div>
+                                <div class="row__title">Сумма годового взноса:</div>
+                                <div class="wrap__drag-slider clearfix">
+                                    <div id="slider_sumYearVz" class="drag-slider sumYearVz" data-min="2000"
+                                         data-max="12000" data-step="1000" data-value="12000"></div>
+                                    <div class="wrap-parameter">
+                                        <div class="min">2000</div>
+                                        <div class="max">12 000</div>
+                                    </div>
+                                    <input type="text" readonly class="amount"/>
                                 </div>
+
+                            </div>
+                            <div class="calculator-row clearfix">
+                                <div class="line-decor"></div>
+                                <div class="row__title">Количество лет уплаты:</div>
+                                <div class="wrap__drag-slider clearfix">
+                                    <div id="slider_years_pay" class="drag-slider years_pay" data-min="1" data-max="10"
+                                         data-step="1" data-value="10"></div>
+                                    <div class="wrap-parameter">
+                                        <div class="min">1</div>
+                                        <div class="max">10</div>
+                                    </div>
+                                    <input type="text" readonly class="amount"/>
+                                </div>
+
                             </div>
                         </div>
 
-
                     </div>
-                    <div class="clear"></div>
+
+                    <div class="right-side">
+
+                        <div class="graph clearfix">
+                            <div class="legend">
+
+                                <div class="current_sof" id="current_sof">
+                                    <div class="ico"></div>
+                                    <div>Софинансирование</div>
+                                    <div class="sum" id="sof_sum">1 000</div>
+                                    <div>руб.</div>
+                                </div>
+                                <div class="current_acc">
+                                    <div class="ico"></div>
+                                    <div>Накопительная часть</div>
+                                    <div class="sum" id="acc_sum">4 236</div>
+                                    <div>руб.</div>
+                                </div>
+                                <div class="current_ins">
+                                    <div class="ico"></div>
+                                    <div>Страховая часть</div>
+                                    <div class="sum" id="ins_sum">6 030</div>
+                                    <div>руб.</div>
+                                </div>
+                            </div>
+                            <div class="wrap-column mean-pension">
+                                <div class="wrap-column__inner">
+
+                                    <div class="column-title">Средняя пенсия в России в 2016 году <strong> 13 132
+                                        руб. </strong></div>
+
+                                    <div class="column1"></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="wrap-column total-pension">
+
+                                <div class="wrap-column__inner">
+
+                                    <div class="column-title">Размер Вашей пенсии составит: <strong><span id="sum">10 266</span>
+                                        руб.</strong></div>
+
+                                    <div class="column2" id="column2"></div>
+
+                                    <div class="column3">
+
+                                        <!--<div class="current">Страховая часть <span id="ins_sum">6 030</span> руб.</div>-->
+
+                                    </div>
+
+                                    <div id="column4" class="column4">
+
+                                        <!--<div class="current" id="current4">Софинансирование <span id="sof_sum">1 000</span> руб.</div>-->
+
+                                    </div>
+
+                                    <div id="column5" class="column5">
+
+                                        <!--<div class="current" id="current5">негосударственное пенсионное обеспечение<span id="npo_sum">2 000</span> руб.</div>-->
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="radial-shadow"></div>
+
+                        <div class="total">
+                            <p>Расчетная сумма пенсионных накоплений <br/> (кроме страховой части) на дату окончания
+                                трудового периода.</p>
+                            <div class="number"><span id="all">965 851</span> рублей</div>
+
+                            <i>Эти накопления могут быть выплачены правопреемникам</i>
+                        </div>
+
+                        <div class="total" style="padding-top: 15px;">
+                            <p style="font-size: 12px;">Приведенный расчет является ориентировочным.
+                                <br/>Не является офертой и не гарантирует доходность в будущем.
+                                <br/>При расчете используется показатель доходности за 2015г.
+                                <br/>(Доходность ОПС - 6,56%)</p><br/>
+                            <p><font color="red">*</font> Расчет страховой пенсии производится с учетом максимальной
+                                налогооблагаемой базы 796 тыс. руб.</p>
+                        </div>
+                    </div>
+
+
                 </div>
 
-
-
-
-
-
-            </div>   <!-- /CONTENT -->
-        </div>   <!-- /main -->   <!-- FOOTER -->
-        <div id="footer">
-            <div>
-                <div class="center">
-                    <div class="bot_logo"></div>
-                    <div class="social_links">
-                        <a href="https://play.google.com/store/apps/details?id=ru.xsquare.npfakvilon.android" class="gp"  target="_blank"></a>
-                        <a href="https://itunes.apple.com/ru/app/mnpf-akvilon/id1178596227?l=ru&ls=1&mt=8" class="ap"  target="_blank"></a>
-
-                        <span class="napf" target="_blank"></span>
-                    </div><div style="float:left;">ОАО "МНПФ "АКВИЛОН"<br />
-                    Лицензия №326/2 от 20.09.2005г. выдана ЦБ РФ<br />
-                    Сайт зарегистрирован как СМИ. Свидетельство ЭЛ № ФС77-54417 от 10.06.2013г.
-                </div><a id="back-top" href="#top">Наверх</a>
-                    <script>
-                        $(document).ready(function(){
-                            $("#back-top").hide();
-                            $(function () {
-                                $(window).scroll(function () {
-                                    if ($(this).scrollTop() > 100) {
-                                        $('#back-top').fadeIn();
-                                    } else {
-                                        $('#back-top').fadeOut();
-                                    }
-                                });
-                                $('#back-top').click(function () {
-                                    $('body,html').animate({
-                                        scrollTop: 0
-                                    }, 800);
-                                    return false;
-                                });
-                            });
-                        });
-                    </script>
-                </div>
             </div>
+
         </div>
-        <input type="hidden" name="p_md5_checksum" value=""  /><input type="hidden" name="p_page_checksum" value="6B70D092887F7E07865213306E69117C" id="pPageChecksum" /></form>
+
 </div>
-
-
-<script type="text/javascript">
-</script>
 
 </body>
 </html>
