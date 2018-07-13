@@ -3,48 +3,29 @@
 <html lang="ru">
 <head>
     <title>Калькулятор</title>
-    <script src="https://mnpf-akvilon.ru/p/libraries/apex/minified/desktop_all.min.js?v=4.2.6.00.03"
-            type="text/javascript"></script>
-    <script src="https://mnpf-akvilon.ru/p/libraries/apex/minified/legacy.min.js?v=4.2.6.00.03"
-            type="text/javascript"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-    <link rel="shortcut icon" href="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/favicon.ico"
-          type="image/x-icon"/>
-    <script src="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/js/jquery.maskedinput-1.3.1.min_.js"
-            type="text/javascript"></script>
-
-
 </head>
 <body id="sun_wlsb">
-<div class="wrp">
-
+    <div class="wrp">
         <link rel="stylesheet" href="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/calc/css/screen.css?v=100"/>
         <link rel="stylesheet" href="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/calc/css/jquery-ui.min.css"/>
-        <script src="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/calc/js/html5shiv.js?v=100"></script>
-
 
         <script src="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/calc/js/jquery-1.9.1.min.js"></script>
         <script src="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/calc/js/jquery-ui.min.js"></script>
         <script src="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/calc/js/jquery.custom-radio-checkbox.min.js"></script>
         <script src="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/calc/js/start1_13022015.js"></script>
-        <script src="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/js/jquery-ui-1.11.1.js"></script>
+        <!--<script src="https://mnpf-akvilon.ru/p/themes/theme_30_akv_site/js/jquery-ui-1.11.1.js"></script>-->
 
         <div class="main_center">
             <div class="right-panel">
-
-
                 <div class="pension_calculator clearfix">
-
                     <div class="left-side">
-
                         <div class="calculator-row clearfix">
                             <div class="row__title">Ваш пол:</div>
                             <div class="sex clearfix" id="sex">
                                 <input type="radio" id="man" onChange="javascript:setSex();" value="M" name="p_t03"/>
                                 <label for="man">мужской</label>
-                                <input type="radio" id="woman" onChange="javascript:setSex();" value="F" name="p_t03"
-                                       checked/>
+                                <input type="radio" id="woman" onChange="javascript:setSex();" value="F" name="p_t03" checked/>
                                 <label for="woman">женский</label>
                             </div>
                         </div>
@@ -62,28 +43,23 @@
                                 <input type="text" readonly class="amount"/>
                             </div>
                         </div>
-
                         <div class="tit">
                             Обязательное пенсионное страхование
                         </div>
                         <div class="calculator-row clearfix" style="padding-bottom:2em">
-                            <div class="line-decor"></div>
                             <div class="row__title">Размер пенсионных накоплений</div>
                             <div class="wrap__drag-slider clearfix">
-                                <div id="slider_cash" class="drag-slider cash" data-min="0" data-max="1000000"
-                                     data-step="1000" data-value="10"></div>
+                                <div id="slider_cash" class="drag-slider cash" data-min="0" data-max="1000000" data-step="1000" data-value="10"></div>
                                 <div class="wrap-parameter">
                                     <div class="min">0</div>
                                     <div class="max">1 000 000</div>
                                 </div>
                                 <input type="text" readonly class="amount"/>
                                 <div class="wrap-check clearfix">
-                                    <input type="checkbox" id="check3" onChange="dontKnow()"/><label for="check3">Не
-                                    знаю</label>
+                                    <input type="checkbox" id="check3" onChange="dontKnow()"/>
+                                    <label for="check3">Не знаю</label>
                                 </div>
-
                             </div>
-
                         </div>
                         <div class="calculator-row clearfix">
                             <div class="line-decor"></div>
@@ -97,7 +73,6 @@
                                 </div>
                                 <input type="text" readonly class="amount"/>
                             </div>
-
                         </div>
                         <div class="calculator-row clearfix">
                             <div class="line-decor"></div>
@@ -112,18 +87,12 @@
                                 <input type="text" readonly class="amount"/>
                             </div>
                         </div>
-
-
                         <div class="user-type">
                             <div class="user-type__row clearfix">
-
-                                <input type="checkbox" id="check1" onChange="javascript:sofHideShow();"/><label
-                                    for="check1">Являюсь участником программы государственного софинансирования</label>
+                                <input type="checkbox" id="check1" onChange="javascript:sofHideShow();"/
+                                <label for="check1">Являюсь участником программы государственного софинансирования</label>
                             </div>
-
-
                         </div>
-
                         <div id="sofBox">
                             <div class="calculator-row clearfix">
                                 <div class="line-decor"></div>
@@ -137,7 +106,6 @@
                                     </div>
                                     <input type="text" readonly class="amount"/>
                                 </div>
-
                             </div>
                             <div class="calculator-row clearfix">
                                 <div class="line-decor"></div>
@@ -151,17 +119,12 @@
                                     </div>
                                     <input type="text" readonly class="amount"/>
                                 </div>
-
                             </div>
                         </div>
-
                     </div>
-
                     <div class="right-side">
-
                         <div class="graph clearfix">
                             <div class="legend">
-
                                 <div class="current_sof" id="current_sof">
                                     <div class="ico"></div>
                                     <div>Софинансирование</div>
@@ -183,77 +146,44 @@
                             </div>
                             <div class="wrap-column mean-pension">
                                 <div class="wrap-column__inner">
-
-                                    <div class="column-title">Средняя пенсия в России в 2016 году <strong> 13 132
-                                        руб. </strong></div>
-
+                                    <div class="column-title">Средняя пенсия в России в 2016 году <strong> 13 132 руб. </strong></div>
                                     <div class="column1"></div>
-
                                 </div>
-
                             </div>
-
                             <div class="wrap-column total-pension">
-
                                 <div class="wrap-column__inner">
-
-                                    <div class="column-title">Размер Вашей пенсии составит: <strong><span id="sum">10 266</span>
-                                        руб.</strong></div>
-
+                                    <div class="column-title">Размер Вашей пенсии составит: <strong><span id="sum">10 266</span> руб.</strong></div>
                                     <div class="column2" id="column2"></div>
-
                                     <div class="column3">
-
                                         <!--<div class="current">Страховая часть <span id="ins_sum">6 030</span> руб.</div>-->
-
                                     </div>
-
                                     <div id="column4" class="column4">
-
                                         <!--<div class="current" id="current4">Софинансирование <span id="sof_sum">1 000</span> руб.</div>-->
-
                                     </div>
-
                                     <div id="column5" class="column5">
-
                                         <!--<div class="current" id="current5">негосударственное пенсионное обеспечение<span id="npo_sum">2 000</span> руб.</div>-->
-
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-
-                        <div class="radial-shadow"></div>
-
                         <div class="total">
                             <p>Расчетная сумма пенсионных накоплений <br/> (кроме страховой части) на дату окончания
                                 трудового периода.</p>
                             <div class="number"><span id="all">965 851</span> рублей</div>
-
                             <i>Эти накопления могут быть выплачены правопреемникам</i>
                         </div>
-
-                        <div class="total" style="padding-top: 15px;">
-                            <p style="font-size: 12px;">Приведенный расчет является ориентировочным.
+                        <div class="total">
+                            <p>Приведенный расчет является ориентировочным.
                                 <br/>Не является офертой и не гарантирует доходность в будущем.
                                 <br/>При расчете используется показатель доходности за 2015г.
                                 <br/>(Доходность ОПС - 6,56%)</p><br/>
-                            <p><font color="red">*</font> Расчет страховой пенсии производится с учетом максимальной
-                                налогооблагаемой базы 796 тыс. руб.</p>
+                            <p>
+                                Расчет страховой пенсии производится с учетом максимальной налогооблагаемой базы 796 тыс. руб.</p>
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
-
         </div>
-
-</div>
-
+    </div>
 </body>
 </html>
