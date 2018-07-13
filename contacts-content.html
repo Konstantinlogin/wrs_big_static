@@ -44,21 +44,40 @@
     var myMap;
 
     function init(){
-        var vieportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-        // 37.533969
+        myMap = new ymaps.Map("map", {
+            center: [55.637396, 37.532951],
+            zoom: 14
+        });
 
-        if (vieportWidth > 1023) {
-            myMap = new ymaps.Map("map", {
-                center: [55.637396, 37.533969],
-                zoom: 14
-            });
-        } else {
-            myMap = new ymaps.Map("map", {
-                center: [55.637396, 37.532951],
-                zoom: 14
-            }); 
-        }
-  
+        var myPlacemark = new ymaps.Placemark([55.640111, 37.532951], {
+            balloonContent: 'ул. Миклухо-Маклая, д. 36 А',
+            iconCaption: 'ул. Миклухо-Маклая, д. 36 А'
+        }, {
+            preset: 'islands#redIcon'
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+    }
+
+    $(function() {
+        $('[data-show-text="howToGetUsText"]').click(function() {
+            console.log('clicked');
+            myMap.container.fitToViewport();
+        });
+    });
+</script>
+
+<script type="text/javascript">
+
+    ymaps.ready(init);
+    var myMap;
+
+    function init(){
+        myMap = new ymaps.Map("map", {
+            center: [55.637396, 37.532951],
+            zoom: 14
+        });
+
         myPlacemark = new ymaps.Placemark([55.640111, 37.532951], {
             balloonContent: 'ул. Миклухо-Маклая, д. 36 А',
             iconCaption: 'ул. Миклухо-Маклая, д. 36 А'
@@ -68,6 +87,13 @@
 
         myMap.geoObjects.add(myPlacemark);
     }
+
+    $(function() {
+        $('[data-show-text="howToGetUsText"]').click(function() {
+            console.log('clicked');
+            myMap.container.fitToViewport();
+        });
+    });
 </script>
 
 <script>

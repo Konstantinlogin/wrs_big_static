@@ -2,8 +2,16 @@
     &--lk {
         .b-header__phone {
             display: none;
-            @media screen and (min-width: 1145px) {
+            @media screen and (min-width: 1328px) {
                 display: inline-block;
+            }
+        }
+        .b-header__logo {
+            @media screen and (max-width: 1455px) {
+                margin-right: 28px$i;
+            }
+            @media screen and (max-width: 767px) {
+                margin-right: 0$i;
             }
         }
         .t-Body-topButton {

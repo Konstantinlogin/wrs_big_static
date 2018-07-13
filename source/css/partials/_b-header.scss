@@ -38,12 +38,15 @@
 @media screen and (max-width: 1366px) {
     .b-header {
         &__logo {
-            margin-right: 69px;
+            margin-right: 28px;
+        }
+        &__user-block {
+            right: 196px;
         }
     }
 }
 
-@media screen and (max-width: 1266px) {
+/* @media screen and (max-width: 1266px) {
     .b-header {
         &__user-block {
             right: 186px;
@@ -52,7 +55,7 @@
             margin-right: 21px;
         }
     }
-}
+} */
 
 
 @include tablet {
@@ -122,7 +125,7 @@
     }
     &__username {
         color: $GREEN;
-        max-width: 136px;
+        max-width: 300px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
