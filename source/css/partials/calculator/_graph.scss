@@ -4,6 +4,11 @@
     height: 400px;
     z-index: 55;
     position: relative;
+    &__wrap-column-inner {
+        position: absolute;
+        bottom: 0;
+        left: 2em;
+    }
 }
 
 .graph .wrap-column {
@@ -13,11 +18,6 @@
     float: left;
 }
 
-.graph .wrap-column .wrap-column__inner {
-    position: absolute;
-    bottom: 0;
-    left: 2em;
-}
 
 .graph .mean-pension {
     width: 12em;

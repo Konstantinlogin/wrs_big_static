@@ -1418,15 +1418,15 @@
     height: 400px;
     z-index: 55;
     position: relative; }
+    .pension-calculator .graph__wrap-column-inner {
+      position: absolute;
+      bottom: 0;
+      left: 2em; }
   .pension-calculator .graph .wrap-column {
     display: block;
     position: relative;
     height: 400px;
     float: left; }
-  .pension-calculator .graph .wrap-column .wrap-column__inner {
-    position: absolute;
-    bottom: 0;
-    left: 2em; }
   .pension-calculator .graph .mean-pension {
     width: 12em; }
   .pension-calculator .graph .mean-pension .column-title {
