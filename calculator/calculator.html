@@ -8,10 +8,8 @@
 </head>
 
 <body>
-
-    <link rel="stylesheet" href="static/screen.css" />
+    <link rel="stylesheet" href="../project.css"/>
     <link rel="stylesheet" href="static/jquery-ui.min.css" />
-
     <script src="static/jquery-1.9.1.min.js"></script>
     <script src="static/jquery-ui.min.js"></script>
     <script src="static/start1_13022015.js"></script>
@@ -96,48 +94,54 @@
                     <input type="pension-calculator-checkbox__input pension-calculator-checkbox__input--sm text" readonly class="amount"/>
                 </div>
             </div>
-            <div class="pension-calculator__row">
-                <div class="row__title">Ваша ежемесячная зарплата
-                    <font color="red">*</font>
+            <div class="pension-calculator__row js-wrap-drag-slider">
+                <div class="pension-calculator__row-label pension-calculator__row-label--star">
+                    Ваша ежемесячная зарплата
                 </div>
-                <div class="js-wrap-drag-slider">
-                    <div id="slider_salary" class="drag-slider salary" data-min="0" data-max="1000000" data-step="1000" data-value="10"></div>
-                    <div class="wrap-parameter">
-                        <div class="min">0</div>
-                        <div class="max">1 000 000</div>
-                    </div>
-                    <input type="text" readonly class="amount" />
-                </div>
-            </div>
-            <div class="user-type">
-                <div class="user-type__row ">
-                    <input type="checkbox" id="check1" onChange="javascript:sofHideShow();" />
-                    <label for="check1">Являюсь участником программы государственного софинансирования</label>
-                </div>
-            </div>
-            <div id="sofBox">
-                <div class="pension-calculator__row">
-                    <div class="line-decor"></div>
-                    <div class="row__title">Сумма годового взноса:</div>
-                    <div class="js-wrap-drag-slider ">
-                        <div id="slider_sumYearVz" class="drag-slider sumYearVz" data-min="2000" data-max="12000" data-step="1000" data-value="12000"></div>
-                        <div class="wrap-parameter">
-                            <div class="min">2000</div>
-                            <div class="max">12 000</div>
-                        </div>
-                        <input type="text" readonly class="amount" />
+                <div class="pension-calculator__slider-block">
+                    <div id="slider_salary" class="pension-calculator__slider drag-slider salary" data-min="0" data-max="1000000" data-step="1000" data-value="10"></div>
+                    <div class="pension-calculator__slider-numbers">
+                        <div class="pension-calculator__slider-min">0</div>
+                        <div class="pension-calculator__slider-max">1 000 000</div>
                     </div>
                 </div>
-                <div class="pension-calculator__row">
-                    <div class="line-decor"></div>
-                    <div class="row__title">Количество лет уплаты:</div>
-                    <div class="js-wrap-drag-slider ">
-                        <div id="slider_years_pay" class="drag-slider years_pay" data-min="1" data-max="10" data-step="1" data-value="10"></div>
-                        <div class="wrap-parameter">
-                            <div class="min">1</div>
-                            <div class="max">10</div>
+                <div class="pension-calculator__input-block">
+                    <input type="text" readonly class="pension-calculator__input amount" />
+                </div>
+            </div>
+            <div class="pension-calculator__row user-type">
+                <label class="pension-calculator-checkbox user-type__row">
+                    <input class="pension-calculator-checkbox__input" type="checkbox" id="check1" onChange="javascript:sofHideShow();"/>
+                    <span class="pension-calculator-checkbox__text">
+                        Являюсь участником программы государственного софинансирования
+                    </span>
+                </label>
+            </div>
+            <div class="pension-calculator__sofBox" id="sofBox">
+                <div class="pension-calculator__row js-wrap-drag-slider">
+                    <div class="pension-calculator__row-label">Сумма годового взноса:</div>
+                    <div class="pension-calculator__slider-block">
+                        <div id="slider_sumYearVz" class="pension-calculator__slider drag-slider sumYearVz" data-min="2000" data-max="12000" data-step="1000" data-value="12000"></div>
+                        <div class="pension-calculator__slider-numbers">
+                            <div class="pension-calculator__slider-min">2000</div>
+                            <div class="pension-calculator__slider-max">12 000</div>
                         </div>
-                        <input type="text" readonly class="amount" />
+                    </div>
+                    <div class="pension-calculator__input-block">
+                        <input type="text" readonly class="pension-calculator__input amount" />
+                    </div>
+                </div>
+                <div class="pension-calculator__row js-wrap-drag-slider">
+                    <div class="pension-calculator__row-label">Количество лет уплаты:</div>
+                    <div class="pension-calculator__slider-block">
+                        <div id="slider_years_pay" class="pension-calculator__slider drag-slider years_pay" data-min="1" data-max="10" data-step="1" data-value="10"></div>
+                        <div class="pension-calculator__slider-numbers">
+                            <div class="pension-calculator__slider-min">1</div>
+                            <div class="pension-calculator__slider-max">10</div>
+                        </div>
+                    </div>
+                    <div class="pension-calculator__input-block">
+                        <input type="text" readonly class="pension-calculator__input amount" />
                     </div>
                 </div>
             </div>
