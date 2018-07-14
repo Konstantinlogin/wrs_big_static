@@ -1,4 +1,4 @@
-.b-menu__link, .b-menu__sub-link, .pension-calculator__title, .pension-calculator__row-label, .pension-calculator__slider-min, .pension-calculator__slider-middle, .pension-calculator__slider-max, .pension-calculator-radio__text, .pension-calculator-checkbox__text {
+.b-menu__link, .b-menu__sub-link, .pension-calculator__title, .pension-calculator__row-label, .pension-calculator__slider-min, .pension-calculator__slider-middle, .pension-calculator__slider-max, .pension-calculator__input, .pension-calculator-radio__text, .pension-calculator-checkbox__text {
   font-family: 'Montserrat', sans-serif; }
 
 .b-green-button {
@@ -1632,6 +1632,9 @@
   .pension-calculator .ui-slider {
     position: relative;
     text-align: left; }
+    .pension-calculator .ui-slider.ui-slider-disabled {
+      opacity: 0.6;
+      pointer-events: none; }
   .pension-calculator .ui-slider .ui-slider-handle {
     position: absolute;
     z-index: 2;
@@ -1659,7 +1662,7 @@
   .pension-calculator .ui-slider-horizontal .ui-slider-handle {
     box-sizing: border-box;
     top: -5px;
-    margin-left: -.6em;
+    margin-left: -5px;
     border: 1px solid #e0e0e0;
     background: white;
     width: 11px;
@@ -1713,23 +1716,70 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 63px; }
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    margin-bottom: 63px;
+    position: relative; }
     .pension-calculator__row:last-of-type {
       margin-bottom: 0; }
     .pension-calculator__row-label {
+      display: inline-block;
       font-size: 16px;
       width: 238px;
       box-sizing: border-box;
-      padding-right: 58px; }
+      padding-right: 58px;
+      -ms-flex-item-align: end;
+          align-self: flex-end; }
+      .pension-calculator__row-label--star:after {
+        content: '*';
+        color: #ff8a00; }
   .pension-calculator__checkbox {
     display: block; }
-  .pension-calculator__slider-numbers {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+  .pension-calculator__slider-block {
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%); }
+  .pension-calculator__slider {
+    margin-bottom: 10px; }
+    .pension-calculator__slider-numbers {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+  .pension-calculator__input-block {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    padding-left: 40px; }
+    .pension-calculator__input-block .pension-calculator__checkbox {
+      position: absolute;
+      bottom: -25px;
+      left: 40px; }
+  .pension-calculator__input {
+    width: 140px;
+    border-width: 1px;
+    border-color: #c7c7c7;
+    border-style: solid;
+    border-radius: 6px;
+    background-color: white;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 14px;
+    padding-right: 14px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 16px; }
+    .pension-calculator__input--sm {
+      width: 70px; }
+    .pension-calculator__input--xs {
+      width: 50px; }
+    .pension-calculator__input:disabled, .pension-calculator__input:-moz-read-only {
+      background-color: rgba(224, 224, 224, 0.3); }
+    .pension-calculator__input:disabled, .pension-calculator__input:read-only {
+      background-color: rgba(224, 224, 224, 0.3); }
 
 .pension-calculator-radio {
   -webkit-user-select: none;

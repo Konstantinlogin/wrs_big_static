@@ -1,6 +1,10 @@
 .ui-slider {
     position: relative;
-    text-align: left
+    text-align: left;
+    &.ui-slider-disabled {
+        opacity: 0.6;
+        pointer-events: none;
+    }
 }
 
 .ui-slider .ui-slider-handle {
@@ -36,7 +40,7 @@
 .ui-slider-horizontal .ui-slider-handle {
     box-sizing: border-box;
     top: -5px;
-    margin-left: -.6em;
+    margin-left: -5px;
     border: 1px solid #e0e0e0;
     background: white;
     width: 11px;

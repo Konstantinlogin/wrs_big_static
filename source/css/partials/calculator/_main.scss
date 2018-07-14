@@ -24,21 +24,35 @@
     }
     &__row {
         display: flex;
+        align-items: end;
         margin-bottom: 63px;
+        position: relative;
         &:last-of-type {
             margin-bottom: 0;
         }
         &-label {
+            display: inline-block;
             font-size: 16px;
             width: 238px;
             box-sizing: border-box;
             padding-right: 58px;
+            align-self: flex-end;
+            &--star {
+                &:after {
+                    content: '*';
+                    color: #ff8a00;
+                }
+            }
         }
     }
     &__checkbox {
         display: block;
     }
+    &__slider-block {
+        transform: translateY(100%);
+    }
     &__slider {
+        margin-bottom: 10px;
         &-numbers {
             display: flex;
             justify-content: space-between;
@@ -46,6 +60,42 @@
         &-min, &-middle, &-max {
             @extend %text;
         } 
+    }
+    &__input-block {
+        position: relative;
+        box-sizing: border-box;
+        display: inline-block;
+        padding-left: 40px;
+        .pension-calculator__checkbox {
+            position: absolute;
+            bottom: -25px;
+            left: 40px;
+        }
+    }
+    &__input {
+        width: 140px;
+        border-width: 1px;
+        border-color: #c7c7c7;
+        border-style: solid;
+        border-radius: 6px;
+        background-color: white;
+        height: 32px;
+        line-height: 32px;
+        padding-left: 14px;
+        padding-right: 14px;
+        display: inline-block;
+        box-sizing: border-box;
+        font-size: 16px;
+        @extend %text;
+        &--sm {
+            width: 70px;
+        }
+        &--xs {
+            width: 50px;
+        }
+        &:disabled, &:read-only {
+            background-color: rgba(224, 224, 224, 0.3);
+        }      
     }
 }
 .pension-calculator-radio {
