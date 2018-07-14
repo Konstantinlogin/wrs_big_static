@@ -17,27 +17,39 @@
     <script src="static/start1_13022015.js"></script>
 
     <div class="pension-calculator">
-        <div class="left-side">
+        <div class="pension-calculator__left-side">
             <div class="pension-calculator__row">
-                <div class="row__title">Ваш пол:</div>
-                <div class="sex " id="sex">
-                    <input type="radio" id="man" onChange="javascript:setSex();" value="M" name="p_t03" />
-                    <label for="man">мужской</label>
-                    <input type="radio" id="woman" onChange="javascript:setSex();" value="F" name="p_t03" checked/>
-                    <label for="woman">женский</label>
+                <div class="pension-calculator__row-label">
+                    Ваш пол:
+                </div>
+                <div class="pension-calculator__radio-group" id="sex">
+                    <label class="pension-calculator-radio">
+                        <input class="pension-calculator-radio__input" type="radio" id="man" onChange="javascript:setSex();" value="M" name="p_t03" />
+                        <span class="pension-calculator-radio__text">
+                            мужской
+                        </span>
+                    </label>
+                    <label class="pension-calculator-radio">
+                        <input type="radio" id="woman" onChange="javascript:setSex();" value="F" name="p_t03" checked/>
+                        <span class="pension-calculator-radio__text">
+                                женский
+                        </span>    
+                    </label>
                 </div>
             </div>
-            <div class="pension-calculator__row">
-                <div class="row__title">Ваш возраст:</div>
-                <div class="js-wrap-drag-slider ">
-                    <div id="slider_age" class="drag-slider your-age" data-min="14" data-max="70" data-step="1" data-value="10"></div>
-                    <div class="wrap-parameter">
-                        <div class="min">14</div>
-                        <div class="middle" id="middle_age">42</div>
-                        <div class="max" id="max_age">70</div>
-                    </div>
-                    <input type="text" readonly class="amount" />
+            <div class="pension-calculator__row js-wrap-drag-slider">
+                <div class="pension-calculator__row-label">
+                    Ваш возраст:
                 </div>
+                <div class="pension-calculator__slider-block">
+                    <div id="slider_age" class="pension-calculator__slider drag-slider your-age" data-min="14" data-max="70" data-step="1" data-value="10"></div>
+                    <div class="pension-calculator__slider-numbers">
+                        <div class="pension-calculator__slider-min">14</div>
+                        <div class="pension-calculator__slider-middle" id="middle_age">42</div>
+                        <div class="pension-calculator__slider-max" id="max_age">70</div>
+                    </div>
+                </div>
+                <input type="text" readonly class="amount" />
             </div>
             <div class="pension-calculator__row">
                 <div class="pension-calculator__row-title">
@@ -114,8 +126,8 @@
                 </div>
             </div>
         </div>
-        <div class="right-side">
-            <div class="graph ">
+        <div class="pension-calculator__right-side">
+            <div class="pension-calculator__graph graph">
                 <div class="legend">
                     <div class="current_sof" id="current_sof">
                         <div class="ico"></div>
