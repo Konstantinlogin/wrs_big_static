@@ -9,13 +9,12 @@
         bottom: 0;
         left: 2em;
     }
-}
-
-.graph .wrap-column {
-    display: block;
-    position: relative;
-    height: 400px;
-    float: left;
+    &__wrap-column {
+        display: block;
+        position: relative;
+        height: 400px;
+        float: left;
+    }
 }
 
 

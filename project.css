@@ -1409,10 +1409,6 @@
 .pension-calculator {
   box-sizing: border-box;
   padding: 62px 20px 62px 62px; }
-  .pension-calculator .legend {
-    position: absolute;
-    z-index: -1;
-    visibility: hidden; }
   .pension-calculator .graph {
     display: block;
     height: 400px;
@@ -1422,11 +1418,11 @@
       position: absolute;
       bottom: 0;
       left: 2em; }
-  .pension-calculator .graph .wrap-column {
-    display: block;
-    position: relative;
-    height: 400px;
-    float: left; }
+    .pension-calculator .graph__wrap-column {
+      display: block;
+      position: relative;
+      height: 400px;
+      float: left; }
   .pension-calculator .graph .mean-pension {
     width: 12em; }
   .pension-calculator .graph .mean-pension .column-title {

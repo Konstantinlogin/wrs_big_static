@@ -25,13 +25,15 @@
                     </div>
                     <div class="pension-calculator__radio-group" id="sex">
                         <label class="pension-calculator__radio pension-calculator-radio">
-                            <input class="pension-calculator-radio__input" type="radio" id="man" onChange="javascript:setSex();" value="M" name="p_t03"/>
+                            <input class="pension-calculator-radio__input" type="radio" id="man" onChange="javascript:setSex();" value="M" name="p_t03"
+                            />
                             <span class="pension-calculator-radio__text">
                                 мужской
                             </span>
                         </label>
                         <label class="pension-calculator-radio">
-                            <input class="pension-calculator-radio__input" type="radio" id="woman" onChange="javascript:setSex();" value="F" name="p_t03" checked/>
+                            <input class="pension-calculator-radio__input" type="radio" id="woman" onChange="javascript:setSex();" value="F" name="p_t03"
+                                checked/>
                             <span class="pension-calculator-radio__text">
                                 женский
                             </span>
@@ -156,49 +158,58 @@
         </div>
         <div class="pension-calculator__right-side">
             <div class="pension-calculator__graph graph">
-                <div class="legend">
-                    <div class="current_sof" id="current_sof">
-                        <div class="ico"></div>
-                        <div>Софинансирование</div>
-                        <div class="sum" id="sof_sum">1 000</div>
-                        <div>руб.</div>
-                    </div>
-                    <div class="current_acc">
-                        <div class="ico"></div>
-                        <div>Накопительная часть</div>
-                        <div class="sum" id="acc_sum">4 236</div>
-                        <div>руб.</div>
-                    </div>
-                    <div class="current_ins">
-                        <div class="ico"></div>
-                        <div>Страховая часть</div>
-                        <div class="sum" id="ins_sum">6 030</div>
-                        <div>руб.</div>
-                    </div>
-                </div>
-                <div class="wrap-column mean-pension">
-                    <div class="graph__wrap-column-inner">
-                        <div class="column-title">Средняя пенсия в России в 2016 году
-                            <strong> 13 132 руб. </strong>
+                <div class="graph__row">
+                    <div class="graph__wrap-column graph__mean-pension wrap-column mean-pension">
+                        <div class="graph__wrap-column-inner">
+                            <div class="graph__column-title column-title">
+                                <span class="graph__column-value">13 132</span>
+                                <span class="graph__column-ruble">&#8381;</span>
+                                <span class="graph__column-title-text">
+                                    Средняя пенсия в Росcии в 2016 году
+                                </span>
+                            </div>
+                            <div class="graph__column1 column1"></div>
                         </div>
-                        <div class="column1"></div>
                     </div>
-                </div>
-                <div class="wrap-column total-pension">
-                    <div class="graph__wrap-column-inner">
-                        <div class="column-title">Размер Вашей пенсии составит:
-                            <strong>
-                                <span id="sum">10 266</span> руб.</strong>
+                    <div class="graph__wrap-column graph__total-pension wrap-column total-pension">
+                        <div class="graph__wrap-column-inner">
+                            <div class="graph__column-title column-title">
+                                <span class="graph__column-value" id="sum">10 266</span>
+                                <span class="graph__column-ruble">&#8381;</span>
+                                <span class="graph__column-title-text">
+                                    Средняя пенсия в Росcии в 2016 году
+                                </span>
+                            </div>
+                            <div class="graph__column2 column2" id="column2"></div>
+                            <div class="graph__column3 column3">
+                                <!--<div class="current">Страховая часть <span id="ins_sum">6 030</span> руб.</div>-->
+                            </div>
+                            <div id="column4" class="graph__column4 column4">
+                                <!--<div class="current" id="current4">Софинансирование <span id="sof_sum">1 000</span> руб.</div>-->
+                            </div>
+                            <div id="column5" class="graph__column5 column5">
+                                <!--<div class="current" id="current5">негосударственное пенсионное обеспечение<span id="npo_sum">2 000</span> руб.</div>-->
+                            </div>
                         </div>
-                        <div class="column2" id="column2"></div>
-                        <div class="column3">
-                            <!--<div class="current">Страховая часть <span id="ins_sum">6 030</span> руб.</div>-->
+                    </div>
+                    <div class="graph__legend legend">
+                        <div class="graph__current_sof current_sof" id="current_sof">
+                            <div class="ico"></div>
+                            <div>Софинансирование</div>
+                            <div class="sum" id="sof_sum">1 000</div>
+                            <div>руб.</div>
                         </div>
-                        <div id="column4" class="column4">
-                            <!--<div class="current" id="current4">Софинансирование <span id="sof_sum">1 000</span> руб.</div>-->
+                        <div class="current_acc">
+                            <div class="ico"></div>
+                            <div>Накопительная часть</div>
+                            <div class="sum" id="acc_sum">4 236</div>
+                            <div>руб.</div>
                         </div>
-                        <div id="column5" class="column5">
-                            <!--<div class="current" id="current5">негосударственное пенсионное обеспечение<span id="npo_sum">2 000</span> руб.</div>-->
+                        <div class="current_ins">
+                            <div class="ico"></div>
+                            <div>Страховая часть</div>
+                            <div class="sum" id="ins_sum">6 030</div>
+                            <div>руб.</div>
                         </div>
                     </div>
                 </div>
@@ -208,10 +219,10 @@
                     Расчетная сумма пенсионных накоплений (кроме страховой части) на дату окончания трудового периода.
                 </p>
                 <div class="graph__number number">
-                    <span class="graph__value" id="all">
+                    <span class="graph__number-value" id="all">
                         965 851
                     </span>
-                     <span class="graph__ruble"></span>
+                    <span class="graph__ruble"></span>
                 </div>
             </div>
         </div>
