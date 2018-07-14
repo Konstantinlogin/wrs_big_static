@@ -73,31 +73,31 @@ jQuery(function (){
 	
 		slider_age
 		
-			$( "#slider_age" ).closest('.wrap__drag-slider').find( ".amount" ).val(age);
+			$( "#slider_age" ).closest('.js-wrap-drag-slider').find( ".amount" ).val(age);
 			$( "#slider_age" ).slider("value", age);
 			
-			$( "#slider_cash" ).closest('.wrap__drag-slider').find( ".amount" ).val(cash);
+			$( "#slider_cash" ).closest('.js-wrap-drag-slider').find( ".amount" ).val(cash);
 			$( "#slider_cash" ).slider("value", cash);
 			
-			$( "#slider_work_year" ).closest('.wrap__drag-slider').find( ".amount" ).val(work_year);
+			$( "#slider_work_year" ).closest('.js-wrap-drag-slider').find( ".amount" ).val(work_year);
 			$( "#slider_work_year" ).slider("value", work_year);
 			
-			$( "#slider_salary" ).closest('.wrap__drag-slider').find( ".amount" ).val(salary);
+			$( "#slider_salary" ).closest('.js-wrap-drag-slider').find( ".amount" ).val(salary);
 			$( "#slider_salary" ).slider("value", salary);
 			
-			$( "#slider_sumYearVz" ).closest('.wrap__drag-slider').find( ".amount" ).val(sumYearVz);
+			$( "#slider_sumYearVz" ).closest('.js-wrap-drag-slider').find( ".amount" ).val(sumYearVz);
 			$( "#slider_sumYearVz" ).slider("value", sumYearVz);
 			
-			$( "#slider_years_pay" ).closest('.wrap__drag-slider').find( ".amount" ).val(years_pay);
+			$( "#slider_years_pay" ).closest('.js-wrap-drag-slider').find( ".amount" ).val(years_pay);
 			$( "#slider_years_pay" ).slider("value", years_pay);
 			
-			$( "#slider_sumMonthVz" ).closest('.wrap__drag-slider').find( ".amount" ).val(sumMonthVz);
+			$( "#slider_sumMonthVz" ).closest('.js-wrap-drag-slider').find( ".amount" ).val(sumMonthVz);
 			$( "#slider_sumMonthVz" ).slider("value", sumMonthVz);
 			
-			$( "#slider_sumMonthVzWork" ).closest('.wrap__drag-slider').find( ".amount" ).val(sumMonthVzWork);
+			$( "#slider_sumMonthVzWork" ).closest('.js-wrap-drag-slider').find( ".amount" ).val(sumMonthVzWork);
 			$( "#slider_sumMonthVzWork" ).slider("value", sumMonthVzWork);
 			
-			$( "#slider_sumOnceVz" ).closest('.wrap__drag-slider').find( ".amount" ).val(sumOnceVz);
+			$( "#slider_sumOnceVz" ).closest('.js-wrap-drag-slider').find( ".amount" ).val(sumOnceVz);
 			$( "#slider_sumOnceVz" ).slider("value", sumOnceVz);
 	}
 		
@@ -112,7 +112,7 @@ jQuery(function (){
 			$( "#slider_cash" ).addClass( "ui-slider-disabled" );
 			$( "#slider_cash" ).addClass( "ui-state-disabled" );
 			$( "#slider_cash" ).addClass( "ui-disabled" );
-			$( "#slider_cash" ).closest('.wrap__drag-slider').find( ".amount" ).val(defaultCash);
+			$( "#slider_cash" ).closest('.js-wrap-drag-slider').find( ".amount" ).val(defaultCash);
 			cash = defaultCash;
 			$( "#slider_cash" ).slider("value", defaultCash);
 		}
@@ -325,55 +325,55 @@ jQuery(function (){
 				slide: function( event, ui ) {
 
 					if(el.hasClass('your-age')){
-						var index_age = $(this).closest('.wrap__drag-slider').find( ".amount" ).val();
+						var index_age = $(this).closest('.js-wrap-drag-slider').find( ".amount" ).val();
 						age = ui.value;
 						printColumn();						
 					}
 					if(el.hasClass('cash')){
-						el.closest('.wrap__drag-slider').find( ".amount" ).val(number_format(ui.value,0,' ',' ' ));
+						el.closest('.js-wrap-drag-slider').find( ".amount" ).val(number_format(ui.value,0,' ',' ' ));
 						cash = ui.value;
 						printColumn();
 					}	
 					if(el.hasClass('work_year')){
-						el.closest('.wrap__drag-slider').find( ".amount" ).val(ui.value);
+						el.closest('.js-wrap-drag-slider').find( ".amount" ).val(ui.value);
 						work_year = ui.value;
 						printColumn();
 					}
 					if(el.hasClass('salary')){
-						el.closest('.wrap__drag-slider').find( ".amount" ).val(number_format(ui.value,0,' ',' ' ));
+						el.closest('.js-wrap-drag-slider').find( ".amount" ).val(number_format(ui.value,0,' ',' ' ));
 						salary = ui.value;
 						printColumn();
 					}
 					if(el.hasClass('sumYearVz')){
-						el.closest('.wrap__drag-slider').find( ".amount" ).val(number_format(ui.value,0,' ',' ' ));
+						el.closest('.js-wrap-drag-slider').find( ".amount" ).val(number_format(ui.value,0,' ',' ' ));
 						sumYearVz = ui.value;
 						printColumn();
 					}
 					if(el.hasClass('sumMonthVz')){
-						el.closest('.wrap__drag-slider').find( ".amount" ).val(number_format(ui.value,0,' ',' ' ));
+						el.closest('.js-wrap-drag-slider').find( ".amount" ).val(number_format(ui.value,0,' ',' ' ));
 						sumMonthVz = ui.value;
 						printColumn();
 					}
 					if(el.hasClass('sumMonthVzWork')){
-						el.closest('.wrap__drag-slider').find( ".amount" ).val(number_format(ui.value,0,' ',' ' ));
+						el.closest('.js-wrap-drag-slider').find( ".amount" ).val(number_format(ui.value,0,' ',' ' ));
 						sumMonthVzWork = ui.value;
 						printColumn();
 					}
 					if(el.hasClass('sumOnceVz')){
-						el.closest('.wrap__drag-slider').find( ".amount" ).val(number_format(ui.value,0,' ',' ' ));
+						el.closest('.js-wrap-drag-slider').find( ".amount" ).val(number_format(ui.value,0,' ',' ' ));
 						sumOnceVz = ui.value;
 						printColumn();
 					}
 					if(el.hasClass('years_pay')){
-						el.closest('.wrap__drag-slider').find( ".amount" ).val(ui.value);
+						el.closest('.js-wrap-drag-slider').find( ".amount" ).val(ui.value);
 						years_pay = ui.value;
 						printColumn();						
 					}else{
-						el.closest('.wrap__drag-slider').find( ".amount" ).val(ui.value);
+						el.closest('.js-wrap-drag-slider').find( ".amount" ).val(ui.value);
 					}
 				}
 			});
-			el.closest('.wrap__drag-slider').find( ".amount" ).val(el.slider( "value" ) );
+			el.closest('.js-wrap-drag-slider').find( ".amount" ).val(el.slider( "value" ) );
 		});
 	}
 	
@@ -420,7 +420,7 @@ jQuery(function (){
 				age = pension_age_f-1;
 				$( "#slider_age" ).find( ".amount" ).val(number_format(age,0,' ',' ' ));
 				$( "#slider_age" ).slider("value", pension_age_f-1);
-				$( "#slider_age" ).closest('.wrap__drag-slider').find( ".amount" ).val(pension_age_f-1);
+				$( "#slider_age" ).closest('.js-wrap-drag-slider').find( ".amount" ).val(pension_age_f-1);
 			}
 		}*/
 		
