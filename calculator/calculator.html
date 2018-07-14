@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <link rel="stylesheet" href="../project.css"/>
+    <link rel="stylesheet" href="../project.css" />
     <link rel="stylesheet" href="static/jquery-ui.min.css" />
     <script src="static/jquery-1.9.1.min.js"></script>
     <script src="static/jquery-ui.min.js"></script>
@@ -16,112 +16,120 @@
 
     <div class="pension-calculator">
         <div class="pension-calculator__left-side">
-            <div class="pension-calculator__title">
-                Пенсионный калькулятор
-            </div>
-            <div class="pension-calculator__row">
-                <div class="pension-calculator__row-label">
-                    Ваш пол:
+            <div class="pension-calculator__section">
+                <div class="pension-calculator__title">
+                    Пенсионный калькулятор
                 </div>
-                <div class="pension-calculator__radio-group" id="sex">
-                    <label class="pension-calculator-radio">
-                        <input class="pension-calculator-radio__input" type="radio" id="man" onChange="javascript:setSex();" value="M" name="p_t03" />
-                        <span class="pension-calculator-radio__text">
-                            мужской
-                        </span>
-                    </label>
-                    <label class="pension-calculator-radio">
-                        <input type="radio" id="woman" onChange="javascript:setSex();" value="F" name="p_t03" checked/>
-                        <span class="pension-calculator-radio__text">
+                <div class="pension-calculator__row">
+                    <div class="pension-calculator__row-label">
+                        Ваш пол:
+                    </div>
+                    <div class="pension-calculator__radio-group" id="sex">
+                        <label class="pension-calculator__radio pension-calculator-radio">
+                            <input class="pension-calculator-radio__input" type="radio" id="man" onChange="javascript:setSex();" value="M" name="p_t03"/>
+                            <span class="pension-calculator-radio__text">
+                                мужской
+                            </span>
+                        </label>
+                        <label class="pension-calculator-radio">
+                            <input type="radio" id="woman" onChange="javascript:setSex();" value="F" name="p_t03" checked/>
+                            <span class="pension-calculator-radio__text">
                                 женский
-                        </span>    
-                    </label>
-                </div>
-            </div>
-            <div class="pension-calculator__row js-wrap-drag-slider">
-                <div class="pension-calculator__row-label">
-                    Ваш возраст:
-                </div>
-                <div class="pension-calculator__slider-block">
-                    <div id="slider_age" class="pension-calculator__slider drag-slider your-age" data-min="14" data-max="70" data-step="1" data-value="10"></div>
-                    <div class="pension-calculator__slider-numbers">
-                        <div class="pension-calculator__slider-min">14</div>
-                        <div class="pension-calculator__slider-middle" id="middle_age">42</div>
-                        <div class="pension-calculator__slider-max" id="max_age">70</div>
+                            </span>
+                        </label>
                     </div>
                 </div>
-                <div class="pension-calculator__input-block">
-                    <input type="text" readonly class="amount pension-calculator__input pension-calculator__input--xs" />
-                </div>
-            </div>
-            <div class="pension-calculator__title">
-                Обязательное пенсионное страхование
-            </div>
-            <div class="pension-calculator__row js-wrap-drag-slider">
-                <div class="pension-calculator__row-label">
-                    Размер пенсионных накоплений
-                </div>
-                <div class="pension-calculator__slider-block">
-                    <div id="slider_cash" class="pension-calculator__slider drag-slider cash" data-min="0" data-max="1000000" data-step="1000" data-value="10"></div>
-                    <div class="pension-calculator__slider-numbers">
-                        <div class="pension-calculator__slider-min">0</div>
-                        <div class="pension-calculator__slider-max">1 000 000</div>
+                <div class="pension-calculator__row js-wrap-drag-slider">
+                    <div class="pension-calculator__row-label">
+                        Ваш возраст:
+                    </div>
+                    <div class="pension-calculator__slider-block">
+                        <div id="slider_age" class="pension-calculator__slider drag-slider your-age" data-min="14" data-max="70" data-step="1" data-value="10"></div>
+                        <div class="pension-calculator__slider-numbers">
+                            <div class="pension-calculator__slider-min">14</div>
+                            <div class="pension-calculator__slider-middle" id="middle_age">42</div>
+                            <div class="pension-calculator__slider-max" id="max_age">70</div>
+                        </div>
+                    </div>
+                    <div class="pension-calculator__input-block">
+                        <input type="text" readonly class="amount pension-calculator__input pension-calculator__input--xs" />
                     </div>
                 </div>
-                <div class="pension-calculator__input-block">
-                    <input type="text" readonly class="amount pension-calculator__input"/>
-                    <label class="pension-calculator-checkbox">
-                        <input class="pension-calculator-checkbox__input" type="checkbox" id="check3" onChange="dontKnow()" />
+            </div>
+            <div class="pension-calculator__section">
+                <div class="pension-calculator__title">
+                    Обязательное пенсионное страхование
+                </div>
+                <div class="pension-calculator__row js-wrap-drag-slider">
+                    <div class="pension-calculator__row-label">
+                        Размер пенсионных накоплений
+                    </div>
+                    <div class="pension-calculator__slider-block">
+                        <div id="slider_cash" class="pension-calculator__slider drag-slider cash" data-min="0" data-max="1000000" data-step="1000"
+                            data-value="10"></div>
+                        <div class="pension-calculator__slider-numbers">
+                            <div class="pension-calculator__slider-min">0</div>
+                            <div class="pension-calculator__slider-max">1 000 000</div>
+                        </div>
+                    </div>
+                    <div class="pension-calculator__input-block">
+                        <input type="text" readonly class="amount pension-calculator__input" />
+                        <label class="pension-calculator__checkbox pension-calculator-checkbox">
+                            <input class="pension-calculator-checkbox__input" type="checkbox" id="check3" onChange="dontKnow()" />
+                            <span class="pension-calculator-checkbox__text">
+                                Не знаю
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="pension-calculator__row js-wrap-drag-slider">
+                    <div class="pension-calculator__row-label">
+                        В каком году Вы начали работать?
+                    </div>
+                    <div class="pension-calculator__slider-block">
+                        <div id="slider_work_year" class="pension-calculator__slider drag-slider work_year" data-min="1985" data-max="2016" data-step="1"
+                            data-value="10"></div>
+                        <div class="pension-calculator__slider-numbers">
+                            <div class="pension-calculator__slider-min">1985</div>
+                            <div class="pension-calculator__slider-max">2016</div>
+                        </div>
+
+                    </div>
+                    <div class="pension-calculator__input-block">
+                        <input type="pension-calculator-checkbox__input pension-calculator-checkbox__input--sm text" readonly class="amount" />
+                    </div>
+                </div>
+                <div class="pension-calculator__row js-wrap-drag-slider">
+                    <div class="pension-calculator__row-label pension-calculator__row-label--star">
+                        Ваша ежемесячная зарплата
+                    </div>
+                    <div class="pension-calculator__slider-block">
+                        <div id="slider_salary" class="pension-calculator__slider drag-slider salary" data-min="0" data-max="1000000" data-step="1000"
+                            data-value="10"></div>
+                        <div class="pension-calculator__slider-numbers">
+                            <div class="pension-calculator__slider-min">0</div>
+                            <div class="pension-calculator__slider-max">1 000 000</div>
+                        </div>
+                    </div>
+                    <div class="pension-calculator__input-block">
+                        <input type="text" readonly class="pension-calculator__input amount" />
+                    </div>
+                </div>
+                <div class="pension-calculator__row user-type">
+                    <label class="pension-calculator-checkbox user-type__row">
+                        <input class="pension-calculator-checkbox__input" type="checkbox" id="check1" onChange="javascript:sofHideShow();" />
                         <span class="pension-calculator-checkbox__text">
-                            Не знаю
+                            Являюсь участником программы государственного софинансирования
                         </span>
                     </label>
                 </div>
             </div>
-            <div class="pension-calculator__row js-wrap-drag-slider">
-                <div class="pension-calculator__row-label">
-                    В каком году Вы начали работать?
-                </div>
-                <div class="pension-calculator__slider-block">
-                    <div id="slider_work_year" class="pension-calculator__slider drag-slider work_year" data-min="1985" data-max="2016" data-step="1" data-value="10"></div>
-                    <div class="pension-calculator__slider-numbers">
-                        <div class="pension-calculator__slider-min">1985</div>
-                        <div class="pension-calculator__slider-max">2016</div>
-                    </div>
-                    
-                </div>
-                <div class="pension-calculator__input-block">
-                    <input type="pension-calculator-checkbox__input pension-calculator-checkbox__input--sm text" readonly class="amount"/>
-                </div>
-            </div>
-            <div class="pension-calculator__row js-wrap-drag-slider">
-                <div class="pension-calculator__row-label pension-calculator__row-label--star">
-                    Ваша ежемесячная зарплата
-                </div>
-                <div class="pension-calculator__slider-block">
-                    <div id="slider_salary" class="pension-calculator__slider drag-slider salary" data-min="0" data-max="1000000" data-step="1000" data-value="10"></div>
-                    <div class="pension-calculator__slider-numbers">
-                        <div class="pension-calculator__slider-min">0</div>
-                        <div class="pension-calculator__slider-max">1 000 000</div>
-                    </div>
-                </div>
-                <div class="pension-calculator__input-block">
-                    <input type="text" readonly class="pension-calculator__input amount" />
-                </div>
-            </div>
-            <div class="pension-calculator__row user-type">
-                <label class="pension-calculator-checkbox user-type__row">
-                    <input class="pension-calculator-checkbox__input" type="checkbox" id="check1" onChange="javascript:sofHideShow();"/>
-                    <span class="pension-calculator-checkbox__text">
-                        Являюсь участником программы государственного софинансирования
-                    </span>
-                </label>
-            </div>
-            <div class="pension-calculator__sofBox" id="sofBox">
+            <div class="pension-calculator__section" id="sofBox">
                 <div class="pension-calculator__row js-wrap-drag-slider">
                     <div class="pension-calculator__row-label">Сумма годового взноса:</div>
                     <div class="pension-calculator__slider-block">
-                        <div id="slider_sumYearVz" class="pension-calculator__slider drag-slider sumYearVz" data-min="2000" data-max="12000" data-step="1000" data-value="12000"></div>
+                        <div id="slider_sumYearVz" class="pension-calculator__slider drag-slider sumYearVz" data-min="2000" data-max="12000" data-step="1000"
+                            data-value="12000"></div>
                         <div class="pension-calculator__slider-numbers">
                             <div class="pension-calculator__slider-min">2000</div>
                             <div class="pension-calculator__slider-max">12 000</div>
@@ -134,7 +142,8 @@
                 <div class="pension-calculator__row js-wrap-drag-slider">
                     <div class="pension-calculator__row-label">Количество лет уплаты:</div>
                     <div class="pension-calculator__slider-block">
-                        <div id="slider_years_pay" class="pension-calculator__slider drag-slider years_pay" data-min="1" data-max="10" data-step="1" data-value="10"></div>
+                        <div id="slider_years_pay" class="pension-calculator__slider drag-slider years_pay" data-min="1" data-max="10" data-step="1"
+                            data-value="10"></div>
                         <div class="pension-calculator__slider-numbers">
                             <div class="pension-calculator__slider-min">1</div>
                             <div class="pension-calculator__slider-max">10</div>
@@ -214,4 +223,5 @@
         </div>
     </div>
 </body>
+
 </html>

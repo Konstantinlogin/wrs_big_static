@@ -1,1 +1,32 @@
-@import "_graph"
+@import "_graph";
+.pension-calculator {
+    display: flex;
+    box-sizing: border-box;
+    &__section {
+        margin-bottom: 80px;
+    }
+    &__title, &__row-label {
+        @extend %text;
+        font-weight: 700;
+    }
+    &__title {
+        font-size: 32px;
+        margin-bottom: 66px;
+    }
+    &__radio-group, &__slider-block {
+        width: 262px;
+    }
+    &__row {
+        display: flex;
+        margin-bottom: 63px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        &-label {
+            font-size: 16px;
+            width: 238px;
+            box-sizing: border-box;
+            padding-right: 58px;
+        }
+    }
+}
