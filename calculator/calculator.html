@@ -18,6 +18,9 @@
 
     <div class="pension-calculator">
         <div class="pension-calculator__left-side">
+            <div class="pension-calculator__title">
+                Пенсионный калькулятор
+            </div>
             <div class="pension-calculator__row">
                 <div class="pension-calculator__row-label">
                     Ваш пол:
@@ -49,24 +52,32 @@
                         <div class="pension-calculator__slider-max" id="max_age">70</div>
                     </div>
                 </div>
-                <input type="text" readonly class="amount" />
-            </div>
-            <div class="pension-calculator__row">
-                <div class="pension-calculator__row-title">
-                    Обязательное пенсионное страхование
+                <div class="pension-calculator__input-block">
+                    <input type="text" readonly class="amount pension-calculator__input pension-calculator__input--xs" />
                 </div>
-                <div class="row__title">Размер пенсионных накоплений</div>
-                <div class="js-wrap-drag-slider ">
-                    <div id="slider_cash" class="drag-slider cash" data-min="0" data-max="1000000" data-step="1000" data-value="10"></div>
-                    <div class="wrap-parameter">
-                        <div class="min">0</div>
-                        <div class="max">1 000 000</div>
+            </div>
+            <div class="pension-calculator__title">
+                Обязательное пенсионное страхование
+            </div>
+            <div class="pension-calculator__row js-wrap-drag-slider">
+                <div class="pension-calculator__row-label">
+                    Размер пенсионных накоплений
+                </div>
+                <div class="pension-calculator__slider-block">
+                    <div id="slider_cash" class="pension-calculator__slider drag-slider cash" data-min="0" data-max="1000000" data-step="1000" data-value="10"></div>
+                    <div class="pension-calculator__slider-numbers">
+                        <div class="pension-calculator__slider-min">0</div>
+                        <div class="pension-calculator__slider-max">1 000 000</div>
                     </div>
-                    <input type="text" readonly class="amount" />
-                    <div class="wrap-check ">
-                        <input type="checkbox" id="check3" onChange="dontKnow()" />
-                        <label for="check3">Не знаю</label>
-                    </div>
+                </div>
+                <div class="pension-calculator__input-block">
+                    <input type="text" readonly class="amount pension-calculator__input pension-calculator__input"/>
+                    <label class="pension-calculator-checkbox">
+                        <input class="pension-calculator-checkbox__input" type="checkbox" id="check3" onChange="dontKnow()" />
+                        <span class="pension-calculator-checkbox__text">
+                            Не знаю
+                        </span>
+                    </label>
                 </div>
             </div>
             <div class="pension-calculator__row">
