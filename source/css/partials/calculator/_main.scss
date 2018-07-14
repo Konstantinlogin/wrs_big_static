@@ -1,5 +1,6 @@
-@import "_graph";
 .pension-calculator {
+    @import "_graph";
+    @import "_slider";
     display: flex;
     box-sizing: border-box;
     &__section {
@@ -12,6 +13,7 @@
     &__title {
         font-size: 32px;
         margin-bottom: 66px;
+        line-height: 1;
     }
     &__radio-group, &__slider-block {
         width: 262px;
@@ -35,6 +37,15 @@
     }
     &__checkbox {
         display: block;
+    }
+    &__slider {
+        &-numbers {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-min, &-middle, &-max {
+            @extend %text;
+        } 
     }
 }
 .pension-calculator-radio {
