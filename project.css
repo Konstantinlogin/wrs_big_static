@@ -1407,10 +1407,12 @@
   background-size: contain; }
 
 .pension-calculator {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 62px 20px 62px 62px; }
+  .pension-calculator .legend {
+    position: absolute;
+    z-index: -1;
+    visibility: hidden; }
   .pension-calculator .graph {
     display: block;
     height: 400px;
@@ -1695,6 +1697,29 @@
     bottom: 0; }
   .pension-calculator .ui-slider-vertical .ui-slider-range-max {
     top: 0; }
+  @media screen and (min-width: 768px) {
+    .pension-calculator {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+  .pension-calculator__left-side {
+    width: 60%; }
+    @media screen and (min-width: 2046px) {
+      .pension-calculator__left-side {
+        width: 47.5%; } }
+  .pension-calculator__right-side {
+    width: 40%;
+    box-sizing: border-box;
+    padding-left: 0; }
+    @media screen and (min-width: 2046px) {
+      .pension-calculator__right-side {
+        width: 52.5%; } }
+    @media screen and (min-width: 768px) {
+      .pension-calculator__right-side {
+        padding-left: 46px; } }
+    @media screen and (min-width: 2046px) {
+      .pension-calculator__right-side {
+        padding-left: 146px; } }
   .pension-calculator__section {
     margin-bottom: 80px; }
   .pension-calculator__title, .pension-calculator__row-label {

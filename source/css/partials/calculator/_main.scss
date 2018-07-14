@@ -1,8 +1,37 @@
 .pension-calculator {
+    .legend {
+        position: absolute;
+        z-index: -1;
+        visibility: hidden;
+    }
     @import "_graph";
     @import "_slider";
-    display: flex;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
     box-sizing: border-box;
+    padding: 62px 20px 62px 62px;
+    // background: red;
+    &__left-side {
+        width: 60%;
+        @media screen and (min-width: 2046px) { 
+            width: 47.5%;
+        }
+    }
+    &__right-side {
+        width: 40%;
+        @media screen and (min-width: 2046px) { 
+            width: 52.5%;
+        }
+        box-sizing: border-box;
+        padding-left: 0;
+        @media screen and (min-width: 768px) {
+            padding-left: 46px;
+        }
+        @media screen and (min-width: 2046px) {
+            padding-left: 146px;
+        }
+    }
     &__section {
         margin-bottom: 80px;
     }
