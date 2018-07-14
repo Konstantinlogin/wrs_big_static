@@ -71,7 +71,7 @@
                     </div>
                 </div>
                 <div class="pension-calculator__input-block">
-                    <input type="text" readonly class="amount pension-calculator__input pension-calculator__input"/>
+                    <input type="text" readonly class="amount pension-calculator__input"/>
                     <label class="pension-calculator-checkbox">
                         <input class="pension-calculator-checkbox__input" type="checkbox" id="check3" onChange="dontKnow()" />
                         <span class="pension-calculator-checkbox__text">
@@ -80,15 +80,20 @@
                     </label>
                 </div>
             </div>
-            <div class="pension-calculator__row">
-                <div class="row__title">В каком году Вы начали работать?</div>
-                <div class="js-wrap-drag-slider">
-                    <div id="slider_work_year" class="drag-slider work_year" data-min="1985" data-max="2016" data-step="1" data-value="10"></div>
-                    <div class="wrap-parameter">
-                        <div class="min">1985</div>
-                        <div class="max">2016</div>
+            <div class="pension-calculator__row js-wrap-drag-slider">
+                <div class="pension-calculator__row-label">
+                    В каком году Вы начали работать?
+                </div>
+                <div class="pension-calculator__slider-block">
+                    <div id="slider_work_year" class="pension-calculator__slider drag-slider work_year" data-min="1985" data-max="2016" data-step="1" data-value="10"></div>
+                    <div class="pension-calculator__slider-numbers">
+                        <div class="pension-calculator__slider-min">1985</div>
+                        <div class="pension-calculator__slider-max">2016</div>
                     </div>
-                    <input type="text" readonly class="amount" />
+                    
+                </div>
+                <div class="pension-calculator__input-block">
+                    <input type="pension-calculator-checkbox__input pension-calculator-checkbox__input--sm text" readonly class="amount"/>
                 </div>
             </div>
             <div class="pension-calculator__row">
