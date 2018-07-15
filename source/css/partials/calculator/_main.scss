@@ -8,34 +8,42 @@
         z-index: -1;
         opacity: 0;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1366px) {
         display: flex;
     }
     box-sizing: border-box;
-    padding: 62px 20px 62px 62px;
-    // background: red;
+    padding: 20px;
+    @media screen and (min-width: 968px) {
+        padding: 62px 20px 62px 62px;
+    }
     &__left-side {
-        width: 60%;
+        @media screen and (min-width: 1366px) { 
+            width: 60%;
+        }
         @media screen and (min-width: 2046px) { 
             width: 47.5%;
         }
     }
     &__right-side {
-        width: 40%;
-        @media screen and (min-width: 2046px) { 
-            width: 52.5%;
+        position: relative;
+        @media screen and (min-width: 1366px) { 
+            width: 40%;
         }
-        box-sizing: border-box;
         padding-left: 0;
-        @media screen and (min-width: 768px) {
+        box-sizing: border-box;
+        @media screen and (min-width: 1366px) {
             padding-left: 46px;
         }
         @media screen and (min-width: 2046px) {
             padding-left: 146px;
+            width: 52.5%;
         }
     }
     &__section {
-        margin-bottom: 80px;
+        margin-bottom: 42px;
+        @media screen and (min-width: 968px) { 
+            margin-bottom: 80px;
+        }
     }
     &__title, &__row-label {
         @extend %text;
@@ -43,25 +51,48 @@
     }
     &__title {
         font-size: 32px;
-        margin-bottom: 66px;
+        margin-bottom: 28px;
+        @media screen and (min-width: 968px) { 
+            margin-bottom: 66px;
+        }
         line-height: 1.5;
         box-sizing: border-box;
         &--sm {
             font-size: 24px;
             padding-top: 8px;
-            margin-bottom: 142px;
+            @media screen and (min-width: 1366px) {
+                margin-bottom: 142px;
+            }
         }
     }
+    &__radio-group {
+        max-width: 215px;
+    }
     &__radio-group, &__slider-block {
-        width: 262px;
+        @media screen and (min-width: 968px) { 
+            width: calc(100% - #{160px + 132px});
+        }
+        @media screen and (min-width: 1706px) {
+            width: 262px;
+            max-width: 262px;
+        }
     }
     &__radio-group {
         display: flex;
         justify-content: space-between;
     }
     &__row {
-        display: flex;
-        align-items: end;
+        position: relative;
+        box-sizing: border-box;
+        padding-right: #{88px + 10px};
+        @media screen and (min-width: 400px) { 
+            padding-right: #{132px + 20px};
+        }
+        @media screen and (min-width: 968px) {
+            padding-right: 0;
+            display: flex;
+            align-items: end;
+        }
         margin-bottom: 63px;
         position: relative;
         &:last-of-type {
@@ -70,9 +101,18 @@
         &-label {
             display: inline-block;
             font-size: 16px;
-            width: 238px;
+            margin-bottom: 20px;
+            @media screen and (min-width: 968px) {  
+                width: 160px;
+                padding-right: 20px;
+                margin-bottom: 0;
+            }
+            @media screen and (min-width: 1706px) {
+                padding-right: 58px;
+                width: 238px;
+            }
             box-sizing: border-box;
-            padding-right: 58px;
+
             align-self: flex-end;
             &--star {
                 &:after {
@@ -85,8 +125,18 @@
     &__checkbox {
         display: block;
     }
+    &__radio {
+        // display: block$i;
+        // @media screen and (min-width: 1706px) {
+        //     display: inline-block$i;
+        // }
+    }
     &__slider-block {
-        transform: translateY(100%);
+        margin-bottom: 10px;
+        @media screen and (min-width: 968px) {
+            margin-bottom: 0;
+            transform: translateY(100%);
+        }
     }
     &__slider {
         margin-bottom: 10px;
@@ -99,18 +149,39 @@
         } 
     }
     &__input-block {
-        position: relative;
+        position: absolute;
+        right: 0;
+        top: 0;
         box-sizing: border-box;
         display: inline-block;
-        padding-left: 40px;
+        width: 88px;
+        text-align: right;
+        @media screen and (min-width: 400px) { 
+            width: 132px;
+            text-align: left;
+        }
+
+        @media screen and (min-width: 968px) { 
+            padding-left: 40px;
+            position: relative;
+        }
+        @media screen and (min-width: 1706px) {
+            width: 180px;
+        }
         .pension-calculator__checkbox {
             position: absolute;
             bottom: -25px;
-            left: 40px;
+            @media screen and (min-width: 968px) {  
+                left: 40px;
+            }
         }
     }
     &__input {
-        width: 140px;
+        display: inline-block;
+        width: 100%;
+        @media screen and (min-width: 1706px) {
+            width: 140px;
+        }
         border-width: 1px;
         border-color: #c7c7c7;
         border-style: solid;
@@ -142,12 +213,16 @@
     display: inline-block;
     box-sizing: border-box;
     padding-left: 32px;
+    margin-right: 8px;
     &__text {
         display: inline-block;
         box-sizing: border-box;
         @extend %text;
         color: $BLACK;
-        font-size: 16px;
+        font-size: 14px;
+        @media screen and (min-width: 1706px) {
+            font-size: 16px;
+        }
         &:before, &:after {
             content: '';
             position: absolute;
