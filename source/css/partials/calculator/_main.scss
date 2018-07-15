@@ -2,6 +2,12 @@
 
     @import "_graph";
     @import "_slider";
+    .user-type {
+        position: absolute;
+        visibility: hidden;
+        z-index: -1;
+        opacity: 0;
+    }
     @media screen and (min-width: 768px) {
         display: flex;
     }
@@ -38,7 +44,13 @@
     &__title {
         font-size: 32px;
         margin-bottom: 66px;
-        line-height: 1;
+        line-height: 1.5;
+        box-sizing: border-box;
+        &--sm {
+            font-size: 24px;
+            padding-top: 8px;
+            margin-bottom: 142px;
+        }
     }
     &__radio-group, &__slider-block {
         width: 262px;
