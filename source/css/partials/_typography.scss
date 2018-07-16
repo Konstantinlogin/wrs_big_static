@@ -30,3 +30,11 @@
 	font-size: 16px;
 	color: #113df7;
 }
+.b-green-link {
+	color: #59ac0d;
+	text-decoration: none;
+	font-size: 16px;
+	&:hover {
+		text-decoration: underline;
+	}
+}

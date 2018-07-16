@@ -11,6 +11,12 @@
 
         }
     }
+    &--clear-right {
+        .b-lk-content__main {
+            background: transparent;
+            box-shadow: none;
+        }
+    }
 }
 
 .b-container {
@@ -37,4 +43,14 @@
             width: 100%;
         }
     }
- }
+}
+.b-right-section {
+    box-sizing: border-box;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    @media screen and (min-width: 1366px){
+        width: calc(100% - 30px);
+    }
+}

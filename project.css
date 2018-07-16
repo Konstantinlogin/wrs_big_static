@@ -1,1 +1,2162 @@
-.b-green-button,.b-menu__link,.b-menu__sub-link,.faq-answers__sub-list-item,.faq-answers__title,.pension-calculator-checkbox__text,.pension-calculator-radio__text,.pension-calculator .graph__column-ruble,.pension-calculator .graph__column-title,.pension-calculator .graph__column-title-text,.pension-calculator .graph__column-value,.pension-calculator .graph__number,.pension-calculator .graph__number-value,.pension-calculator .graph__ruble,.pension-calculator .graph__total-text,.pension-calculator .legend__rub,.pension-calculator .legend__sum,.pension-calculator .legend__text,.pension-calculator__input,.pension-calculator__row-label,.pension-calculator__slider-max,.pension-calculator__slider-middle,.pension-calculator__slider-min,.pension-calculator__title{font-family:Montserrat,sans-serif}.b-green-button{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;text-align:center;color:#fff;font-weight:600;-webkit-appearance:none;border:none;box-sizing:border-box;border-radius:25px;background-image:-webkit-linear-gradient(-90deg,#8fda0b,#4ca00d);background-image:-ms-linear-gradient(-90deg,#8fda0b 0,#4ca00d 100%);outline:none}.b-green-button:focus{box-shadow:inset 0 0 0 1px #010101!important}.b-green-button,.b-yellow-button{height:50px;font-size:16px;line-height:46px;padding-left:18px;padding-right:18px}.b-yellow-button{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-appearance:none;border:none;font-family:Montserrat,sans-serif;color:#010101;font-weight:600;text-align:center;box-sizing:border-box;border-radius:25px;background-image:-webkit-linear-gradient(-90deg,#eca300,#fed500);background-image:-ms-linear-gradient(-90deg,#eca300 0,#fed500 100%);outline:none}.b-yellow-button:focus{box-shadow:inset 0 0 0 1px #010101!important}.t-PageBody--login .b-login-form .password,.t-PageBody--login .b-login-form .text_field,.t-PageBody--login .b-recovery-form .password,.t-PageBody--login .b-recovery-form .text_field,.t-PageBody--login .b-register-form .password,.t-PageBody--login .b-register-form .text_field{background:transparent!important;border-radius:0!important;box-shadow:none!important;border-left:none!important;border-right:none!important;border-top:none!important;border-bottom:2px solid;font-size:16px!important;font-family:Montserrat,sans-serif!important;font-weight:500;color:#010101!important;border-color:#b3b3b3!important;height:38px!important;line-height:32px!important;padding:0!important}.t-PageBody--login .b-login-form .password::-webkit-input-placeholder,.t-PageBody--login .b-login-form .text_field::-webkit-input-placeholder,.t-PageBody--login .b-recovery-form .password::-webkit-input-placeholder,.t-PageBody--login .b-recovery-form .text_field::-webkit-input-placeholder,.t-PageBody--login .b-register-form .password::-webkit-input-placeholder,.t-PageBody--login .b-register-form .text_field::-webkit-input-placeholder{font-family:Montserrat,sans-serif!important;font-weight:500!important;color:#010101!important;text-transform:none!important}.t-PageBody--login .b-login-form .password:-ms-input-placeholder,.t-PageBody--login .b-login-form .text_field:-ms-input-placeholder,.t-PageBody--login .b-recovery-form .password:-ms-input-placeholder,.t-PageBody--login .b-recovery-form .text_field:-ms-input-placeholder,.t-PageBody--login .b-register-form .password:-ms-input-placeholder,.t-PageBody--login .b-register-form .text_field:-ms-input-placeholder{font-family:Montserrat,sans-serif!important;font-weight:500!important;color:#010101!important;text-transform:none!important}.t-PageBody--login .b-login-form .password::placeholder,.t-PageBody--login .b-login-form .text_field::placeholder,.t-PageBody--login .b-recovery-form .password::placeholder,.t-PageBody--login .b-recovery-form .text_field::placeholder,.t-PageBody--login .b-register-form .password::placeholder,.t-PageBody--login .b-register-form .text_field::placeholder{font-family:Montserrat,sans-serif!important;font-weight:500!important;color:#010101!important;text-transform:none!important}.t-PageBody--login .b-login-form .password:focus,.t-PageBody--login .b-login-form .text_field:focus,.t-PageBody--login .b-recovery-form .password:focus,.t-PageBody--login .b-recovery-form .text_field:focus,.t-PageBody--login .b-register-form .password:focus,.t-PageBody--login .b-register-form .text_field:focus{border-color:#010101!important;background:transparent!important}.t-PageBody--login .b-login-form .form-input-icon.password,.t-PageBody--login .b-login-form .form-input-icon.text_field,.t-PageBody--login .b-recovery-form .form-input-icon.password,.t-PageBody--login .b-recovery-form .form-input-icon.text_field,.t-PageBody--login .b-register-form .form-input-icon.password,.t-PageBody--login .b-register-form .form-input-icon.text_field{padding-left:30px!important}.t-PageBody--login .b-login-form .form-input-icon-date.password,.t-PageBody--login .b-login-form .form-input-icon-date.text_field,.t-PageBody--login .b-recovery-form .form-input-icon-date.password,.t-PageBody--login .b-recovery-form .form-input-icon-date.text_field,.t-PageBody--login .b-register-form .form-input-icon-date.password,.t-PageBody--login .b-register-form .form-input-icon-date.text_field{background:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/spr-calendar.png") no-repeat 0!important;background-size:18px!important}.b-phone,.b-phone__icon{text-decoration:none;border:none}.b-title-h1{font-family:Montserrat,sans-serif;font-weight:700;font-size:32px;color:#000}.b-text{font-size:18px}.b-text,.b-text-16{font-family:Montserrat,sans-serif;font-weight:300;color:#000;margin:0}.b-text-16{font-size:16px}.b-link{font-size:18px}.b-link,.b-link-16{font-family:Montserrat,sans-serif;font-weight:300;color:#113df7}@font-face{font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light"),local("Montserrat-Light"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_cJD3gTD_vx3rCubqg.woff2") format("woff2");unicode-range:u+0460-052f,u+1c80-1c88,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f}@font-face{font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light"),local("Montserrat-Light"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_cJD3g3D_vx3rCubqg.woff2") format("woff2");unicode-range:u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116}@font-face{font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light"),local("Montserrat-Light"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_cJD3gbD_vx3rCubqg.woff2") format("woff2");unicode-range:u+0102-0103,u+0110-0111,u+1ea0-1ef9,u+20ab}@font-face{font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light"),local("Montserrat-Light"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_cJD3gfD_vx3rCubqg.woff2") format("woff2");unicode-range:u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff}@font-face{font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light"),local("Montserrat-Light"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_cJD3gnD_vx3rCs.woff2") format("woff2");unicode-range:u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd}@font-face{font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular"),local("Montserrat-Regular"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2") format("woff2");unicode-range:u+0460-052f,u+1c80-1c88,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f}@font-face{font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular"),local("Montserrat-Regular"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTUSjIg1_i6t8kCHKm459W1hyyTh89ZNpQ.woff2") format("woff2");unicode-range:u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116}@font-face{font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular"),local("Montserrat-Regular"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTUSjIg1_i6t8kCHKm459WZhyyTh89ZNpQ.woff2") format("woff2");unicode-range:u+0102-0103,u+0110-0111,u+1ea0-1ef9,u+20ab}@font-face{font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular"),local("Montserrat-Regular"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTUSjIg1_i6t8kCHKm459WdhyyTh89ZNpQ.woff2") format("woff2");unicode-range:u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff}@font-face{font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular"),local("Montserrat-Regular"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2") format("woff2");unicode-range:u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd}@font-face{font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold"),local("Montserrat-SemiBold"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_bZF3gTD_vx3rCubqg.woff2") format("woff2");unicode-range:u+0460-052f,u+1c80-1c88,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f}@font-face{font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold"),local("Montserrat-SemiBold"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_bZF3g3D_vx3rCubqg.woff2") format("woff2");unicode-range:u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116}@font-face{font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold"),local("Montserrat-SemiBold"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_bZF3gbD_vx3rCubqg.woff2") format("woff2");unicode-range:u+0102-0103,u+0110-0111,u+1ea0-1ef9,u+20ab}@font-face{font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold"),local("Montserrat-SemiBold"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_bZF3gfD_vx3rCubqg.woff2") format("woff2");unicode-range:u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff}@font-face{font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold"),local("Montserrat-SemiBold"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_bZF3gnD_vx3rCs.woff2") format("woff2");unicode-range:u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd}@font-face{font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold"),local("Montserrat-Bold"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_dJE3gTD_vx3rCubqg.woff2") format("woff2");unicode-range:u+0460-052f,u+1c80-1c88,u+20b4,u+2de0-2dff,u+a640-a69f,u+fe2e-fe2f}@font-face{font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold"),local("Montserrat-Bold"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_dJE3g3D_vx3rCubqg.woff2") format("woff2");unicode-range:u+0400-045f,u+0490-0491,u+04b0-04b1,u+2116}@font-face{font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold"),local("Montserrat-Bold"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_dJE3gbD_vx3rCubqg.woff2") format("woff2");unicode-range:u+0102-0103,u+0110-0111,u+1ea0-1ef9,u+20ab}@font-face{font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold"),local("Montserrat-Bold"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_dJE3gfD_vx3rCubqg.woff2") format("woff2");unicode-range:u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff}@font-face{font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold"),local("Montserrat-Bold"),url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_dJE3gnD_vx3rCs.woff2") format("woff2");unicode-range:u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd}.b-grey-link,.b-link-16{font-size:16px}.b-grey-link{font-family:Montserrat,sans-serif;color:#b3b3b3;font-weight:200}.b-yellow-button__spr-gos-uslugi{width:25px;height:28px;background:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/spr-gos-logo.png") no-repeat 50%;background-size:contain;margin-right:12px}.b-yellow-button__label,.b-yellow-button__spr-gos-uslugi{display:inline-block;line-height:1.2;vertical-align:middle}@media (max-width:767px){.b-yellow-button__spr-gos-uslugi{display:none}}.b-phone{font-size:0;height:40px;line-height:40px}.b-phone__icon{width:40px;height:40px;background:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/spr-phone.png") no-repeat 50%;background-size:contain;margin-right:32px}.b-phone__content,.b-phone__icon{display:inline-block;vertical-align:middle}.b-phone__content{font-family:Montserrat,sans-serif;font-weight:600;color:#010101;font-size:28px}@media (max-width:1023px){.b-phone__content{font-size:24px}.b-phone__icon{width:35px;height:35px;margin-right:14px;font-size:24px}}.b-logout-btn{display:block;width:104px;white-space:nowrap;font-size:0;line-height:24px;height:24px}.b-logout-btn__icon{display:inline-block;vertical-align:middle;margin-right:10px;width:26px;height:24px;background:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/spr-logout.png") no-repeat 50%;background-size:contain}.b-logout-btn__content{display:inline-block;vertical-align:middle;line-height:1.2;font-family:Montserrat,sans-serif;font-size:16px;font-weight:600;color:#010101}@media (max-width:767px){.b-logout-btn__content{display:none}.b-logout-btn__icon{margin-right:0;width:21px;height:20px}}.t-PageBody--login{background-color:#f7f7f7!important}.b-body{box-sizing:border-box}.b-body--lk,.b-body--login{padding:20px;width:100%}.b-container{margin-left:auto;margin-right:auto;width:100%}.b-container--540{max-width:540px}.b-container .container,.b-container .row{overflow:visible!important}.lo-login-wrapper{padding-top:20px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}@media (max-width:767px){.b-body--login{padding:0;width:100%}}.b-logo{font-size:0;white-space:nowrap;height:80px;line-height:80px}.b-logo__title{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-family:Montserrat,sans-serif;color:#010101;font-weight:600;font-size:16px;line-height:1.2;width:115px;white-space:normal}.b-logo__image,.b-logo__title{display:inline-block;vertical-align:middle}.b-logo__image{margin-right:21px;font-size:0;border-radius:80px;width:80px;height:80px;background:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/logo_big.png") no-repeat 50%;background-size:contain;box-shadow:5.657px 5.657px 40px 0 rgba(0,0,0,.4)}@media (max-width:767px){.b-logo{height:45px;line-height:45px}.b-logo__title{display:none}.b-logo__image{width:45px;height:45px;border-radius:45px;margin-right:0;box-shadow:-1px -1px 106px -16px #000}}.b-header{width:100%;border-radius:5px;background-color:#fff;box-shadow:19.799px 19.799px 40px 0 rgba(0,0,0,.1);min-height:132px;display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:8px 60px 8px 50px;box-sizing:border-box}.b-header__logout-btn{position:absolute;right:60px;width:104px}.b-header__logout-btn,.b-header__user-block{top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.b-header__logo{margin-right:130px}.b-header__menu-btn{display:none;font-size:0;-webkit-appearance:none;border:none;background-color:transparent}.b-header__user-block{position:absolute;right:233px}@media screen and (max-width:1366px){.b-header__logo{margin-right:28px}.b-header__user-block{right:196px}}@media (max-width:1023px){.b-header__user-block{display:none!important}}@media (max-width:767px){.b-header{position:relative;padding:0;background:transparent;box-shadow:none;height:91px;min-height:91px}.b-header__phone{display:none}.b-header__logo{position:absolute;width:45px;height:45px;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);margin-right:0}.b-header__logout-btn{right:6px;width:21px}.b-header__logout-btn,.b-header__menu-btn{position:absolute;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.b-header__menu-btn{display:block;left:6px}}.b-user-block{min-width:258px;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.b-user-block,.b-user-block__content{display:-webkit-box;display:-ms-flexbox;display:flex}.b-user-block__content{padding-right:16px;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.b-user-block__text,.b-user-block__username{display:inline-block;font-size:16px;font-family:Montserrat,sans-serif;font-weight:700}.b-user-block__text{color:#010101;margin-right:4px}.b-user-block__username{color:#479b0d;max-width:300px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.b-user-block__image-block{position:relative;width:55px;height:55px;border-radius:55px;overflow:hidden}.b-user-block__avatar{position:absolute;width:100%;top:0;left:0}.menu-btn__icon{position:absolute;width:19px;height:18px;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.menu-btn__line{position:absolute;left:0;background-color:#010101;height:2px;width:100%;border-radius:2px;pointer-events:none}.menu-btn__line_1{top:0}.menu-btn__line_2{top:0;bottom:0;margin:auto}.menu-btn__line_3{bottom:0}.menu-btn_close1 .menu-btn__line_1{-webkit-transition:-webkit-transform .2s ease-in-out;transition:-webkit-transform .2s ease-in-out;transition:transform .2s ease-in-out;transition:transform .2s ease-in-out,-webkit-transform .2s ease-in-out}.menu-btn_close1 .menu-btn__line_2{right:0;-webkit-transition:right .2s ease-in-out,opacity .35s ease-in-out,-webkit-transform 0s ease-in-out;transition:right .2s ease-in-out,opacity .35s ease-in-out,-webkit-transform 0s ease-in-out;transition:right .2s ease-in-out,opacity .35s ease-in-out,transform 0s ease-in-out;transition:right .2s ease-in-out,opacity .35s ease-in-out,transform 0s ease-in-out,-webkit-transform 0s ease-in-out}.menu-btn_close1 .menu-btn__line_3{-webkit-transition:-webkit-transform .2s ease-in-out;transition:-webkit-transform .2s ease-in-out;transition:transform .2s ease-in-out;transition:transform .2s ease-in-out,-webkit-transform .2s ease-in-out}.menu-btn_close1.open .menu-btn__line_1{-webkit-transform:translate3d(0,8px,0) rotate(135deg);transform:translate3d(0,8px,0) rotate(135deg)}.menu-btn_close1.open .menu-btn__line_2{opacity:0;right:-76px;-webkit-transform:translate3d(-19px,0,0);transform:translate3d(-19px,0,0);-webkit-transition:opacity .2s ease-in-out,right 0s ease-in-out .2s,-webkit-transform .2s ease-in-out;transition:opacity .2s ease-in-out,right 0s ease-in-out .2s,-webkit-transform .2s ease-in-out;transition:opacity .2s ease-in-out,transform .2s ease-in-out,right 0s ease-in-out .2s;transition:opacity .2s ease-in-out,transform .2s ease-in-out,right 0s ease-in-out .2s,-webkit-transform .2s ease-in-out}.menu-btn_close1.open .menu-btn__line_3{-webkit-transform:translate3d(0,-8px,0) rotate(-135deg);transform:translate3d(0,-8px,0) rotate(-135deg)}.t-PageBody--login .t-Form--stretchInputs .t-Form-fieldContainer .t-Form-inputContainer,.t-PageBody--login .t-Form-fieldContainer--stretchInputs .t-Form-inputContainer{display:block!important}.t-PageBody--login .t-Login-title{font-family:Montserrat,sans-serif!important;font-weight:600!important;font-size:24px}.t-PageBody--login .b-green-button,.t-PageBody--login .b-yellow-button{width:100%}.t-PageBody--login .b-login-form{margin-top:90px;padding:77px 0 66px 54px;width:100%;max-width:1224px;display:-webkit-box;display:-ms-flexbox;display:flex;margin-left:auto;margin-right:auto;box-shadow:19.799px 19.799px 40px 0 rgba(0,0,0,.1)!important}.t-PageBody--login .b-login-form__bottom{text-align:center}.t-PageBody--login .b-login-form .t-Form-fieldContainer:first-of-type{margin-bottom:37px}.t-PageBody--login .b-login-form .t-Form-fieldContainer{margin-bottom:25px}.t-PageBody--login .b-login-form .t-Login-header{padding:0!important;margin-bottom:51px!important}.t-PageBody--login .b-login-form .t-Form-error{padding-top:8px!important;font-family:Montserrat,sans-serif!important;font-size:10px!important}.t-PageBody--login .b-login-form .t-Login-title{margin:0}.t-PageBody--login .b-login-form .b-green-button,.t-PageBody--login .b-login-form .b-yellow-button{margin-bottom:9px}.t-PageBody--login .b-login-form .apex-item-checkbox{position:relative}.t-PageBody--login .b-login-form .apex-item-checkbox input{visibility:hidden;position:absolute;z-index:-1}.t-PageBody--login .b-login-form .apex-item-checkbox label{position:relative;display:inline-block;box-sizing:border-box;padding-left:32px;font-size:10px;color:#b3b3b3;font-family:Montserrat,sans-serif!important;font-weight:300}.t-PageBody--login .b-login-form .apex-item-checkbox label:before{content:"";display:inline-block;box-sizing:border-box;position:absolute;left:0;top:0;width:16px;height:16px;border:1px solid #b3b3b3;border-radius:2px}.t-PageBody--login .b-login-form .apex-item-checkbox input:checked~label:before{border:none;width:16px;height:16px;background:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/spr-ckbx-checked.png") no-repeat 50%;background-size:contain}.t-PageBody--login .b-login-form__left{width:40%;padding-right:45px}.t-PageBody--login .b-login-form__right{width:60%;padding-right:45px;box-sizing:border-box}.t-PageBody--login .b-login-form__bg{position:relative;left:21px;top:29px;width:100%;background-image:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/login_bg.jpg");background-size:contain;background-position:0;background-repeat:no-repeat;height:327px}.t-PageBody--login .b-login-form__bottom{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-top:32px;max-width:374px;margin-left:auto;margin-right:auto}.t-PageBody--login .b-login-form__link-left{padding-right:8px;margin-bottom:8px}.t-PageBody--login .b-login-form .password,.t-PageBody--login .b-login-form .text_field{text-align:center;width:100%;font-weight:700}@media (max-width:767px){.t-PageBody--login .b-login-form{padding:0 30px 46px;display:block;margin-top:23px;background:transparent;box-shadow:none!important}.t-PageBody--login .b-login-form .password,.t-PageBody--login .b-login-form .text_field{border-bottom:1px solid}.t-PageBody--login .b-login-form .t-Login-header{margin-bottom:33px!important}.t-PageBody--login .b-login-form .t-Form-inputContainer{padding-bottom:12px!important}.t-PageBody--login .b-login-form .t-Form-error{text-align:center}.t-PageBody--login .b-login-form .t-Form-fieldContainer,.t-PageBody--login .b-login-form .t-Form-fieldContainer:first-of-type{margin-bottom:0}.t-PageBody--login .b-login-form .b-green-button{max-width:100%!important;height:40px!important;line-height:40px!important;font-size:14px!important}.t-PageBody--login .b-login-form__bottom{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.t-PageBody--login .b-login-form__link-left{margin-right:0;margin-bottom:16px}.t-PageBody--login .b-login-form__link-left,.t-PageBody--login .b-login-form__link-right{font-size:12px}.t-PageBody--login .b-login-form .t-Form-inputContainer{padding-bottom:10px!important}.t-PageBody--login .b-login-form .t-Login-buttons{margin-top:37px}.t-PageBody--login .b-login-form__left{width:100%;padding:0}.t-PageBody--login .b-login-form__right{display:none}}.t-PageBody--login .b-register-form{max-width:540px;padding:50px 70px 46px;margin-top:28px;margin-left:auto;margin-right:auto;box-shadow:19.799px 19.799px 40px 0 rgba(0,0,0,.1)!important}.t-PageBody--login .b-register-form__bottom{width:100%;text-align:center}.t-PageBody--login .b-register-form .t-Form-fieldContainer{margin-bottom:18px}.t-PageBody--login .b-register-form .t-Form-inputContainer{position:relative}.t-PageBody--login .b-register-form .t-Login-header{padding:0!important;margin-bottom:51px!important}.t-PageBody--login .b-register-form .t-Form-error{padding-top:8px!important;font-family:Montserrat,sans-serif!important;font-size:10px!important}.t-PageBody--login .b-register-form .t-Login-title{margin:0}.t-PageBody--login .b-register-form .b-green-button,.t-PageBody--login .b-register-form .b-yellow-button{margin-bottom:20px}.t-PageBody--login .b-register-form .apex-item-checkbox{position:relative}.t-PageBody--login .b-register-form .apex-item-checkbox input{visibility:hidden;position:absolute;z-index:-1}.t-PageBody--login .b-register-form .apex-item-checkbox label{position:relative;display:inline-block;box-sizing:border-box;padding-left:32px;font-size:10px;color:#b3b3b3;font-family:Montserrat,sans-serif!important;font-weight:300}.t-PageBody--login .b-register-form .apex-item-checkbox label:before{content:"";display:inline-block;box-sizing:border-box;position:absolute;left:0;top:0;width:16px;height:16px;border:1px solid #b3b3b3;border-radius:2px}.t-PageBody--login .b-register-form .apex-item-checkbox input:checked~label:before{border:none;width:16px;height:16px;background:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/spr-ckbx-checked.png") no-repeat 50%;background-size:contain}@media (max-width:767px){.t-PageBody--login .t-Login-title{font-size:16px}.t-PageBody--login .b-register-form{margin-top:4px;background:transparent;box-shadow:none!important;padding:0 30px 46px}.t-PageBody--login .b-register-form .password,.t-PageBody--login .b-register-form .text_field{border-bottom:1px solid}.t-PageBody--login .b-register-form .t-Login-header{margin-bottom:33px!important}.t-PageBody--login .b-register-form .t-Form-fieldContainer{margin-bottom:0}.t-PageBody--login .b-register-form .t-Form-inputContainer{padding-bottom:12px!important}.t-PageBody--login .b-register-form .t-Form-error{text-align:center}.t-PageBody--login .b-register-form .b-green-button{margin-top:24px}.t-PageBody--login .b-register-form .b-green-button,.t-PageBody--login .b-register-form .b-yellow-button{height:44px;line-height:42px;font-size:14px}.t-PageBody--login .b-register-form__bottom{margin-top:28px}}.t-PageBody--login .b-recovery-form{margin-top:40px;max-width:540px;padding:56px 70px 46px;margin-left:auto;margin-right:auto;box-shadow:19.799px 19.799px 40px 0 rgba(0,0,0,.1)!important}.t-PageBody--login .b-recovery-form .t-Login-header{padding:0!important;margin-bottom:60px!important}.t-PageBody--login .b-recovery-form .t-Form-inputContainer{position:relative}.t-PageBody--login .b-recovery-form .t-Form-fieldContainer{margin-bottom:17px}.t-PageBody--login .b-recovery-form .t-Form-fieldContainer:first-child{margin-bottom:39px}.t-PageBody--login .b-recovery-form .t-Form-error{padding-top:8px!important;font-family:Montserrat,sans-serif!important;font-size:10px!important}.t-PageBody--login .b-recovery-form .t-Login-title{margin:0}.t-PageBody--login .b-recovery-form .b-green-button{margin-top:10px}.t-PageBody--login .b-recovery-form .b-green-button,.t-PageBody--login .b-recovery-form .b-yellow-button{margin-bottom:20px}.t-PageBody--login .b-recovery-form .t-Login-links{margin-top:5px}.t-PageBody--login .b-recovery-form .apex-item-checkbox{position:relative}.t-PageBody--login .b-recovery-form .apex-item-checkbox input{visibility:hidden;position:absolute;z-index:-1}.t-PageBody--login .b-recovery-form .apex-item-checkbox label{position:relative;display:inline-block;box-sizing:border-box;padding-left:32px;font-size:10px;color:#b3b3b3;font-family:Montserrat,sans-serif!important;font-weight:300}.t-PageBody--login .b-recovery-form .apex-item-checkbox label:before{content:"";display:inline-block;box-sizing:border-box;position:absolute;left:0;top:0;width:16px;height:16px;border:1px solid #b3b3b3;border-radius:2px}.t-PageBody--login .b-recovery-form .apex-item-checkbox input:checked~label:before{border:none;width:16px;height:16px;background:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/spr-ckbx-checked.png") no-repeat 50%;background-size:contain}.t-PageBody--login .b-recovery-form__bottom{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap;width:100%;text-align:center}.t-PageBody--login .b-recovery-form__link-left{margin-right:43px;margin-bottom:8px;margin-left:23px}@media (max-width:767px){.t-PageBody--login .t-Login-title{font-size:16px}.t-PageBody--login .b-recovery-form{margin-top:23px;padding:0 30px 46px;background:transparent;box-shadow:none!important}.t-PageBody--login .b-recovery-form .text_field{text-align:center}.t-PageBody--login .b-recovery-form .t-Login-links+.container .row .col{margin-top:8px!important}.t-PageBody--login .b-recovery-form .t-Form-fieldContainer{margin-bottom:8px}.t-PageBody--login .b-recovery-form .t-Form-fieldContainer:first-child{margin-bottom:0}.t-PageBody--login .b-recovery-form .password,.t-PageBody--login .b-recovery-form .text_field{border-bottom:1px solid}.t-PageBody--login .b-recovery-form .t-Login-header{margin-bottom:33px!important}.t-PageBody--login .b-recovery-form .t-Form-inputContainer{padding:0 0 1.4rem}.t-PageBody--login .b-recovery-form .t-Form-error{text-align:center}.t-PageBody--login .b-recovery-form .b-green-button{margin-top:24px}.t-PageBody--login .b-recovery-form .b-green-button,.t-PageBody--login .b-recovery-form .b-yellow-button{height:44px;line-height:42px;font-size:14px}.t-PageBody--login .b-recovery-form__bottom{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.t-PageBody--login .b-recovery-form__link-left{margin-right:0;margin-left:0;margin-bottom:19px}.t-PageBody--login .b-recovery-form__link-left,.t-PageBody--login .b-recovery-form__link-right{font-size:12px}}@media (max-width:767px){.t-PageBody--login{padding:0 20px}.t-PageBody--login .t-Login-title{font-size:16px}.t-PageBody--login .b-login-form{background:transparent;box-shadow:none!important}.t-PageBody--login .b-login-form .password,.t-PageBody--login .b-login-form .text_field{border-bottom:1px solid}.t-PageBody--login .b-login-form .t-Login-header{margin-bottom:33px!important}.t-PageBody--login .b-login-form .t-Form-inputContainer{padding-bottom:12px!important}.t-PageBody--login .b-login-form .t-Form-error{text-align:center}}.b-body--lk .b-header__phone{display:none}@media screen and (min-width:1328px){.b-body--lk .b-header__phone{display:inline-block}}@media screen and (max-width:1455px){.b-body--lk .b-header__logo{margin-right:28px!important}}@media screen and (max-width:767px){.b-body--lk .b-header__logo{margin-right:0!important}}.b-body--lk .t-Body-topButton{display:none!important}.b-lk-content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.b-lk-content__main{margin-top:50px!important}.b-lk-content__navigation{padding-top:50px;box-sizing:border-box;padding-right:20px;width:418px;padding-bottom:40px}@media screen and (max-width:1366px){.b-lk-content__navigation{width:35%}}.b-lk-content__main{display:block;box-sizing:border-box;background-color:#fff;border-radius:5px;box-shadow:19.799px 19.799px 40px 0 rgba(0,0,0,.1);width:-webkit-calc(100% - 448px);width:calc(100% - 448px)}@media screen and (max-width:1366px){.b-lk-content__main{width:65%}}@media (max-width:1023px){.b-lk-content__navigation{width:40%}.b-lk-content__main{width:60%}}@media (max-width:767px){.b-body--lk{padding-top:0}.b-lk-content__navigation{width:auto;padding-top:20px}.b-lk-content__main{width:100%;margin-top:0!important}}.b-mobile-nav{display:block;position:fixed;background-color:#fff;width:100%;height:80%;bottom:0;right:0;opacity:0;z-index:-1;overflow:auto}@supports (height:calc(100% - 105px)){.b-mobile-nav{height:-webkit-calc(100% - 105px);height:calc(100% - 105px)}}.b-mobile-nav__menu{text-align:center;list-style:none;padding:0;margin-top:40px;margin-left:auto;margin-right:auto}.b-mobile-nav__item{margin-bottom:16px}.b-mobile-nav__link{font-family:Montserrat,sans-serif!important;font-weight:600!important;font-size:16px!important;color:#404040!important}@media (max-width:767px){.mobile-menu-opened{background-color:#fff!important;-webkit-transition:.3s;transition:.3s;height:100%;overflow:hidden;width:100%;position:fixed}.b-mobile-nav.open{opacity:1;z-index:99999;-webkit-transition:.5s;transition:.5s}}.b-lk-navigation .t-Body-nav{position:relative;top:0!important;box-shadow:none!important;background:transparent!important}.b-lk-navigation .t-Body-nav ul{background-color:transparent!important}.b-menu{overflow:visible;width:100%!important}.b-menu__list,.b-menu__sub-list{list-style:none;margin:0}.b-menu__list{margin-left:52px}.b-menu__list-item{padding-top:22px;display:block;box-sizing:border-box;min-height:66px;margin-bottom:40px}.b-menu__list-item:last-of-type{margin-bottom:0}.b-menu__link{display:block;box-sizing:border-box;position:relative;padding-left:100px}.b-menu__icon{left:5px;top:-20px}.b-menu__icon,.b-menu__icon:after,.b-menu__icon:before{display:block;position:absolute;width:66px;height:66px;box-sizing:border-box}.b-menu__icon:after,.b-menu__icon:before{content:"";top:0;left:0;border-radius:66px;z-index:1;background-repeat:no-repeat}.b-menu__icon:before{border:1px solid #9f9f9f;z-index:1}.b-menu__icon:after{z-index:2}.b-menu .ic_lk:after{background-image:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_lk.png");background-size:22px;background-position:50%}.b-menu .ic_support:after{background-image:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_support.png");background-size:22px;background-position:50%}.b-menu .ic_profile:after{background-image:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_profile.png");background-size:22px;background-position:50%}.b-menu .ic_bid:after{background-image:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_bid.png");background-size:20px;background-position:25px}.b-menu .ic_calculator:after{background-image:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_calculator.png");background-size:20px;background-position:50%}.b-menu .ic_about:after{background-image:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_about.png");background-size:22px;background-position:23px}.b-menu__list-item.active .b-menu__icon:before{border:none;background-image:-webkit-linear-gradient(118.61deg,#eca300,#fed500);background-image:-ms-linear-gradient(118.61deg,#eca300 0,#fed500 100%);box-shadow:9.899px 9.899px 40px 0 rgba(0,0,0,.4)}.b-menu__list-item.active .ic_lk:after{background-image:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_lk_active.png")}.b-menu__list-item.active .ic_support:after{background-image:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_support_active.png")}.b-menu__list-item.active .ic_profile:after{background-image:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_profile_active.png")}.b-menu__list-item.active .ic_bid:after{background-image:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_bid_active.png")}.b-menu__list-item.active .ic_calculator:after{background-image:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_calculator_active.png")}.b-menu__list-item.active .ic_about:after{background-image:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_about_active.png")}.b-menu__sub-list{display:block;margin-left:100px;padding-top:40px;box-sizing:border-box}.b-menu__sub-list-item{position:relative;padding-left:23px;margin-bottom:23px}.b-menu__sub-list-item:last-of-type{margin-bottom:0}.b-menu__sub-list-item.active:before{content:"";display:inline-block;position:absolute;top:5px;left:0;border-radius:10px;width:10px;height:10px;background-image:-webkit-linear-gradient(118.61deg,#eca300,#fed500);background-image:-ms-linear-gradient(118.61deg,#eca300 0,#fed500 100%);box-shadow:9.899px 9.899px 40px 0 rgba(0,0,0,.4)}.b-menu__link,.b-menu__sub-link{color:#010101;font-weight:600}.b-menu__link{font-size:16px}.b-menu__sub-link{font-size:14px}@media (max-width:1023px){.b-menu__list{margin-left:0}.b-menu__icon{left:0}}@media (max-width:767px){.b-lk-navigation{box-sizing:border-box;padding-left:20px;padding-right:20px;display:block;position:fixed;background-color:#fff;width:100%;height:80%;bottom:0;right:0;opacity:0;z-index:-1;overflow:auto}@supports (height:calc(100% - 90px)){.b-lk-navigation{height:-webkit-calc(100% - 90px);height:calc(100% - 90px)}}.b-lk-navigation.open{opacity:1;z-index:99999;-webkit-transition:.5s;transition:.5s}.b-menu__list-item{margin-bottom:20px}.b-menu__link{padding-left:85px}.b-menu__sub-list{margin-left:85px;padding-top:20px}}.b-contacts-content{position:relative}@media screen and (min-width:1024px){.b-contacts-content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}}.b-contacts-content__main{box-sizing:border-box;width:100%;padding:20px}@media screen and (min-width:768px){.b-contacts-content__main{padding:60px 20px 60px 60px}}@media screen and (min-width:1024px){.b-contacts-content__main{width:50%}}@media screen and (min-width:1366px){.b-contacts-content__main{width:421px}}.b-contacts-content__map{box-sizing:border-box;width:100%;height:400px;overflow:hidden;border-radius:0 5px 5px 0}@media screen and (min-width:1024px){.b-contacts-content__map{width:50%;height:auto}}@media screen and (min-width:1366px){.b-contacts-content__map{width:-webkit-calc(100% - 421px);width:calc(100% - 421px)}}.b-contacts-content__section,.b-contacts-content__title-h1{margin-bottom:20px}@media screen and (min-width:1024px){.b-contacts-content__section,.b-contacts-content__title-h1{margin-bottom:91px}}.b-contacts-content__text{line-height:1.5}.b-contacts-content__section{position:relative;box-sizing:border-box;padding-left:54px}@media screen and (max-width:1024px){.b-contacts-content__section br{display:none}}.b-contacts-content__icon{position:absolute;left:0}.b-contacts-content__icon:not(.ic-email){top:4px}.b-contacts-content__icon.ic-email{top:0}.ic-address{width:15px;height:18px;background:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_contacts_pin.png") no-repeat 50%;background-size:contain}.ic-phone{background:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_contacts_phone.png") no-repeat 50%;background-size:contain}.ic-email,.ic-phone{width:18px;height:18px}.ic-email{background:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_contacts_email.png") no-repeat 50%;background-size:contain}.pension-calculator{box-sizing:border-box;padding:20px}.pension-calculator .graph{display:block}@media screen and (min-width:1366px){.pension-calculator .graph{height:400px}}@media screen and (min-width:1706px){.pension-calculator .graph{position:relative}}.pension-calculator .graph__nowrap{white-space:nowrap}.pension-calculator .graph__row{display:-webkit-box;display:-ms-flexbox;display:flex}.pension-calculator .graph__wrap-column{display:block;position:relative;box-sizing:border-box;height:400px;width:100%;max-width:50%}@media screen and (min-width:1366px){.pension-calculator .graph__wrap-column{max-width:225px;margin-right:38px}}.pension-calculator .graph__wrap-column:last-of-type{margin-right:0}.pension-calculator .graph__wrap-column-inner{position:absolute;bottom:0;left:0;width:109px;box-sizing:border-box}@media screen and (min-width:400px){.pension-calculator .graph__wrap-column-inner{width:120px}}@media screen and (min-width:1706px){.pension-calculator .graph__wrap-column-inner{width:-webkit-calc(100% - 83px);width:calc(100% - 83px)}}.pension-calculator .graph__total-pension .graph__wrap-column-inner{height:329px}.pension-calculator .graph__total-pension .graph__column-title{position:relative;bottom:85px;padding-bottom:20px}.pension-calculator .graph__total-pension .graph__column-ruble,.pension-calculator .graph__total-pension .graph__column-value{font-weight:600}.pension-calculator .graph__mean-pension .graph__column-ruble,.pension-calculator .graph__mean-pension .graph__column-value{font-size:32px;color:#010101;font-weight:600}.pension-calculator .graph__mean-pension .graph__column-title{padding-bottom:18px}.pension-calculator .graph__mean-pension .graph__column-ruble{font-weight:600}.pension-calculator .graph__column1{width:100%;height:122px;background-image:-webkit-linear-gradient(right,#d0d0d0,#aeaeae);background-image:linear-gradient(-90deg,#d0d0d0,#aeaeae);position:relative;-webkit-transition:height .4s ease 0s;transition:height .4s ease 0s;border-radius:0 0 0 0}.pension-calculator .graph__column2{border-radius:0 0 0 0;z-index:30;height:56px;background-image:-webkit-linear-gradient(right,#8fda0b,#4ca00d);background-image:linear-gradient(-90deg,#8fda0b,#4ca00d)}.pension-calculator .graph__column2,.pension-calculator .graph__column3{width:100%;position:absolute;top:0;left:0;-webkit-transition:height .4s ease 0s;transition:height .4s ease 0s}.pension-calculator .graph__column3{z-index:40;height:28px;background:#fff;border:solid;border-color:#c7c7c7;border-width:1px 1px 0;box-sizing:border-box}.pension-calculator .graph__column4{z-index:40;background:tomato;position:absolute;left:0;top:0}.pension-calculator .graph__column4,.pension-calculator .graph__column5{visibility:hidden;width:100%;height:50px;-webkit-transition:height .4s ease 0s;transition:height .4s ease 0s}.pension-calculator .graph__column5{z-index:10;background:red}.pension-calculator .graph__legend{width:100%;margin-top:20px}@media screen and (min-width:1366px){.pension-calculator .graph__legend{margin-top:0;position:absolute;top:107px;left:48px}}@media screen and (min-width:1706px){.pension-calculator .graph__legend{top:34px;left:0;width:50%}}.pension-calculator .graph__column-title{width:auto}@media screen and (min-width:1703px){.pension-calculator .graph__column-title{width:193px}}.pension-calculator .graph__column-ruble,.pension-calculator .graph__column-title,.pension-calculator .graph__column-title-text,.pension-calculator .graph__column-value{line-height:1.2}.pension-calculator .graph__column-title-text{font-size:14px;display:block;line-height:1.2}@media screen and (min-width:1706px){.pension-calculator .graph__column-title-text{font-size:16px}}.pension-calculator .graph__column-value{margin-left:-4px}.pension-calculator .graph__column-ruble,.pension-calculator .graph__column-value{font-size:32px;color:#346d10}@media screen and (min-width:1708px){.pension-calculator .graph__column-ruble,.pension-calculator .graph__column-value{font-size:44px}}.pension-calculator .graph__total-text{line-height:1.5;font-size:16px;display:block;max-width:330px;padding-bottom:16px;padding-top:21px;margin:0}.pension-calculator .graph__number{display:block}.pension-calculator .graph__number,.pension-calculator .graph__number-value,.pension-calculator .graph__ruble{font-weight:600;font-size:32px;color:#346d10;line-height:1.2}@media screen and (min-width:1708px){.pension-calculator .graph__number,.pension-calculator .graph__number-value,.pension-calculator .graph__ruble{font-size:44px}}.pension-calculator .legend__rub,.pension-calculator .legend__sum,.pension-calculator .legend__text{display:inline-block;font-size:14px}.pension-calculator .legend__text{padding-top:2px;box-sizing:border-box}.pension-calculator .legend__current-acc,.pension-calculator .legend__current-ins,.pension-calculator .legend__current-sof{margin-bottom:8px;position:relative;padding-left:22px;box-sizing:border-box;line-height:22px;padding-left:24px}.pension-calculator .legend__current-acc-ico,.pension-calculator .legend__current-ins-ico,.pension-calculator .legend__current-sof-ico{position:absolute;left:0;top:4px;display:inline-block;width:19px;height:19px;box-sizing:border-box}.pension-calculator .legend__current-acc-ico{background-image:-webkit-linear-gradient(right,#8fda0b,#4ca00d);background-image:linear-gradient(-90deg,#8fda0b,#4ca00d)}.pension-calculator .legend__current-ins-ico{border:1px solid #c7c7c7}.pension-calculator .legend__current-sof-ico{background:tomato}.pension-calculator .ui-slider{position:relative;text-align:left}.pension-calculator .ui-slider.ui-slider-disabled{opacity:.6;pointer-events:none}.pension-calculator .ui-slider .ui-slider-handle{position:absolute;z-index:2;width:1.2em;height:1.2em;cursor:default;-ms-touch-action:none;touch-action:none}.pension-calculator .ui-slider .ui-slider-range{position:absolute;z-index:1;display:block;border:0;background:#479b0d;border:none;background-image:-webkit-linear-gradient(right,#8fda0b,#4ca00d);background-image:linear-gradient(-90deg,#8fda0b,#4ca00d)}.pension-calculator .ui-slider.ui-state-disabled .ui-slider-handle,.pension-calculator .ui-slider.ui-state-disabled .ui-slider-range{-webkit-filter:inherit;filter:inherit}.pension-calculator .ui-slider-horizontal{height:2px;border:none;background-color:#e0e0e0}.pension-calculator .ui-slider-horizontal .ui-slider-handle{box-sizing:border-box;top:-5px;margin-left:-5px;border:1px solid #e0e0e0;background:#fff;width:11px;height:11px;border-radius:11px;outline:none;cursor:pointer;box-shadow:none!important}.pension-calculator .ui-slider-horizontal .ui-slider-handle:focus{box-shadow:0 0 5px #4d90fe!important;border:1px solid #e0e0e0}.pension-calculator .ui-slider-horizontal .ui-slider-range{top:-1px;height:4px}.pension-calculator .ui-slider-horizontal .ui-slider-range-min{left:0}.pension-calculator .ui-slider-horizontal .ui-slider-range-max{right:0}.pension-calculator .ui-slider-vertical{width:.8em;height:100px}.pension-calculator .ui-slider-vertical .ui-slider-handle{left:-.3em;margin-left:0;margin-bottom:-.6em}.pension-calculator .ui-slider-vertical .ui-slider-range{left:0;width:100%}.pension-calculator .ui-slider-vertical .ui-slider-range-min{bottom:0}.pension-calculator .ui-slider-vertical .ui-slider-range-max{top:0}.pension-calculator .user-type{position:absolute;visibility:hidden;z-index:-1;opacity:0}@media screen and (min-width:1366px){.pension-calculator{display:-webkit-box;display:-ms-flexbox;display:flex}}@media screen and (min-width:968px){.pension-calculator{padding:62px 20px 62px 62px}}@media screen and (min-width:1366px){.pension-calculator__left-side{width:60%}}@media screen and (min-width:2046px){.pension-calculator__left-side{width:47.5%}}.pension-calculator__right-side{position:relative;padding-left:0;box-sizing:border-box}@media screen and (min-width:1366px){.pension-calculator__right-side{width:40%;padding-left:46px}}@media screen and (min-width:2046px){.pension-calculator__right-side{padding-left:146px;width:52.5%}}.pension-calculator__section{margin-bottom:42px}@media screen and (min-width:968px){.pension-calculator__section{margin-bottom:80px}}.pension-calculator__row-label,.pension-calculator__title{font-weight:700}.pension-calculator__title{font-size:32px;margin-bottom:28px;line-height:1.5;box-sizing:border-box}@media screen and (min-width:968px){.pension-calculator__title{margin-bottom:66px}}.pension-calculator__title--sm{font-size:24px;padding-top:8px}@media screen and (min-width:1366px){.pension-calculator__title--sm{margin-bottom:142px}}.pension-calculator__radio-group{max-width:215px}@media screen and (min-width:968px){.pension-calculator__radio-group,.pension-calculator__slider-block{width:-webkit-calc(100% - 292px);width:calc(100% - 292px)}}@media screen and (min-width:1706px){.pension-calculator__radio-group,.pension-calculator__slider-block{width:262px;max-width:262px}}.pension-calculator__radio-group{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.pension-calculator__row{box-sizing:border-box;padding-right:98px;margin-bottom:63px;position:relative}@media screen and (min-width:400px){.pension-calculator__row{padding-right:152px}}@media screen and (min-width:968px){.pension-calculator__row{padding-right:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:end;-ms-flex-align:end;align-items:end}}.pension-calculator__row:last-of-type{margin-bottom:0}.pension-calculator__row-label{display:inline-block;font-size:16px;margin-bottom:20px;box-sizing:border-box;-ms-flex-item-align:end;align-self:flex-end}@media screen and (min-width:968px){.pension-calculator__row-label{width:160px;padding-right:20px;margin-bottom:0}}@media screen and (min-width:1706px){.pension-calculator__row-label{padding-right:58px;width:238px}}.pension-calculator__row-label--star:after{content:"*";color:#ff8a00}.pension-calculator__checkbox{display:block}.pension-calculator__slider-block{margin-bottom:10px}@media screen and (min-width:968px){.pension-calculator__slider-block{margin-bottom:0;-webkit-transform:translateY(100%);-ms-transform:translateY(100%);transform:translateY(100%)}}.pension-calculator__slider{margin-bottom:10px}.pension-calculator__slider-numbers{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.pension-calculator__input-block{position:absolute;right:0;top:0;box-sizing:border-box;display:inline-block;width:88px;text-align:right}@media screen and (min-width:400px){.pension-calculator__input-block{width:132px;text-align:left}}@media screen and (min-width:968px){.pension-calculator__input-block{padding-left:40px;position:relative}}@media screen and (min-width:1706px){.pension-calculator__input-block{width:180px}}.pension-calculator__input-block .pension-calculator__checkbox{position:absolute;bottom:-25px}@media screen and (min-width:968px){.pension-calculator__input-block .pension-calculator__checkbox{left:40px}}.pension-calculator__input{width:100%;border:1px solid #c7c7c7;border-radius:6px;background-color:#fff;height:32px;line-height:32px;padding-left:14px;padding-right:14px;display:inline-block;box-sizing:border-box;font-size:16px}@media screen and (min-width:1706px){.pension-calculator__input{width:140px}}.pension-calculator__input--sm{width:70px}.pension-calculator__input--xs{width:50px}.pension-calculator__input:-moz-read-only,.pension-calculator__input:disabled{background-color:hsla(0,0%,88%,.3)}.pension-calculator__input:disabled,.pension-calculator__input:read-only{background-color:hsla(0,0%,88%,.3)}.pension-calculator-radio{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;position:relative;display:inline-block;box-sizing:border-box;padding-left:32px;margin-right:8px}.pension-calculator-radio__text{display:inline-block;box-sizing:border-box;color:#010101;font-size:14px}@media screen and (min-width:1706px){.pension-calculator-radio__text{font-size:16px}}.pension-calculator-radio__text:after,.pension-calculator-radio__text:before{content:"";position:absolute;display:block}.pension-calculator-radio__text:before{left:0;right:0;border:1px solid #e0e0e0;width:19px;height:19px;border-radius:19px;z-index:1}.pension-calculator-radio__text:after{display:none;background-color:#479b0d;width:11px;height:11px;border-radius:11px;z-index:2;left:5px;top:5px}.pension-calculator-radio__input{position:absolute;visibility:hidden;z-index:-1;opacity:0}.pension-calculator-radio__input:checked~.pension-calculator-radio__text:after{display:block}.pension-calculator-checkbox{position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer}.pension-calculator-checkbox__input{visibility:hidden;position:absolute;z-index:-1}.pension-calculator-checkbox__text{position:relative;display:inline-block;box-sizing:border-box;padding-left:26px;font-size:14px;color:#010101}.pension-calculator-checkbox__text:before{content:"";display:inline-block;box-sizing:border-box;position:absolute;left:0;top:0;width:16px;height:16px;border:1px solid #b3b3b3;border-radius:2px}.pension-calculator-checkbox__input:checked~.pension-calculator-checkbox__text:before{border:none;width:16px;height:16px;background:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/spr-ckbx-checked.png") no-repeat 50%;background-size:contain}.faq-links{list-style:none;padding:0;margin-top:0}.faq-links__item{margin-bottom:20px}.faq-links__item:last-of-type{margin-bottom:0}.faq-links__link{text-decoration:none;line-height:1.2}.faq-links__link:hover{text-decoration:underline}.faq-answers{list-style:none;padding:0;margin:0}.faq-answers__item{box-sizing:border-box;padding-left:50px;position:relative;margin-bottom:60px}.faq-answers__item:last-of-type{margin-bottom:0}.faq-answers__title{display:block;font-size:20px;width:100%;box-sizing:border-box;border-bottom:2px solid #e0e0e0;line-height:1.2;padding-bottom:8px;margin-bottom:30px}@media screen and (min-width:768px){.faq-answers__title{font-size:24px}}.faq-answers__title:before{content:"";position:absolute;width:22px;height:22px;background:url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_chat.png") no-repeat 50%;background-size:contain;top:3px;left:0;display:block}.faq-answers__text{line-height:1.5}.faq-answers__sub-list{padding:0;margin-left:17px;margin-top:30px}.faq-answers__sub-list-item{font-weight:300;line-height:1.5}.b-faq-content{box-sizing:border-box;padding:20px}@media screen and (min-width:768px){.b-faq-content{padding:62px}}.b-faq-content__first-title{margin:0 0 60px;line-height:1.2}.b-faq-content__second-title{margin:0 0 30px;line-height:1.2}.b-faq-content__first-text{margin:0 0 30px}.b-faq-content__contacts{margin-bottom:92px}.b-faq-content__faq-links{margin-bottom:100px;margin-right:0!important;margin-left:0!important}.b-faq-content__faq-answers{margin-top:0;margin-bottom:60px;max-width:1120px}.b-faq-content__top-button{display:inline-block;text-decoration:none;width:120px;height:51px;line-height:51px;box-sizing:border-box}.contacts-grid{box-sizing:border-box}.contacts-grid__legend{font-size:14px}.contacts-grid__mail,.contacts-grid__tel{font-size:18px}@media screen and (min-width:768px){.contacts-grid__mail,.contacts-grid__tel{font-size:22px}}.contacts-grid__mail{text-decoration:none}.contacts-grid__mail:hover{text-decoration:underline}.contacts-grid__row{box-sizing:border-box;margin-bottom:30px}.contacts-grid__row:last-of-type{margin-bottom:0}@media screen and (min-width:1366px){.contacts-grid__row{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}}.contacts-grid__col{box-sizing:border-box;display:inline-block;padding-right:18px}@media screen and (min-width:768px){.contacts-grid__col{min-width:305px}}
+.b-menu__link, .b-menu__sub-link, .pension-calculator .graph__column-title, .pension-calculator .graph__column-value, .pension-calculator .graph__column-ruble, .pension-calculator .graph__column-title-text, .pension-calculator .graph__total-text, .pension-calculator .graph__number, .pension-calculator .graph__number-value, .pension-calculator .graph__ruble, .pension-calculator .legend__text, .pension-calculator .legend__sum, .pension-calculator .legend__rub, .pension-calculator__title, .pension-calculator__row-label, .pension-calculator__slider-min, .pension-calculator__slider-middle, .pension-calculator__slider-max, .pension-calculator__input, .pension-calculator-radio__text, .pension-calculator-checkbox__text, .faq-answers__title, .faq-answers__sub-list-item, .b-about-content__item-title, .b-about-content__item-text {
+  font-family: 'Montserrat', sans-serif; }
+
+.b-green-button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: 600;
+  -webkit-appearance: none;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-image: -webkit-linear-gradient(-90deg, #8fda0b 0%, #4ca00d 100%);
+  background-image: -ms-linear-gradient(-90deg, #8fda0b 0%, #4ca00d 100%);
+  outline: none; }
+  .b-green-button:focus {
+    box-shadow: 0 0 0 1px #010101 inset !important; }
+
+.b-green-button {
+  height: 50px;
+  font-size: 16px;
+  line-height: 46px;
+  padding-left: 18px;
+  padding-right: 18px; }
+
+.b-yellow-button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-appearance: none;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #010101;
+  font-weight: 600;
+  text-align: center;
+  height: 50px;
+  line-height: 46px;
+  padding-left: 18px;
+  padding-right: 18px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-image: -webkit-linear-gradient(-90deg, #eca300 0%, #fed500 100%);
+  background-image: -ms-linear-gradient(-90deg, #eca300 0%, #fed500 100%);
+  outline: none; }
+  .b-yellow-button:focus {
+    box-shadow: 0 0 0 1px #010101 inset !important; }
+
+.t-PageBody--login .b-login-form .text_field, .t-PageBody--login .b-login-form .password, .t-PageBody--login .b-register-form .text_field, .t-PageBody--login .b-register-form .password, .t-PageBody--login .b-recovery-form .text_field, .t-PageBody--login .b-recovery-form .password {
+  background: transparent !important;
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  border-bottom: 2px solid;
+  font-size: 16px !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500;
+  color: #010101 !important;
+  border-color: #b3b3b3 !important;
+  height: 38px !important;
+  line-height: 32px !important;
+  padding: 0 !important; }
+  .t-PageBody--login .b-login-form .text_field::-webkit-input-placeholder, .t-PageBody--login .b-login-form .password::-webkit-input-placeholder, .t-PageBody--login .b-register-form .text_field::-webkit-input-placeholder, .t-PageBody--login .b-register-form .password::-webkit-input-placeholder, .t-PageBody--login .b-recovery-form .text_field::-webkit-input-placeholder, .t-PageBody--login .b-recovery-form .password::-webkit-input-placeholder {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 500 !important;
+    color: #010101 !important;
+    text-transform: none !important; }
+  .t-PageBody--login .b-login-form .text_field:-ms-input-placeholder, .t-PageBody--login .b-login-form .password:-ms-input-placeholder, .t-PageBody--login .b-register-form .text_field:-ms-input-placeholder, .t-PageBody--login .b-register-form .password:-ms-input-placeholder, .t-PageBody--login .b-recovery-form .text_field:-ms-input-placeholder, .t-PageBody--login .b-recovery-form .password:-ms-input-placeholder {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 500 !important;
+    color: #010101 !important;
+    text-transform: none !important; }
+  .t-PageBody--login .b-login-form .text_field::placeholder, .t-PageBody--login .b-login-form .password::placeholder, .t-PageBody--login .b-register-form .text_field::placeholder, .t-PageBody--login .b-register-form .password::placeholder, .t-PageBody--login .b-recovery-form .text_field::placeholder, .t-PageBody--login .b-recovery-form .password::placeholder {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 500 !important;
+    color: #010101 !important;
+    text-transform: none !important; }
+  .t-PageBody--login .b-login-form .text_field:focus, .t-PageBody--login .b-login-form .password:focus, .t-PageBody--login .b-register-form .text_field:focus, .t-PageBody--login .b-register-form .password:focus, .t-PageBody--login .b-recovery-form .text_field:focus, .t-PageBody--login .b-recovery-form .password:focus {
+    border-color: #010101 !important;
+    background: transparent !important; }
+  .t-PageBody--login .b-login-form .form-input-icon.text_field, .t-PageBody--login .b-login-form .form-input-icon.password, .t-PageBody--login .b-register-form .form-input-icon.text_field, .t-PageBody--login .b-register-form .form-input-icon.password, .t-PageBody--login .b-recovery-form .form-input-icon.text_field, .t-PageBody--login .b-recovery-form .form-input-icon.password {
+    padding-left: 30px !important; }
+  .t-PageBody--login .b-login-form .form-input-icon-date.text_field, .t-PageBody--login .b-login-form .form-input-icon-date.password, .t-PageBody--login .b-register-form .form-input-icon-date.text_field, .t-PageBody--login .b-register-form .form-input-icon-date.password, .t-PageBody--login .b-recovery-form .form-input-icon-date.text_field, .t-PageBody--login .b-recovery-form .form-input-icon-date.password {
+    background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/spr-calendar.png") no-repeat left !important;
+    background-size: 18px !important; }
+
+.b-phone, .b-phone__icon {
+  text-decoration: none;
+  border: none; }
+
+.b-title-h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #000000; }
+
+.b-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #000000;
+  margin: 0; }
+
+.b-text-16 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+  margin: 0; }
+
+.b-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #113df7; }
+
+.b-link-16 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #113df7; }
+
+.b-green-link {
+  color: #59ac0d;
+  text-decoration: none;
+  font-size: 16px; }
+  .b-green-link:hover {
+    text-decoration: underline; }
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Montserrat Light"), local("Montserrat-Light"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_cJD3gTD_vx3rCubqg.woff2") format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Montserrat Light"), local("Montserrat-Light"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_cJD3g3D_vx3rCubqg.woff2") format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Montserrat Light"), local("Montserrat-Light"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_cJD3gbD_vx3rCubqg.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Montserrat Light"), local("Montserrat-Light"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_cJD3gfD_vx3rCubqg.woff2") format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Montserrat Light"), local("Montserrat-Light"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_cJD3gnD_vx3rCs.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2") format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTUSjIg1_i6t8kCHKm459W1hyyTh89ZNpQ.woff2") format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTUSjIg1_i6t8kCHKm459WZhyyTh89ZNpQ.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTUSjIg1_i6t8kCHKm459WdhyyTh89ZNpQ.woff2") format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_bZF3gTD_vx3rCubqg.woff2") format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_bZF3g3D_vx3rCubqg.woff2") format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_bZF3gbD_vx3rCubqg.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_bZF3gfD_vx3rCubqg.woff2") format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_bZF3gnD_vx3rCs.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_dJE3gTD_vx3rCubqg.woff2") format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_dJE3g3D_vx3rCubqg.woff2") format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_dJE3gbD_vx3rCubqg.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_dJE3gfD_vx3rCubqg.woff2") format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/fonts/Montserrat/JTURjIg1_i6t8kCHKm45_dJE3gnD_vx3rCs.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+.b-grey-link {
+  font-family: 'Montserrat', sans-serif;
+  color: #b3b3b3;
+  font-weight: 200;
+  font-size: 16px; }
+
+.b-yellow-button__spr-gos-uslugi {
+  display: inline-block;
+  line-height: 1.2;
+  vertical-align: middle;
+  width: 25px;
+  height: 28px;
+  background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/spr-gos-logo.png") no-repeat center;
+  background-size: contain;
+  margin-right: 12px; }
+
+.b-yellow-button__label {
+  display: inline-block;
+  line-height: 1.2;
+  vertical-align: middle; }
+
+@media (max-width: 767px) {
+  .b-yellow-button__spr-gos-uslugi {
+    display: none; } }
+
+.b-phone {
+  font-size: 0;
+  height: 40px;
+  line-height: 40px; }
+  .b-phone__icon {
+    width: 40px;
+    height: 40px;
+    background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/spr-phone.png") no-repeat center;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 32px; }
+  .b-phone__content {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #010101;
+    font-size: 28px;
+    display: inline-block;
+    vertical-align: middle; }
+
+@media (max-width: 1023px) {
+  .b-phone__content {
+    font-size: 24px; }
+  .b-phone__icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 14px;
+    font-size: 24px; } }
+
+.b-logout-btn {
+  display: block;
+  width: 104px;
+  white-space: nowrap;
+  font-size: 0;
+  line-height: 24px;
+  height: 24px; }
+  .b-logout-btn__icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 26px;
+    height: 24px;
+    background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/spr-logout.png") no-repeat center;
+    background-size: contain; }
+  .b-logout-btn__content {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #010101; }
+
+@media (max-width: 767px) {
+  .b-logout-btn__content {
+    display: none; }
+  .b-logout-btn__icon {
+    margin-right: 0;
+    width: 21px;
+    height: 20px; } }
+
+.t-PageBody--login {
+  background-color: #f7f7f7 !important; }
+
+.b-body {
+  box-sizing: border-box; }
+  .b-body--login, .b-body--lk {
+    padding: 20px;
+    width: 100%; }
+  .b-body--clear-right .b-lk-content__main {
+    background: transparent;
+    box-shadow: none; }
+
+.b-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+  .b-container--540 {
+    max-width: 540px; }
+  .b-container .container, .b-container .row {
+    overflow: visible !important; }
+
+.lo-login-wrapper {
+  padding-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+@media (max-width: 767px) {
+  .b-body--login {
+    padding: 0;
+    width: 100%; } }
+
+.b-right-section {
+  box-sizing: border-box;
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1);
+  width: 100%; }
+  @media screen and (min-width: 1366px) {
+    .b-right-section {
+      width: -webkit-calc(100% - 30px);
+      width: calc(100% - 30px); } }
+
+.b-logo {
+  font-size: 0;
+  white-space: nowrap;
+  height: 80px;
+  line-height: 80px; }
+  .b-logo__title {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #010101;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    width: 115px;
+    white-space: normal;
+    display: inline-block;
+    vertical-align: middle; }
+  .b-logo__image {
+    margin-right: 21px;
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 80px;
+    width: 80px;
+    height: 80px;
+    background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/logo_big.png") no-repeat center;
+    background-size: contain;
+    box-shadow: 5.657px 5.657px 40px 0px rgba(0, 0, 0, 0.4); }
+
+@media (max-width: 767px) {
+  .b-logo {
+    height: 45px;
+    line-height: 45px; }
+    .b-logo__title {
+      display: none; }
+    .b-logo__image {
+      width: 45px;
+      height: 45px;
+      border-radius: 45px;
+      margin-right: 0;
+      box-shadow: -1px -1px 106px -16px black; } }
+
+.b-header {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1);
+  min-height: 132px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 60px 8px 50px;
+  box-sizing: border-box; }
+  .b-header__logout-btn {
+    position: absolute;
+    right: 60px;
+    width: 104px; }
+  .b-header__user-block, .b-header__logout-btn {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .b-header__logo {
+    margin-right: 130px; }
+  .b-header__menu-btn {
+    display: none;
+    font-size: 0;
+    -webkit-appearance: none;
+    border: none;
+    background-color: transparent; }
+  .b-header__user-block {
+    position: absolute;
+    right: 233px; }
+
+@media screen and (max-width: 1366px) {
+  .b-header__logo {
+    margin-right: 28px; }
+  .b-header__user-block {
+    right: 196px; } }
+
+/* @media screen and (max-width: 1266px) {
+    .b-header {
+        &__user-block {
+            right: 186px;
+        }
+        &__logo {
+            margin-right: 21px;
+        }
+    }
+} */
+@media (max-width: 1023px) {
+  .b-header__user-block {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .b-header {
+    position: relative;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    height: 91px;
+    min-height: 91px; }
+    .b-header__phone {
+      display: none; }
+    .b-header__logo {
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      margin-right: 0; }
+    .b-header__logout-btn {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      right: 6px;
+      width: 21px; }
+    .b-header__menu-btn {
+      position: absolute;
+      display: block;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      left: 6px; } }
+
+.b-user-block {
+  min-width: 258px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .b-user-block__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .b-user-block__text, .b-user-block__username {
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; }
+  .b-user-block__text {
+    color: #010101;
+    margin-right: 4px; }
+  .b-user-block__username {
+    color: #479b0d;
+    max-width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  .b-user-block__image-block {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    border-radius: 55px;
+    overflow: hidden; }
+  .b-user-block__avatar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0; }
+
+.menu-btn__icon {
+  position: absolute;
+  width: 19px;
+  height: 18px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.menu-btn__line {
+  position: absolute;
+  left: 0;
+  background-color: #010101;
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  pointer-events: none; }
+  .menu-btn__line_1 {
+    top: 0; }
+  .menu-btn__line_2 {
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+  .menu-btn__line_3 {
+    bottom: 0; }
+
+.menu-btn_close1 .menu-btn__line_1 {
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
+
+.menu-btn_close1 .menu-btn__line_2 {
+  right: 0;
+  -webkit-transition: right .2s ease-in-out, opacity .35s ease-in-out,  -webkit-transform 0s ease-in-out;
+  transition: right .2s ease-in-out, opacity .35s ease-in-out,  -webkit-transform 0s ease-in-out;
+  transition: right .2s ease-in-out, opacity .35s ease-in-out,  transform 0s ease-in-out;
+  transition: right .2s ease-in-out, opacity .35s ease-in-out,  transform 0s ease-in-out, -webkit-transform 0s ease-in-out; }
+
+.menu-btn_close1 .menu-btn__line_3 {
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
+
+.menu-btn_close1.open .menu-btn__line_1 {
+  -webkit-transform: translate3d(0, 8px, 0) rotate(135deg);
+          transform: translate3d(0, 8px, 0) rotate(135deg); }
+
+.menu-btn_close1.open .menu-btn__line_2 {
+  opacity: 0;
+  right: -76px;
+  -webkit-transform: translate3d(-19px, 0, 0);
+          transform: translate3d(-19px, 0, 0);
+  -webkit-transition: opacity .2s ease-in-out, right .0s ease-in-out .2s, -webkit-transform .2s ease-in-out;
+  transition: opacity .2s ease-in-out, right .0s ease-in-out .2s, -webkit-transform .2s ease-in-out;
+  transition: opacity .2s ease-in-out, transform .2s ease-in-out, right .0s ease-in-out .2s;
+  transition: opacity .2s ease-in-out, transform .2s ease-in-out, right .0s ease-in-out .2s, -webkit-transform .2s ease-in-out; }
+
+.menu-btn_close1.open .menu-btn__line_3 {
+  -webkit-transform: translate3d(0, -8px, 0) rotate(-135deg);
+          transform: translate3d(0, -8px, 0) rotate(-135deg); }
+
+.t-PageBody--login .t-Form--stretchInputs .t-Form-fieldContainer .t-Form-inputContainer, .t-PageBody--login .t-Form-fieldContainer--stretchInputs .t-Form-inputContainer {
+  display: block !important; }
+
+.t-PageBody--login .t-Login-title {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 24px; }
+
+.t-PageBody--login .b-yellow-button, .t-PageBody--login .b-green-button {
+  width: 100%; }
+
+.t-PageBody--login .b-login-form {
+  margin-top: 90px;
+  padding: 77px 0 66px 54px;
+  width: 100%;
+  max-width: 1224px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1) !important; }
+  .t-PageBody--login .b-login-form__bottom {
+    width: 100%;
+    text-align: center; }
+  .t-PageBody--login .b-login-form .t-Form-fieldContainer:first-of-type {
+    margin-bottom: 37px; }
+  .t-PageBody--login .b-login-form .t-Form-fieldContainer {
+    margin-bottom: 25px; }
+  .t-PageBody--login .b-login-form .t-Login-header {
+    padding: 0 !important;
+    margin-bottom: 51px !important; }
+  .t-PageBody--login .b-login-form .t-Form-error {
+    padding-top: 8px !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 10px !important; }
+  .t-PageBody--login .b-login-form .t-Login-title {
+    margin: 0; }
+  .t-PageBody--login .b-login-form .b-green-button, .t-PageBody--login .b-login-form .b-yellow-button {
+    margin-bottom: 9px; }
+  .t-PageBody--login .b-login-form .apex-item-checkbox {
+    position: relative; }
+    .t-PageBody--login .b-login-form .apex-item-checkbox input {
+      visibility: hidden;
+      position: absolute;
+      z-index: -1; }
+    .t-PageBody--login .b-login-form .apex-item-checkbox label {
+      position: relative;
+      display: inline-block;
+      box-sizing: border-box;
+      padding-left: 32px;
+      font-size: 10px;
+      color: #b3b3b3;
+      font-family: "Montserrat", sans-serif !important;
+      font-weight: 300; }
+      .t-PageBody--login .b-login-form .apex-item-checkbox label:before {
+        content: '';
+        display: inline-block;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #b3b3b3;
+        border-radius: 2px; }
+    .t-PageBody--login .b-login-form .apex-item-checkbox input:checked ~ label:before {
+      border: none;
+      width: 16px;
+      height: 16px;
+      background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/spr-ckbx-checked.png") no-repeat center;
+      background-size: contain; }
+  .t-PageBody--login .b-login-form__left {
+    width: 40%;
+    padding-right: 45px; }
+  .t-PageBody--login .b-login-form__right {
+    width: 60%;
+    padding-right: 45px;
+    box-sizing: border-box; }
+  .t-PageBody--login .b-login-form__bg {
+    position: relative;
+    left: 21px;
+    top: 29px;
+    width: 100%;
+    background-image: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/login_bg.jpg");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 327px; }
+  .t-PageBody--login .b-login-form__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 32px;
+    max-width: 374px;
+    margin-left: auto;
+    margin-right: auto; }
+  .t-PageBody--login .b-login-form__link-left {
+    padding-right: 8px;
+    margin-bottom: 8px; }
+  .t-PageBody--login .b-login-form .text_field, .t-PageBody--login .b-login-form .password {
+    text-align: center;
+    width: 100%;
+    font-weight: 700; }
+
+@media (max-width: 767px) {
+  .t-PageBody--login .b-login-form {
+    padding: 0 30px 46px 30px;
+    display: block;
+    margin-top: 23px;
+    background: transparent;
+    box-shadow: none !important; }
+    .t-PageBody--login .b-login-form .text_field, .t-PageBody--login .b-login-form .password {
+      border-bottom: 1px solid; }
+    .t-PageBody--login .b-login-form .t-Login-header {
+      margin-bottom: 33px !important; }
+    .t-PageBody--login .b-login-form .t-Form-inputContainer {
+      padding-bottom: 12px !important; }
+    .t-PageBody--login .b-login-form .t-Form-error {
+      text-align: center; }
+    .t-PageBody--login .b-login-form .t-Form-fieldContainer:first-of-type {
+      margin-bottom: 0; }
+    .t-PageBody--login .b-login-form .t-Form-fieldContainer {
+      margin-bottom: 0; }
+    .t-PageBody--login .b-login-form .b-green-button {
+      max-width: 100% !important;
+      height: 40px !important;
+      line-height: 40px !important;
+      font-size: 14px !important; }
+    .t-PageBody--login .b-login-form__bottom {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .t-PageBody--login .b-login-form__link-left {
+      margin-right: 0;
+      margin-bottom: 16px; }
+    .t-PageBody--login .b-login-form__link-left, .t-PageBody--login .b-login-form__link-right {
+      font-size: 12px; }
+    .t-PageBody--login .b-login-form .t-Form-inputContainer {
+      padding-bottom: 10px !important; }
+    .t-PageBody--login .b-login-form .t-Login-buttons {
+      margin-top: 37px; }
+    .t-PageBody--login .b-login-form__left {
+      width: 100%;
+      padding: 0; }
+    .t-PageBody--login .b-login-form__right {
+      display: none; } }
+
+.t-PageBody--login .b-register-form {
+  max-width: 540px;
+  padding: 50px 70px 46px 70px;
+  margin-top: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1) !important; }
+  .t-PageBody--login .b-register-form__bottom {
+    width: 100%;
+    text-align: center; }
+  .t-PageBody--login .b-register-form .t-Form-fieldContainer {
+    margin-bottom: 18px; }
+  .t-PageBody--login .b-register-form .t-Form-inputContainer {
+    position: relative; }
+  .t-PageBody--login .b-register-form .t-Login-header {
+    padding: 0 !important;
+    margin-bottom: 51px !important; }
+  .t-PageBody--login .b-register-form .t-Form-error {
+    padding-top: 8px !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 10px !important; }
+  .t-PageBody--login .b-register-form .t-Login-title {
+    margin: 0; }
+  .t-PageBody--login .b-register-form .b-green-button, .t-PageBody--login .b-register-form .b-yellow-button {
+    margin-bottom: 20px; }
+  .t-PageBody--login .b-register-form .apex-item-checkbox {
+    position: relative; }
+    .t-PageBody--login .b-register-form .apex-item-checkbox input {
+      visibility: hidden;
+      position: absolute;
+      z-index: -1; }
+    .t-PageBody--login .b-register-form .apex-item-checkbox label {
+      position: relative;
+      display: inline-block;
+      box-sizing: border-box;
+      padding-left: 32px;
+      font-size: 10px;
+      color: #b3b3b3;
+      font-family: "Montserrat", sans-serif !important;
+      font-weight: 300; }
+      .t-PageBody--login .b-register-form .apex-item-checkbox label:before {
+        content: '';
+        display: inline-block;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #b3b3b3;
+        border-radius: 2px; }
+    .t-PageBody--login .b-register-form .apex-item-checkbox input:checked ~ label:before {
+      border: none;
+      width: 16px;
+      height: 16px;
+      background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/spr-ckbx-checked.png") no-repeat center;
+      background-size: contain; }
+
+@media (max-width: 767px) {
+  .t-PageBody--login .t-Login-title {
+    font-size: 16px; }
+  .t-PageBody--login .b-register-form {
+    margin-top: 4px;
+    background: transparent;
+    box-shadow: none !important;
+    padding: 0 30px 46px 30px; }
+    .t-PageBody--login .b-register-form .text_field, .t-PageBody--login .b-register-form .password {
+      border-bottom: 1px solid; }
+    .t-PageBody--login .b-register-form .t-Login-header {
+      margin-bottom: 33px !important; }
+    .t-PageBody--login .b-register-form .t-Form-fieldContainer {
+      margin-bottom: 0; }
+    .t-PageBody--login .b-register-form .t-Form-inputContainer {
+      padding-bottom: 12px !important; }
+    .t-PageBody--login .b-register-form .t-Form-error {
+      text-align: center; }
+    .t-PageBody--login .b-register-form .b-green-button {
+      margin-top: 24px; }
+    .t-PageBody--login .b-register-form .b-green-button, .t-PageBody--login .b-register-form .b-yellow-button {
+      height: 44px;
+      line-height: 42px;
+      font-size: 14px; }
+    .t-PageBody--login .b-register-form__bottom {
+      margin-top: 28px; } }
+
+.t-PageBody--login .b-recovery-form {
+  margin-top: 40px;
+  max-width: 540px;
+  padding: 56px 70px 46px 70px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1) !important; }
+  .t-PageBody--login .b-recovery-form .t-Login-header {
+    padding: 0 !important;
+    margin-bottom: 60px !important; }
+  .t-PageBody--login .b-recovery-form .t-Form-inputContainer {
+    position: relative; }
+  .t-PageBody--login .b-recovery-form .t-Form-fieldContainer {
+    margin-bottom: 17px; }
+    .t-PageBody--login .b-recovery-form .t-Form-fieldContainer:first-child {
+      margin-bottom: 39px; }
+  .t-PageBody--login .b-recovery-form .t-Form-error {
+    padding-top: 8px !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 10px !important; }
+  .t-PageBody--login .b-recovery-form .t-Login-title {
+    margin: 0; }
+  .t-PageBody--login .b-recovery-form .b-green-button {
+    margin-top: 10px; }
+  .t-PageBody--login .b-recovery-form .b-green-button, .t-PageBody--login .b-recovery-form .b-yellow-button {
+    margin-bottom: 20px; }
+  .t-PageBody--login .b-recovery-form .t-Login-links {
+    margin-top: 5px; }
+  .t-PageBody--login .b-recovery-form .apex-item-checkbox {
+    position: relative; }
+    .t-PageBody--login .b-recovery-form .apex-item-checkbox input {
+      visibility: hidden;
+      position: absolute;
+      z-index: -1; }
+    .t-PageBody--login .b-recovery-form .apex-item-checkbox label {
+      position: relative;
+      display: inline-block;
+      box-sizing: border-box;
+      padding-left: 32px;
+      font-size: 10px;
+      color: #b3b3b3;
+      font-family: "Montserrat", sans-serif !important;
+      font-weight: 300; }
+      .t-PageBody--login .b-recovery-form .apex-item-checkbox label:before {
+        content: '';
+        display: inline-block;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #b3b3b3;
+        border-radius: 2px; }
+    .t-PageBody--login .b-recovery-form .apex-item-checkbox input:checked ~ label:before {
+      border: none;
+      width: 16px;
+      height: 16px;
+      background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/spr-ckbx-checked.png") no-repeat center;
+      background-size: contain; }
+  .t-PageBody--login .b-recovery-form__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    text-align: center; }
+  .t-PageBody--login .b-recovery-form__link-left {
+    margin-right: 43px;
+    margin-bottom: 8px;
+    margin-left: 23px; }
+
+@media (max-width: 767px) {
+  .t-PageBody--login .t-Login-title {
+    font-size: 16px; }
+  .t-PageBody--login .b-recovery-form {
+    margin-top: 23px;
+    padding: 0 30px 46px 30px;
+    background: transparent;
+    box-shadow: none !important; }
+    .t-PageBody--login .b-recovery-form .text_field {
+      text-align: center; }
+    .t-PageBody--login .b-recovery-form .t-Login-links + .container .row .col {
+      margin-top: 8px !important; }
+    .t-PageBody--login .b-recovery-form .t-Form-fieldContainer {
+      margin-bottom: 8px; }
+      .t-PageBody--login .b-recovery-form .t-Form-fieldContainer:first-child {
+        margin-bottom: 0; }
+    .t-PageBody--login .b-recovery-form .text_field, .t-PageBody--login .b-recovery-form .password {
+      border-bottom: 1px solid; }
+    .t-PageBody--login .b-recovery-form .t-Login-header {
+      margin-bottom: 33px !important; }
+    .t-PageBody--login .b-recovery-form .t-Form-inputContainer {
+      padding: 0 0 1.4rem; }
+    .t-PageBody--login .b-recovery-form .t-Form-error {
+      text-align: center; }
+    .t-PageBody--login .b-recovery-form .b-green-button {
+      margin-top: 24px; }
+    .t-PageBody--login .b-recovery-form .b-green-button, .t-PageBody--login .b-recovery-form .b-yellow-button {
+      height: 44px;
+      line-height: 42px;
+      font-size: 14px; }
+    .t-PageBody--login .b-recovery-form__bottom {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .t-PageBody--login .b-recovery-form__link-left {
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 19px; }
+    .t-PageBody--login .b-recovery-form__link-left, .t-PageBody--login .b-recovery-form__link-right {
+      font-size: 12px; } }
+
+@media (max-width: 767px) {
+  .t-PageBody--login {
+    padding: 0 20px;
+    /*.b-login-form {
+            padding: 0 30px 46px 30px;
+            display: block;
+            .b-green-button {
+                max-width: 100%$i;
+                height: 40px$i;
+                line-height: 40px$i;
+                font-size: 14px$i;
+            }
+            &__bottom {
+                flex-direction: column;
+                justify-content: center;
+            }
+            &__link-left {
+                margin-right: 0;
+                margin-bottom: 26px;
+            }
+            &__link-left, &__link-right {
+                font-size: 14px;
+            }
+            .t-Form-inputContainer {
+                padding-bottom: 10px$i;
+            }
+            .t-Login-body {
+                .t-Form-fieldContainer {
+                    &:last-of-type {
+                        .t-Form-inputContainer {
+                            padding-bottom: 10px$i;
+                        } 
+                    }
+                }
+            }
+            .t-Login-buttons {
+                margin-top: 37px;
+            }
+            &__left {
+                width: 100%;
+                padding: 0;
+            }
+            &__right {
+                display: none;
+            }
+        }*/ }
+    .t-PageBody--login .t-Login-title {
+      font-size: 16px; }
+    .t-PageBody--login .b-login-form {
+      background: transparent;
+      box-shadow: none !important; }
+      .t-PageBody--login .b-login-form .text_field, .t-PageBody--login .b-login-form .password {
+        border-bottom: 1px solid; }
+      .t-PageBody--login .b-login-form .t-Login-header {
+        margin-bottom: 33px !important; }
+      .t-PageBody--login .b-login-form .t-Form-inputContainer {
+        padding-bottom: 12px !important; }
+      .t-PageBody--login .b-login-form .t-Form-error {
+        text-align: center; } }
+
+.b-body--lk .b-header__phone {
+  display: none; }
+  @media screen and (min-width: 1328px) {
+    .b-body--lk .b-header__phone {
+      display: inline-block; } }
+
+@media screen and (max-width: 1455px) {
+  .b-body--lk .b-header__logo {
+    margin-right: 28px !important; } }
+
+@media screen and (max-width: 767px) {
+  .b-body--lk .b-header__logo {
+    margin-right: 0 !important; } }
+
+.b-body--lk .t-Body-topButton {
+  display: none !important; }
+
+.b-lk-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .b-lk-content__main {
+    margin-top: 50px !important; }
+  .b-lk-content__navigation {
+    padding-top: 50px;
+    box-sizing: border-box;
+    padding-right: 20px;
+    width: 418px;
+    padding-bottom: 40px; }
+    @media screen and (max-width: 1366px) {
+      .b-lk-content__navigation {
+        width: 35%; } }
+  .b-lk-content__main {
+    display: block;
+    box-sizing: border-box;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1);
+    width: -webkit-calc(100% - 448px);
+    width: calc(100% - 448px); }
+    @media screen and (max-width: 1366px) {
+      .b-lk-content__main {
+        width: 65%; } }
+
+@media (max-width: 1023px) {
+  .b-lk-content__navigation {
+    width: 40%; }
+  .b-lk-content__main {
+    width: 60%; } }
+
+@media (max-width: 767px) {
+  .b-body--lk {
+    padding-top: 0; }
+  .b-lk-content__navigation {
+    width: auto;
+    padding-top: 20px; }
+  .b-lk-content__main {
+    width: 100%;
+    margin-top: 0 !important; } }
+
+.b-mobile-nav {
+  display: block;
+  position: fixed;
+  background-color: #FFF;
+  width: 100%;
+  height: 80%;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  z-index: -1;
+  overflow: auto; }
+  @supports (height: calc(100% - 105px)) {
+    .b-mobile-nav {
+      height: -webkit-calc(100% - 105px);
+      height: calc(100% - 105px); } }
+  .b-mobile-nav__menu {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto; }
+  .b-mobile-nav__item {
+    margin-bottom: 16px; }
+  .b-mobile-nav__link {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    color: #404040 !important; }
+
+@media (max-width: 767px) {
+  .mobile-menu-opened {
+    background-color: #FFF !important;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: fixed; }
+  .b-mobile-nav.open {
+    opacity: 1;
+    z-index: 99999;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; } }
+
+.b-lk-navigation .t-Body-nav {
+  position: relative;
+  top: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important; }
+  .b-lk-navigation .t-Body-nav ul {
+    background-color: transparent !important; }
+
+.b-menu {
+  overflow: visible;
+  width: 100% !important; }
+  .b-menu__list, .b-menu__sub-list {
+    list-style: none;
+    margin: 0; }
+  .b-menu__list {
+    margin-left: 52px; }
+  .b-menu__list-item {
+    padding-top: 22px;
+    display: block;
+    box-sizing: border-box;
+    min-height: 66px;
+    margin-bottom: 40px; }
+    .b-menu__list-item:last-of-type {
+      margin-bottom: 0; }
+  .b-menu__link {
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 100px; }
+  .b-menu__icon {
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: -20px;
+    width: 66px;
+    height: 66px;
+    box-sizing: border-box; }
+    .b-menu__icon:before, .b-menu__icon:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 66px;
+      height: 66px;
+      border-radius: 66px;
+      z-index: 1;
+      background-repeat: no-repeat;
+      box-sizing: border-box; }
+    .b-menu__icon:before {
+      border: 1px solid #9f9f9f;
+      z-index: 1; }
+    .b-menu__icon:after {
+      z-index: 2; }
+  .b-menu .ic_lk:after {
+    background-image: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_lk.png");
+    background-size: 22px;
+    background-position: center; }
+  .b-menu .ic_support:after {
+    background-image: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_support.png");
+    background-size: 22px;
+    background-position: center; }
+  .b-menu .ic_profile:after {
+    background-image: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_profile.png");
+    background-size: 22px;
+    background-position: center; }
+  .b-menu .ic_bid:after {
+    background-image: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_bid.png");
+    background-size: 20px;
+    background-position: 25px center; }
+  .b-menu .ic_calculator:after {
+    background-image: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_calculator.png");
+    background-size: 20px;
+    background-position: center; }
+  .b-menu .ic_about:after {
+    background-image: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_about.png");
+    background-size: 22px;
+    background-position: 23px center; }
+  .b-menu__list-item.active .b-menu__icon:before {
+    border: none;
+    background-image: -webkit-linear-gradient(118.61deg, #eca300 0%, #fed500 100%);
+    background-image: -ms-linear-gradient(118.61deg, #eca300 0%, #fed500 100%);
+    box-shadow: 9.899px 9.899px 40px 0px rgba(0, 0, 0, 0.4); }
+  .b-menu__list-item.active .ic_lk:after {
+    background-image: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_lk_active.png"); }
+  .b-menu__list-item.active .ic_support:after {
+    background-image: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_support_active.png"); }
+  .b-menu__list-item.active .ic_profile:after {
+    background-image: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_profile_active.png"); }
+  .b-menu__list-item.active .ic_bid:after {
+    background-image: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_bid_active.png"); }
+  .b-menu__list-item.active .ic_calculator:after {
+    background-image: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_calculator_active.png"); }
+  .b-menu__list-item.active .ic_about:after {
+    background-image: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_about_active.png"); }
+  .b-menu__sub-list {
+    display: block;
+    margin-left: 100px;
+    padding-top: 40px;
+    box-sizing: border-box; }
+  .b-menu__sub-list-item {
+    position: relative;
+    padding-left: 23px;
+    margin-bottom: 23px; }
+    .b-menu__sub-list-item:last-of-type {
+      margin-bottom: 0; }
+    .b-menu__sub-list-item.active:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      border-radius: 10px;
+      width: 10px;
+      height: 10px;
+      background-image: -webkit-linear-gradient(118.61deg, #eca300 0%, #fed500 100%);
+      background-image: -ms-linear-gradient(118.61deg, #eca300 0%, #fed500 100%);
+      box-shadow: 9.899px 9.899px 40px 0px rgba(0, 0, 0, 0.4); }
+  .b-menu__link, .b-menu__sub-link {
+    color: #010101;
+    font-weight: 600; }
+  .b-menu__link {
+    font-size: 16px; }
+  .b-menu__sub-link {
+    font-size: 14px; }
+
+@media (max-width: 1023px) {
+  .b-menu__list {
+    margin-left: 0; }
+  .b-menu__icon {
+    left: 0; } }
+
+@media (max-width: 767px) {
+  .b-lk-navigation {
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    position: fixed;
+    background-color: #FFF;
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    z-index: -1;
+    overflow: auto; }
+    @supports (height: calc(100% - 90px)) {
+      .b-lk-navigation {
+        height: -webkit-calc(100% - 90px);
+        height: calc(100% - 90px); } }
+    .b-lk-navigation.open {
+      opacity: 1;
+      z-index: 99999;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+  .b-menu__list-item {
+    margin-bottom: 20px; }
+  .b-menu__link {
+    padding-left: 85px; }
+  .b-menu__sub-list {
+    margin-left: 85px;
+    padding-top: 20px; } }
+
+.b-contacts-content {
+  position: relative; }
+  @media screen and (min-width: 1024px) {
+    .b-contacts-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
+  .b-contacts-content__main {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px; }
+    @media screen and (min-width: 768px) {
+      .b-contacts-content__main {
+        padding: 60px 20px 60px 60px; } }
+    @media screen and (min-width: 1024px) {
+      .b-contacts-content__main {
+        width: 50%; } }
+    @media screen and (min-width: 1366px) {
+      .b-contacts-content__main {
+        width: 421px; } }
+  .b-contacts-content__map {
+    box-sizing: border-box;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 0 5px 5px 0px; }
+    @media screen and (min-width: 1024px) {
+      .b-contacts-content__map {
+        width: 50%;
+        height: auto; } }
+    @media screen and (min-width: 1366px) {
+      .b-contacts-content__map {
+        width: -webkit-calc(100% - 421px);
+        width: calc(100% - 421px); } }
+  .b-contacts-content__title-h1, .b-contacts-content__section {
+    margin-bottom: 20px; }
+    @media screen and (min-width: 1024px) {
+      .b-contacts-content__title-h1, .b-contacts-content__section {
+        margin-bottom: 91px; } }
+  .b-contacts-content__text {
+    line-height: 1.5; }
+  .b-contacts-content__section {
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 54px; }
+    @media screen and (max-width: 1024px) {
+      .b-contacts-content__section br {
+        display: none; } }
+  .b-contacts-content__icon {
+    position: absolute;
+    left: 0; }
+    .b-contacts-content__icon:not(.ic-email) {
+      top: 4px; }
+    .b-contacts-content__icon.ic-email {
+      top: 0; }
+
+.ic-address {
+  width: 15px;
+  height: 18px;
+  background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_contacts_pin.png") no-repeat center;
+  background-size: contain; }
+
+.ic-phone {
+  width: 18px;
+  height: 18px;
+  background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_contacts_phone.png") no-repeat center;
+  background-size: contain; }
+
+.ic-email {
+  width: 18px;
+  height: 18px;
+  background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_contacts_email.png") no-repeat center;
+  background-size: contain; }
+
+.pension-calculator {
+  box-sizing: border-box;
+  padding: 20px; }
+  .pension-calculator .graph {
+    display: block; }
+    @media screen and (min-width: 1366px) {
+      .pension-calculator .graph {
+        height: 400px; } }
+    @media screen and (min-width: 1706px) {
+      .pension-calculator .graph {
+        position: relative; } }
+    .pension-calculator .graph__nowrap {
+      white-space: nowrap; }
+    .pension-calculator .graph__row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .pension-calculator .graph__wrap-column {
+      display: block;
+      position: relative;
+      box-sizing: border-box;
+      height: 400px;
+      width: 100%;
+      max-width: 50%; }
+      @media screen and (min-width: 1366px) {
+        .pension-calculator .graph__wrap-column {
+          max-width: 225px;
+          margin-right: 38px; } }
+      .pension-calculator .graph__wrap-column:last-of-type {
+        margin-right: 0; }
+    .pension-calculator .graph__wrap-column-inner {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 109px;
+      box-sizing: border-box; }
+      @media screen and (min-width: 400px) {
+        .pension-calculator .graph__wrap-column-inner {
+          width: 120px; } }
+      @media screen and (min-width: 1706px) {
+        .pension-calculator .graph__wrap-column-inner {
+          width: -webkit-calc(100% - 83px);
+          width: calc(100% - 83px); } }
+    .pension-calculator .graph__total-pension .graph__wrap-column-inner {
+      height: 329px; }
+    .pension-calculator .graph__total-pension .graph__column-title {
+      position: relative;
+      bottom: 85px;
+      padding-bottom: 20px; }
+    .pension-calculator .graph__total-pension .graph__column-ruble, .pension-calculator .graph__total-pension .graph__column-value {
+      font-weight: 600; }
+    .pension-calculator .graph__mean-pension .graph__column-value,
+    .pension-calculator .graph__mean-pension .graph__column-ruble {
+      font-size: 32px;
+      color: #010101;
+      font-weight: 600; }
+    .pension-calculator .graph__mean-pension .graph__column-title {
+      padding-bottom: 18px; }
+    .pension-calculator .graph__mean-pension .graph__column-ruble {
+      font-weight: 600; }
+    .pension-calculator .graph__column1 {
+      width: 100%;
+      height: 122px;
+      background-image: -webkit-linear-gradient(right, #d0d0d0 0%, #aeaeae 100%);
+      background-image: linear-gradient(-90deg, #d0d0d0 0%, #aeaeae 100%);
+      position: relative;
+      -webkit-transition: height 0.4s ease 0s;
+      transition: height 0.4s ease 0s;
+      border-radius: 0px 0px 0 0; }
+    .pension-calculator .graph__column2 {
+      border-radius: 0px 0px 0 0;
+      z-index: 30;
+      width: 100%;
+      height: 56px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-transition: height 0.4s ease 0s;
+      transition: height 0.4s ease 0s;
+      background-image: -webkit-linear-gradient(right, #8fda0b 0%, #4ca00d 100%);
+      background-image: linear-gradient(-90deg, #8fda0b 0%, #4ca00d 100%); }
+    .pension-calculator .graph__column3 {
+      z-index: 40;
+      width: 100%;
+      height: 28px;
+      background: white;
+      border: solid;
+      border-color: #c7c7c7;
+      border-width: 1px 1px 0px 1px;
+      position: absolute;
+      left: 0;
+      box-sizing: border-box;
+      top: 0;
+      -webkit-transition: height 0.4s ease 0s;
+      transition: height 0.4s ease 0s; }
+    .pension-calculator .graph__column4 {
+      visibility: hidden;
+      z-index: 40;
+      width: 100%;
+      height: 50px;
+      background: tomato;
+      position: absolute;
+      left: 0;
+      top: 0;
+      -webkit-transition: height 0.4s ease 0s;
+      transition: height 0.4s ease 0s; }
+    .pension-calculator .graph__column5 {
+      visibility: hidden;
+      z-index: 10;
+      width: 100%;
+      height: 50px;
+      background: red;
+      -webkit-transition: height 0.4s ease 0s;
+      transition: height 0.4s ease 0s; }
+    .pension-calculator .graph__legend {
+      width: 100%;
+      margin-top: 20px; }
+      @media screen and (min-width: 1366px) {
+        .pension-calculator .graph__legend {
+          margin-top: 0;
+          position: absolute;
+          top: 107px;
+          left: 48px; } }
+      @media screen and (min-width: 1706px) {
+        .pension-calculator .graph__legend {
+          top: 34px;
+          left: 0;
+          width: 50%; } }
+    .pension-calculator .graph__column-title {
+      width: auto; }
+      @media screen and (min-width: 1703px) {
+        .pension-calculator .graph__column-title {
+          width: 193px; } }
+    .pension-calculator .graph__column-title, .pension-calculator .graph__column-value, .pension-calculator .graph__column-ruble, .pension-calculator .graph__column-title-text {
+      line-height: 1.2; }
+    .pension-calculator .graph__column-title-text {
+      font-size: 14px;
+      display: block;
+      line-height: 1.2; }
+      @media screen and (min-width: 1706px) {
+        .pension-calculator .graph__column-title-text {
+          font-size: 16px; } }
+    .pension-calculator .graph__column-value {
+      margin-left: -4px; }
+    .pension-calculator .graph__column-value, .pension-calculator .graph__column-ruble {
+      font-size: 32px;
+      color: #346d10; }
+      @media screen and (min-width: 1708px) {
+        .pension-calculator .graph__column-value, .pension-calculator .graph__column-ruble {
+          font-size: 44px; } }
+    .pension-calculator .graph__total-text {
+      line-height: 1.5;
+      font-size: 16px;
+      display: block;
+      max-width: 330px;
+      padding-bottom: 16px;
+      padding-top: 21px;
+      margin: 0; }
+    .pension-calculator .graph__number {
+      display: block; }
+    .pension-calculator .graph__number, .pension-calculator .graph__number-value, .pension-calculator .graph__ruble {
+      font-weight: 600;
+      font-size: 32px;
+      color: #346d10;
+      line-height: 1.2; }
+      @media screen and (min-width: 1708px) {
+        .pension-calculator .graph__number, .pension-calculator .graph__number-value, .pension-calculator .graph__ruble {
+          font-size: 44px; } }
+  .pension-calculator .legend__text, .pension-calculator .legend__sum, .pension-calculator .legend__rub {
+    display: inline-block;
+    font-size: 14px; }
+  .pension-calculator .legend__text {
+    padding-top: 2px;
+    box-sizing: border-box; }
+  .pension-calculator .legend__current-sof, .pension-calculator .legend__current-acc, .pension-calculator .legend__current-ins {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 22px;
+    box-sizing: border-box;
+    line-height: 22px;
+    padding-left: 24px; }
+  .pension-calculator .legend__current-acc-ico, .pension-calculator .legend__current-sof-ico, .pension-calculator .legend__current-ins-ico {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    box-sizing: border-box; }
+  .pension-calculator .legend__current-acc-ico {
+    background-image: -webkit-linear-gradient(right, #8fda0b 0%, #4ca00d 100%);
+    background-image: linear-gradient(-90deg, #8fda0b 0%, #4ca00d 100%); }
+  .pension-calculator .legend__current-ins-ico {
+    border: 1px solid #c7c7c7; }
+  .pension-calculator .legend__current-sof-ico {
+    background: tomato; }
+  .pension-calculator .ui-slider {
+    position: relative;
+    text-align: left; }
+    .pension-calculator .ui-slider.ui-slider-disabled {
+      opacity: 0.6;
+      pointer-events: none; }
+  .pension-calculator .ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 1.2em;
+    height: 1.2em;
+    cursor: default;
+    -ms-touch-action: none;
+    touch-action: none; }
+  .pension-calculator .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    border: 0;
+    background: #479b0d;
+    border: none;
+    background-image: -webkit-linear-gradient(right, #8fda0b 0%, #4ca00d 100%);
+    background-image: linear-gradient(-90deg, #8fda0b 0%, #4ca00d 100%); }
+  .pension-calculator .ui-slider.ui-state-disabled .ui-slider-handle, .pension-calculator .ui-slider.ui-state-disabled .ui-slider-range {
+    -webkit-filter: inherit;
+            filter: inherit; }
+  .pension-calculator .ui-slider-horizontal {
+    height: 2px;
+    border: none;
+    background-color: #e0e0e0; }
+  .pension-calculator .ui-slider-horizontal .ui-slider-handle {
+    box-sizing: border-box;
+    top: -5px;
+    margin-left: -5px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    width: 11px;
+    height: 11px;
+    border-radius: 11px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: none !important; }
+    .pension-calculator .ui-slider-horizontal .ui-slider-handle:focus {
+      box-shadow: 0px 0px 5px #4D90FE !important;
+      border: 1px solid #e0e0e0; }
+  .pension-calculator .ui-slider-horizontal .ui-slider-range {
+    top: -1px;
+    height: 4px; }
+  .pension-calculator .ui-slider-horizontal .ui-slider-range-min {
+    left: 0; }
+  .pension-calculator .ui-slider-horizontal .ui-slider-range-max {
+    right: 0; }
+  .pension-calculator .ui-slider-vertical {
+    width: .8em;
+    height: 100px; }
+  .pension-calculator .ui-slider-vertical .ui-slider-handle {
+    left: -.3em;
+    margin-left: 0;
+    margin-bottom: -.6em; }
+  .pension-calculator .ui-slider-vertical .ui-slider-range {
+    left: 0;
+    width: 100%; }
+  .pension-calculator .ui-slider-vertical .ui-slider-range-min {
+    bottom: 0; }
+  .pension-calculator .ui-slider-vertical .ui-slider-range-max {
+    top: 0; }
+  .pension-calculator .user-type {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1;
+    opacity: 0; }
+  @media screen and (min-width: 1366px) {
+    .pension-calculator {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+  @media screen and (min-width: 968px) {
+    .pension-calculator {
+      padding: 62px 20px 62px 62px; } }
+  @media screen and (min-width: 1366px) {
+    .pension-calculator__left-side {
+      width: 60%; } }
+  @media screen and (min-width: 2046px) {
+    .pension-calculator__left-side {
+      width: 47.5%; } }
+  .pension-calculator__right-side {
+    position: relative;
+    padding-left: 0;
+    box-sizing: border-box; }
+    @media screen and (min-width: 1366px) {
+      .pension-calculator__right-side {
+        width: 40%; } }
+    @media screen and (min-width: 1366px) {
+      .pension-calculator__right-side {
+        padding-left: 46px; } }
+    @media screen and (min-width: 2046px) {
+      .pension-calculator__right-side {
+        padding-left: 146px;
+        width: 52.5%; } }
+  .pension-calculator__section {
+    margin-bottom: 42px; }
+    @media screen and (min-width: 968px) {
+      .pension-calculator__section {
+        margin-bottom: 80px; } }
+  .pension-calculator__title, .pension-calculator__row-label {
+    font-weight: 700; }
+  .pension-calculator__title {
+    font-size: 32px;
+    margin-bottom: 28px;
+    line-height: 1.5;
+    box-sizing: border-box; }
+    @media screen and (min-width: 968px) {
+      .pension-calculator__title {
+        margin-bottom: 66px; } }
+    .pension-calculator__title--sm {
+      font-size: 24px;
+      padding-top: 8px; }
+      @media screen and (min-width: 1366px) {
+        .pension-calculator__title--sm {
+          margin-bottom: 142px; } }
+  .pension-calculator__radio-group {
+    max-width: 215px; }
+  @media screen and (min-width: 968px) {
+    .pension-calculator__radio-group, .pension-calculator__slider-block {
+      width: -webkit-calc(100% - 292px);
+      width: calc(100% - 292px); } }
+  @media screen and (min-width: 1706px) {
+    .pension-calculator__radio-group, .pension-calculator__slider-block {
+      width: 262px;
+      max-width: 262px; } }
+  .pension-calculator__radio-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .pension-calculator__row {
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 98px;
+    margin-bottom: 63px;
+    position: relative; }
+    @media screen and (min-width: 400px) {
+      .pension-calculator__row {
+        padding-right: 152px; } }
+    @media screen and (min-width: 968px) {
+      .pension-calculator__row {
+        padding-right: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: end; } }
+    .pension-calculator__row:last-of-type {
+      margin-bottom: 0; }
+    .pension-calculator__row-label {
+      display: inline-block;
+      font-size: 16px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      -ms-flex-item-align: end;
+          align-self: flex-end; }
+      @media screen and (min-width: 968px) {
+        .pension-calculator__row-label {
+          width: 160px;
+          padding-right: 20px;
+          margin-bottom: 0; } }
+      @media screen and (min-width: 1706px) {
+        .pension-calculator__row-label {
+          padding-right: 58px;
+          width: 238px; } }
+      .pension-calculator__row-label--star:after {
+        content: '*';
+        color: #ff8a00; }
+  .pension-calculator__checkbox {
+    display: block; }
+  .pension-calculator__slider-block {
+    margin-bottom: 10px; }
+    @media screen and (min-width: 968px) {
+      .pension-calculator__slider-block {
+        margin-bottom: 0;
+        -webkit-transform: translateY(100%);
+            -ms-transform: translateY(100%);
+                transform: translateY(100%); } }
+  .pension-calculator__slider {
+    margin-bottom: 10px; }
+    .pension-calculator__slider-numbers {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+  .pension-calculator__input-block {
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 88px;
+    text-align: right; }
+    @media screen and (min-width: 400px) {
+      .pension-calculator__input-block {
+        width: 132px;
+        text-align: left; } }
+    @media screen and (min-width: 968px) {
+      .pension-calculator__input-block {
+        padding-left: 40px;
+        position: relative; } }
+    @media screen and (min-width: 1706px) {
+      .pension-calculator__input-block {
+        width: 180px; } }
+    .pension-calculator__input-block .pension-calculator__checkbox {
+      position: absolute;
+      bottom: -25px; }
+      @media screen and (min-width: 968px) {
+        .pension-calculator__input-block .pension-calculator__checkbox {
+          left: 40px; } }
+  .pension-calculator__input {
+    display: inline-block;
+    width: 100%;
+    border-width: 1px;
+    border-color: #c7c7c7;
+    border-style: solid;
+    border-radius: 6px;
+    background-color: white;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 14px;
+    padding-right: 14px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 16px; }
+    @media screen and (min-width: 1706px) {
+      .pension-calculator__input {
+        width: 140px; } }
+    .pension-calculator__input--sm {
+      width: 70px; }
+    .pension-calculator__input--xs {
+      width: 50px; }
+    .pension-calculator__input:disabled, .pension-calculator__input:-moz-read-only {
+      background-color: rgba(224, 224, 224, 0.3); }
+    .pension-calculator__input:disabled, .pension-calculator__input:read-only {
+      background-color: rgba(224, 224, 224, 0.3); }
+
+.pension-calculator-radio {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: 32px;
+  margin-right: 8px; }
+  .pension-calculator-radio__text {
+    display: inline-block;
+    box-sizing: border-box;
+    color: #010101;
+    font-size: 14px; }
+    @media screen and (min-width: 1706px) {
+      .pension-calculator-radio__text {
+        font-size: 16px; } }
+    .pension-calculator-radio__text:before, .pension-calculator-radio__text:after {
+      content: '';
+      position: absolute;
+      display: block; }
+    .pension-calculator-radio__text:before {
+      left: 0;
+      right: 0;
+      border: 1px solid #e0e0e0;
+      width: 19px;
+      height: 19px;
+      border-radius: 19px;
+      z-index: 1; }
+    .pension-calculator-radio__text:after {
+      display: none;
+      background-color: #479b0d;
+      width: 11px;
+      height: 11px;
+      border-radius: 11px;
+      z-index: 2;
+      left: 5px;
+      top: 5px; }
+  .pension-calculator-radio__input {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1;
+    opacity: 0; }
+  .pension-calculator-radio__input:checked ~ .pension-calculator-radio__text:after {
+    display: block; }
+
+.pension-calculator-checkbox {
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer; }
+  .pension-calculator-checkbox__input {
+    visibility: hidden;
+    position: absolute;
+    z-index: -1; }
+  .pension-calculator-checkbox__text {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 26px;
+    font-size: 14px;
+    color: #010101; }
+    .pension-calculator-checkbox__text:before {
+      content: '';
+      display: inline-block;
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #b3b3b3;
+      border-radius: 2px; }
+  .pension-calculator-checkbox__input:checked ~ .pension-calculator-checkbox__text:before {
+    border: none;
+    width: 16px;
+    height: 16px;
+    background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/spr-ckbx-checked.png") no-repeat center;
+    background-size: contain; }
+
+.faq-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 0; }
+  .faq-links__item {
+    margin-bottom: 20px; }
+    .faq-links__item:last-of-type {
+      margin-bottom: 0; }
+  .faq-links__link {
+    text-decoration: none;
+    line-height: 1.2; }
+    .faq-links__link:hover {
+      text-decoration: underline; }
+
+.faq-answers {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .faq-answers__item {
+    box-sizing: border-box;
+    padding-left: 50px;
+    position: relative;
+    margin-bottom: 60px; }
+    .faq-answers__item:last-of-type {
+      margin-bottom: 0; }
+  .faq-answers__title {
+    display: block;
+    font-size: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px solid #e0e0e0;
+    line-height: 1.2;
+    padding-bottom: 8px;
+    margin-bottom: 30px; }
+    @media screen and (min-width: 768px) {
+      .faq-answers__title {
+        font-size: 24px; } }
+    .faq-answers__title:before {
+      content: '';
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_chat.png") no-repeat center;
+      background-size: contain;
+      top: 3px;
+      left: 0;
+      display: block; }
+  .faq-answers__text {
+    line-height: 1.5; }
+  .faq-answers__sub-list {
+    padding: 0;
+    margin-left: 17px;
+    margin-top: 30px; }
+    .faq-answers__sub-list-item {
+      font-weight: 300;
+      line-height: 1.5; }
+
+.b-faq-content {
+  box-sizing: border-box;
+  padding: 20px; }
+  @media screen and (min-width: 768px) {
+    .b-faq-content {
+      padding: 62px; } }
+  .b-faq-content__first-title {
+    margin: 0 0 60px 0;
+    line-height: 1.2; }
+  .b-faq-content__second-title {
+    margin: 0 0 30px 0;
+    line-height: 1.2; }
+  .b-faq-content__first-text {
+    margin: 0 0 30px 0; }
+  .b-faq-content__contacts {
+    margin-bottom: 92px; }
+  .b-faq-content__faq-links {
+    margin-bottom: 100px;
+    margin-right: 0 !important;
+    margin-left: 0 !important; }
+  .b-faq-content__faq-answers {
+    margin-top: 0;
+    margin-bottom: 60px;
+    max-width: 1120px; }
+  .b-faq-content__top-button {
+    display: inline-block;
+    text-decoration: none;
+    width: 120px;
+    height: 51px;
+    line-height: 51px;
+    box-sizing: border-box; }
+
+.contacts-grid {
+  box-sizing: border-box; }
+  .contacts-grid__legend {
+    font-size: 14px; }
+  .contacts-grid__tel, .contacts-grid__mail {
+    font-size: 18px; }
+    @media screen and (min-width: 768px) {
+      .contacts-grid__tel, .contacts-grid__mail {
+        font-size: 22px; } }
+  .contacts-grid__mail {
+    text-decoration: none; }
+    .contacts-grid__mail:hover {
+      text-decoration: underline; }
+  .contacts-grid__row {
+    box-sizing: border-box;
+    margin-bottom: 30px; }
+    .contacts-grid__row:last-of-type {
+      margin-bottom: 0; }
+    @media screen and (min-width: 1366px) {
+      .contacts-grid__row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
+  .contacts-grid__col {
+    box-sizing: border-box;
+    display: inline-block;
+    padding-right: 18px; }
+    @media screen and (min-width: 768px) {
+      .contacts-grid__col {
+        min-width: 305px; } }
+
+.b-about-content {
+  box-sizing: border-box; }
+  .b-about-content__about-text {
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 62px; }
+    @media screen and (min-width: 768px) {
+      .b-about-content__about-text {
+        padding: 62px; } }
+  .b-about-content__title-h1 {
+    margin-bottom: 50px; }
+  .b-about-content__text {
+    line-height: 1.5;
+    padding-bottom: 60px;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 48px; }
+  .b-about-content__item {
+    padding-right: 18px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px; }
+    @media screen and (min-width: 1366px) {
+      .b-about-content__item {
+        width: 50%;
+        margin-bottom: 0; } }
+  .b-about-content__item-title {
+    display: block;
+    font-size: 32px;
+    color: #7ac80c;
+    line-height: 1.2;
+    margin-bottom: 8px; }
+    @media screen and (min-width: 1450px) {
+      .b-about-content__item-title {
+        font-size: 40px; } }
+    .b-about-content__item-title .ic-ruble {
+      font-style: normal; }
+  .b-about-content__item-text {
+    font-size: 16px;
+    line-height: 1.5; }
+  @media screen and (min-width: 768px) {
+    .b-about-content__grid {
+      max-width: 849px; } }
+  @media screen and (min-width: 1366px) {
+    .b-about-content__grid-row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-bottom: 50px; } }
+  .b-about-content__grid-row:last-of-type {
+    margin-bottom: 0; }
+
+@media screen and (min-width: 768px) {
+  .b-download-pdfs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.b-download-pdfs__item {
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .b-download-pdfs__item {
+      background-color: #FFF;
+      border-radius: 5px;
+      box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 426px; } }
