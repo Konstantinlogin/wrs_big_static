@@ -86,9 +86,21 @@
     }
 }
 
-
+%lk-input-border {
+    @extend %form-input;
+    height: 32px$i;
+    line-height: 32px$i;
+    box-sizing: border-box;
+}
 
 %reset-link {
     text-decoration: none;
     border: none;
+}
+%lk-textarea {
+    border: 1px solid #c8c8c8$i;
+    padding: 20px$i;
+    &:focus {
+        border-color: #010101$i;
+    }
 }

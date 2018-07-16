@@ -1,0 +1,17 @@
+.b-request-section {
+    @import "_b-request-form";
+    padding: 20px;
+    @media screen and (min-width: 768px) {
+        padding: 62px;
+        padding-bottom: 0; 
+    }
+    &__title-h1 {
+        line-height: 1.2;
+        margin-bottom: 62px;
+    }
+
+
+    .b-requests-table {
+        // Для таблицы
+    }
+}
