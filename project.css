@@ -1,4 +1,4 @@
-.b-menu__link, .b-menu__sub-link, .pension-calculator .graph__column-title, .pension-calculator .graph__column-value, .pension-calculator .graph__column-ruble, .pension-calculator .graph__column-title-text, .pension-calculator .graph__total-text, .pension-calculator .graph__number, .pension-calculator .graph__number-value, .pension-calculator .graph__ruble, .pension-calculator .legend__text, .pension-calculator .legend__sum, .pension-calculator .legend__rub, .pension-calculator__title, .pension-calculator__row-label, .pension-calculator__slider-min, .pension-calculator__slider-middle, .pension-calculator__slider-max, .pension-calculator__input, .pension-calculator-radio__text, .pension-calculator-checkbox__text, .faq-answers__title, .faq-answers__sub-list-item, .b-about-content__item-title, .b-about-content__item-text {
+.b-menu__link, .b-menu__sub-link, .pension-calculator .graph__column-title, .pension-calculator .graph__column-value, .pension-calculator .graph__column-ruble, .pension-calculator .graph__column-title-text, .pension-calculator .graph__total-text, .pension-calculator .graph__number, .pension-calculator .graph__number-value, .pension-calculator .graph__ruble, .pension-calculator .legend__text, .pension-calculator .legend__sum, .pension-calculator .legend__rub, .pension-calculator__title, .pension-calculator__row-label, .pension-calculator__slider-min, .pension-calculator__slider-middle, .pension-calculator__slider-max, .pension-calculator__input, .pension-calculator-radio__text, .pension-calculator-checkbox__text, .faq-answers__title, .faq-answers__sub-list-item, .b-about-content__item-title, .b-about-content__item-text, .b-download-pdfs__title, .b-download-pdfs__file-name {
   font-family: 'Montserrat', sans-serif; }
 
 .b-green-button {
@@ -2152,11 +2152,44 @@
     display: flex; } }
 
 .b-download-pdfs__item {
-  width: 100%; }
-  @media screen and (min-width: 768px) {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #FFF;
+  box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px; }
+  @media screen and (min-width: 1024px) {
     .b-download-pdfs__item {
-      background-color: #FFF;
-      border-radius: 5px;
-      box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1);
-      width: 100%;
+      padding: 62px;
+      width: 50%;
       max-width: 426px; } }
+
+.b-download-pdfs__file-block {
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 78px;
+  min-height: 61px; }
+
+.b-download-pdfs__title {
+  display: block;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  line-height: 1.2; }
+
+.b-download-pdfs__file-name {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 18px;
+  padding-top: 10px; }
+
+.b-download-pdfs__file-pdf {
+  display: block;
+  left: 0;
+  top: 0;
+  width: 49px;
+  height: 61px;
+  background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_pdf.png") no-repeat center;
+  background-size: contain;
+  position: absolute; }

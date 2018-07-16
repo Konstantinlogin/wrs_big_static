@@ -69,12 +69,44 @@
 	}
 	&__item {
 		width: 100%;
-		@media screen and (min-width: 768px) {
-			background-color: #FFF;
-			border-radius: 5px;
-			box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1);
-			width: 100%;
+		max-width: 100%;
+		box-sizing: border-box;
+		padding: 20px;
+		background-color: #FFF;
+		box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1);
+		border-radius: 5px;
+		@media screen and (min-width: 1024px) {
+			padding: 62px;
+			width: 50%;
 			max-width: 426px;
 		}
+	}
+	&__file-block {
+		position: relative;
+		box-sizing: border-box;
+		padding-left: 78px;
+		min-height: 61px;
+	}
+	&__title {
+		@extend %text;
+		display: block;
+		font-size: 22px;
+		font-weight: 600;
+		margin-bottom: 50px;
+		line-height: 1.2;
+	}
+	&__file-name {
+		display: block;
+		@extend %text;
+		font-size: 18px;
+		margin-bottom: 18px;
+		padding-top: 10px;
+	}
+	&__file-pdf {
+		display: block;
+		left: 0;
+		top: 0;
+		@include makeSprite(49px, 61px, 'ic_pdf.png');
+		position: absolute;
 	}
 }
