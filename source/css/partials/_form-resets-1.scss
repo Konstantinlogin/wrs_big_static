@@ -1,6 +1,9 @@
 .t-Form-inputContainer, .t-Form-labelContainer, .t-Form-label {
     padding: 0;
 }
+.t-Form-inputContainer {
+    width: 100%$i;
+}
 .t-Form-label {
     font-size: 14px;
     color: #828282;

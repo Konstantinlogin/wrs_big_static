@@ -1,4 +1,4 @@
-.b-profile-content {
+.b-profile-content, .b-profile-content-section, .b-profile-content-section-footer {
 	box-sizing: border-box;
 	padding: 20px;
 	@media screen and (min-width: 768px) {
@@ -7,8 +7,34 @@
 	&__title {
 		margin-bottom: 44px;
 	}
+	&__title-h3 {
+		@extend %text;
+		margin-bottom: 22px;
+		font-size: 22px;
+	}
 	.b-profile-form {
 		@import "_form-resets-1";
 		@import "_form-resets-2";
+		max-width: 429px;
+		&--tel {
+			.b-green-button {
+				margin-bottom: 40px;
+			}
+		}
+	}
+	.t-Button {
+		@extend %button-sm;
+	}
+}
+.b-profile-content-section {
+	padding-bottom: 0;
+}
+.b-profile-content-section-footer {
+	line-height: 1.5;
+	padding-top: 20px;
+	// text-align: center;
+	padding: 20px 20px 20px 20px;
+	@media screen and (min-width: 768px) {
+		padding: 20px 62px 62px 62px;
 	}
 }

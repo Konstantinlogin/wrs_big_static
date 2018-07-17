@@ -19,6 +19,13 @@
         box-shadow: 0 0 0 1px $BLACK inset$i;
     }
 }
+%button-sm {
+    @extend %button;
+    height: 40px;
+    line-height: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 %button-md {
     @extend %button;
     height: 50px;

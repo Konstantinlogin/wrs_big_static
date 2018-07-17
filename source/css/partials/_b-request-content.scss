@@ -14,5 +14,11 @@
     }
     .b-requests-table {
         @import "_table-resets-1";
+       .t-Report-wrap {
+        padding-bottom: 20px;
+        @media screen and (min-width: 768px) {
+            padding-bottom: 62px; 
+        }
+       }
     }
 }
