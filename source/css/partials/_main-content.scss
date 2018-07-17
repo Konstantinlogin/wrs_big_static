@@ -1,0 +1,39 @@
+.b-main-content {
+    &__section {
+        padding: 20px;
+        @media screen and (min-width: 768px) {
+            padding: 52px;
+		}
+    }
+}
+.user-details {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    // padding-left: #{140px + 52px};
+    &__image-block {
+        // position: absolute;
+        // left: 0;
+        // top: 0;
+        position: relative;
+        width: 140px;
+        height: 140px;
+        overflow: hidden;
+        border-radius: 140px;
+        margin-right: 52px;
+    }
+    &__image {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+    &__section {
+        margin-bottom: 18px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}

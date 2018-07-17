@@ -10,6 +10,9 @@
 	font-size: 18px;
 	color: #000000;
 	margin: 0;
+	&--bold {
+		font-weight: 600;
+	}
 }
 .b-text-16 {
 	font-family: 'Montserrat', sans-serif;
@@ -17,18 +20,29 @@
 	font-size: 16px;
 	color: #000000;
 	margin: 0;
+	&--bold {
+		font-weight: 600;
+	}
 }
 .b-link {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	font-size: 18px;
 	color: #113df7;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
 }
 .b-link-16 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	font-size: 16px;
 	color: #113df7;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
 }
 .b-green-link {
 	color: #59ac0d;

@@ -22,6 +22,9 @@
 .b-lk-content {
     display: flex;
     align-items: flex-start;
+    .container, .row {
+        overflow: visible$i;
+    }
     &__main {
         margin-top: 50px$i;
     }
