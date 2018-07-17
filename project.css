@@ -1,4 +1,4 @@
-.b-menu__link, .b-menu__sub-link, .pension-calculator .graph__column-title, .pension-calculator .graph__column-value, .pension-calculator .graph__column-ruble, .pension-calculator .graph__column-title-text, .pension-calculator .graph__total-text, .pension-calculator .graph__number, .pension-calculator .graph__number-value, .pension-calculator .graph__ruble, .pension-calculator .legend__text, .pension-calculator .legend__sum, .pension-calculator .legend__rub, .pension-calculator__title, .pension-calculator__row-label, .pension-calculator__slider-min, .pension-calculator__slider-middle, .pension-calculator__slider-max, .pension-calculator__input, .pension-calculator-radio__text, .pension-calculator-checkbox__text, .faq-answers__title, .faq-answers__sub-list-item, .b-about-content__item-title, .b-about-content__item-text, .b-download-pdfs__title, .b-download-pdfs__file-name, .b-request-section .b-requests-table .t-Report-colHead, .b-request-section .b-requests-table .t-Report-cell, .b-profile-content__title-h3, .b-profile-content-section__title-h3, .b-profile-content-section-footer__title-h3 {
+.b-menu__link, .b-menu__sub-link, .pension-calculator .graph__column-title, .pension-calculator .graph__column-value, .pension-calculator .graph__column-ruble, .pension-calculator .graph__column-title-text, .pension-calculator .graph__total-text, .pension-calculator .graph__number, .pension-calculator .graph__number-value, .pension-calculator .graph__ruble, .pension-calculator .legend__text, .pension-calculator .legend__sum, .pension-calculator .legend__rub, .pension-calculator__title, .pension-calculator__row-label, .pension-calculator__slider-min, .pension-calculator__slider-middle, .pension-calculator__slider-max, .pension-calculator__input, .pension-calculator-radio__text, .pension-calculator-checkbox__text, .faq-answers__title, .faq-answers__sub-list-item, .b-about-content__item-title, .b-about-content__item-text, .b-download-pdfs__title, .b-download-pdfs__file-name, .b-request-section .b-requests-table .t-Report-colHead, .b-request-section .b-requests-table .t-Report-cell, .b-profile-content__title-h3, .b-profile-content-section__title-h3, .b-profile-content-section-footer__title-h3, .round-graph__info-block-text, .rg-info-tooltip__caption-text, .rg-legend-switcher__text, .rg-legend-list__text, .rg-legend-list__num {
   font-family: 'Montserrat', sans-serif; }
 
 .b-profile-content .t-Button, .b-profile-content-section .t-Button, .b-profile-content-section-footer .t-Button, .b-green-button {
@@ -2354,10 +2354,21 @@
       padding: 20px 62px 62px 62px; } }
 
 .b-main-content__section {
-  padding: 20px; }
+  padding: 20px;
+  margin-bottom: 34px; }
   @media screen and (min-width: 768px) {
     .b-main-content__section {
       padding: 52px; } }
+
+.b-main-content:last-of-type .b-main-content__section {
+  margin-bottom: 0; }
+
+.b-main-content__title-h1, .b-main-content__title-h2 {
+  margin-top: 0;
+  line-height: 1.2; }
+
+.b-main-content__title-h1 {
+  margin-bottom: 52px; }
 
 .user-details {
   position: relative;
@@ -2369,6 +2380,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .user-details__phone-icon, .user-details__mail-icon {
+    display: inline-block;
+    position: relative;
+    margin-right: 15px; }
+  .user-details__phone-icon {
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_user_details_phone.png") no-repeat center;
+    background-size: contain; }
+  .user-details__mail-icon {
+    top: 1px;
+    width: 16px;
+    height: 16px;
+    background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_user_details_email.png") no-repeat center;
+    background-size: contain; }
   .user-details__image-block {
     position: relative;
     width: 140px;
@@ -2385,3 +2412,159 @@
     margin-bottom: 18px; }
     .user-details__section:last-of-type {
       margin-bottom: 0; }
+
+.round-graph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .round-graph__diagram-block {
+    width: 40%; }
+  .round-graph__legend {
+    width: 60%; }
+  .round-graph__rg-legend-switcher {
+    margin-bottom: 44px; }
+    @media screen and (min-width: 768px) {
+      .round-graph__rg-legend-switcher {
+        margin-bottom: 88px; } }
+  .round-graph__rg-legend-list {
+    margin-bottom: 52px; }
+  .round-graph__info-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 52px;
+    padding-top: 40px;
+    border-top: 2px solid #edf1f5; }
+  .round-graph__info-block-text {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.5; }
+  .round-graph__info-icon {
+    display: inline-block;
+    margin-right: 14px; }
+  .round-graph__info-icon--warning {
+    width: 46px;
+    height: 39px;
+    background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_warning.png") no-repeat center;
+    background-size: contain; }
+
+.rg-info-tooltip {
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  white-space: nowrap; }
+  .rg-info-tooltip:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_tooltip.png") no-repeat center;
+    background-size: contain; }
+  .rg-info-tooltip__content {
+    display: inline-block;
+    visibility: hidden;
+    position: relative;
+    width: 13px;
+    height: 13px; }
+    .rg-info-tooltip__content:before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      position: absolute;
+      top: 20px;
+      right: -6px;
+      background-color: #f1f0f0;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+      z-index: 1; }
+  .rg-info-tooltip:hover .rg-info-tooltip__content, .rg-info-tooltip:focus .rg-info-tooltip__content {
+    visibility: visible; }
+  .rg-info-tooltip__caption {
+    z-index: 2;
+    width: 280px;
+    background-color: #f1f0f0;
+    border-radius: 16px;
+    padding: 12px 18px 12px 18px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 24px;
+    right: -60px; }
+    @media screen and (min-width: 768px) {
+      .rg-info-tooltip__caption {
+        width: 405px; } }
+    .rg-info-tooltip__caption-text {
+      white-space: normal;
+      font-size: 11px;
+      line-height: 1.5;
+      display: inline-block;
+      max-width: 326px; }
+
+.rg-legend-switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .rg-legend-switcher__item {
+    position: relative;
+    margin-right: 22px;
+    box-sizing: border-box; }
+    .rg-legend-switcher__item:last-of-type {
+      margin-right: 0; }
+  .rg-legend-switcher__input {
+    position: absolute;
+    z-index: -1;
+    visibility: hidden; }
+  .rg-legend-switcher__text {
+    color: #c7c7c7;
+    font-size: 18px;
+    font-weight: 300; }
+  .rg-legend-switcher__input:checked ~ .rg-legend-switcher__text {
+    color: #000000;
+    font-weight: 600; }
+
+.rg-legend-list {
+  list-style: none;
+  padding: 0; }
+  .rg-legend-list__item {
+    box-sizing: border-box;
+    padding-right: 120px;
+    line-height: 1.5;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    min-height: 21px;
+    margin-bottom: 36px; }
+    .rg-legend-list__item:last-of-type {
+      margin-bottom: 0; }
+  .rg-legend-list__text {
+    color: #000000;
+    font-size: 14px; }
+  .rg-legend-list__num {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    right: 0; }
+  .rg-legend-list__leg-color {
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 18px; }
