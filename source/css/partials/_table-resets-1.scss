@@ -1,0 +1,55 @@
+.t-Report-wrap {
+	width: 100%;
+}
+.t-Report-report {
+	width: 100%;
+}
+.t-Report-colHead {
+	@extend %text;
+	font-size: 14px;
+	font-weight: 600;
+	color: $BLACK$i;
+	text-align: left;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	border: none;
+	&:last-child {
+		border: none;
+	}
+	a {
+		font-size: 14px;
+		color: $BLACK;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.t-Report-cell {
+	padding: 10px 10px;
+	@extend %text;
+	font-size: 14px;
+	border: none$i;
+	&:first-child {
+		border-radius: 6px 0 0 6px;
+	}
+	&:last-child {
+		border: none;
+		border-radius: 0 6px 6px 0;
+	}
+	a {
+		@extend %blue-link;
+		text-decoration: none;
+		font-size: 14px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.u-Report-sortIcon {
+	display: none;
+}
+tr:nth-child(odd) .t-Report-cell {
+	background-color: #ebebeb$i;
+}

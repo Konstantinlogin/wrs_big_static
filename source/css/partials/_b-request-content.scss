@@ -1,5 +1,8 @@
 .b-request-section {
-    @import "_b-request-form";
+    .b-request-form {
+        @import "_form-resets-1";
+        max-width: 690px;
+    }
     padding: 20px;
     @media screen and (min-width: 768px) {
         padding: 62px;
@@ -9,9 +12,7 @@
         line-height: 1.2;
         margin-bottom: 62px;
     }
-
-
     .b-requests-table {
-        // Для таблицы
+        @import "_table-resets-1";
     }
 }
