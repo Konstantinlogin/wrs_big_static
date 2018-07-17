@@ -1,0 +1,14 @@
+.b-profile-content {
+	box-sizing: border-box;
+	padding: 20px;
+	@media screen and (min-width: 768px) {
+		padding: 62px;
+	}
+	&__title {
+		margin-bottom: 44px;
+	}
+	.b-profile-form {
+		@import "_form-resets-1";
+		@import "_form-resets-2";
+	}
+}

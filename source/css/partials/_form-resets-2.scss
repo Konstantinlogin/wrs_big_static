@@ -1,0 +1,15 @@
+.t-Field-label, .t-Form-labelContainer {
+    float: none$i;
+    text-align: left;
+}
+.text_field {
+    width: 100%;
+    font-weight: 600;
+}
+.display_only {
+    @extend %lk-input-border;
+    font-weight: 600;
+    width: 100%;
+    text-transform: lowercase;
+}
+
