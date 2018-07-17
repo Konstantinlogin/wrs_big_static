@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Main page</title>
     <link rel="stylesheet" href="../project.css" />
+
 </head>
 <!-- .b-main-content>.b-right-section.b-main-content__section -->
 
@@ -45,14 +46,205 @@
         </div>
     </div>
     <div class="b-main-content">
+        <script src="https://cdn.anychart.com/releases/8.3.0/js/anychart-base.min.js"></script>
+        <script src="https://cdn.anychart.com/releases/8.3.0/js/anychart-ui.min.js"></script>
+        <script src="https://cdn.anychart.com/releases/8.3.0/js/anychart-exports.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.anychart.com/releases/8.3.0/css/anychart-ui.min.css" />
+        <link rel="stylesheet" href="https://cdn.anychart.com/releases/8.3.0/fonts/css/anychart-font.min.css" />
         <div class="b-right-section b-main-content__section">
             <h1 class="b-title-h1 b-main-content__title-h1">
                 Сумма ваших накоплений
             </h1>
             <div class="b-main-content__round-graph round-graph">
-                <div class="round-graph__diagram-block">
-                    
+                    <style>
+                            .anychart-credits {
+                                display: none!important;
+                            }    
+                            </style>
+                <div class="round-graph__diagram-block" id="container">
                 </div>
+                <script type="text/javascript">
+                    anychart.onDocumentReady(function () {
+                        //define sample data
+                        var data = [{
+                            name: 'Point 1',
+                            value: 10,
+                            group: 'stock'
+                        },
+                        {
+                            name: 'Point 2',
+                            value: 30,
+                            group: 'stock'
+                        },
+                        {
+                            name: 'Point 3',
+                            value: 60,
+                            group: 'stock'
+                        },
+                        {
+                            name: 'Point 4',
+                            value: 30,
+                            group: 'stock'
+                        },
+                        {
+                            name: 'Point 5',
+                            value: 80,
+                            group: 'stock'
+                        },
+                        {
+                            name: 'Point 6',
+                            value: 40,
+                            group: 'stock'
+                        },
+                        {
+                            name: 'Point 7',
+                            value: 10,
+                            group: 'stock'
+                        },
+                        {
+                            name: 'Point 8',
+                            value: 40,
+                            group: 'bonds'
+                        },
+                        {
+                            name: 'Point 9',
+                            value: 60,
+                            group: 'bonds'
+                        },
+                        {
+                            name: 'Point 10',
+                            value: 40,
+                            group: 'bonds'
+                        },
+                        {
+                            name: 'Point 11',
+                            value: 10,
+                            group: 'bonds'
+                        },
+                        {
+                            name: 'Point 12',
+                            value: 40,
+                            group: 'bonds'
+                        }
+                        ];
+
+                        //pre process data points, to define indexes groups and set color from palette
+                        var groupsPalette = ['#003268', '#0E3119'];
+                        var dataPointsCount = data.length;
+                        var groupsMap = {};
+                        var groupsIndex = 0;
+                        var explodedGroupName;
+
+                        for (var i = 0; i < dataPointsCount; i++) {
+                            var point = data[i];
+                            var groupName = point['group'];
+                            var group = groupsMap[groupName];
+
+                            if (!group) {
+                                group = {};
+                                group['index'] = groupsIndex;
+                                group['sum'] = 0;
+                                group['palette'] = anychart.palettes.distinctColors(anychart.color.singleHueProgression(groupsPalette[groupsIndex], dataPointsCount));
+                                group['lastPointIndex'] = -1;
+                                group['indexes'] = [];
+                                groupsMap[groupName] = group;
+                                groupsIndex++;
+                            }
+                            group['lastPointIndex']++;
+                            group['sum'] += point['value'];
+                            var groupPalette = group['palette'];
+                            var lastPointIndex = group['lastPointIndex'];
+                            var groupIndexes = group['indexes'];
+                            groupIndexes.push(i);
+
+                            point['fill'] = groupPalette.itemAt(lastPointIndex);
+                            point['stroke'] = groupPalette.itemAt(lastPointIndex);
+                        }
+
+                        // create pie chart with passed data
+                        var chart = anychart.pie(data);
+
+                        // set chart title text settings
+                        chart
+                            .interactivity('single')
+                            //disable chart legend
+                            .legend(false)
+                            //set chart radius
+                            .radius('100%')
+                            .labels(false)
+                            // create empty area in pie chart
+                            .innerRadius('70%');
+
+                        createChartLabel(chart, 0, 'center', 'bonds');
+                        // createChartLabel(chart, 1, 'left-top', 'stock');
+
+                        // set container id for the chart
+                        chart.container('container');
+                        // initiate chart drawing
+                        chart.draw();
+
+                        chart.listen('pointMouseOver', function (evt) {
+                            var pointIndex = evt.pointIndex;
+                            var groupName = chart.data().get(pointIndex, 'group');
+                            var group = groupsMap[groupName];
+                            var groupIndexes = group['indexes'];
+
+                            chart.unhover();
+                            chart.hover(groupIndexes);
+                        });
+
+                        chart.listen('pointMouseOut', function () {
+                            chart.unhover();
+                        });
+
+                        function createChartLabel(chart, index, anchor, groupName) {
+                            // var label = chart.label(index);
+                            var label = chart.label(index);
+                            label.position('center')
+                                .anchor(anchor)
+                                .offsetY(0)
+                                .offsetX(10)
+                                .hAlign('center')
+                                .useHtml(true)
+                                .text('<span class="rg-title">' +
+                                     '<span class="rg-title__rub">12 800 352 ₽ </span>' + 
+                                     '<br/><span class="rg-title__desk">По состоянию на 01.01.2017 г.</span></span>'
+                                );
+                                // .text('<span style="font-size: 28px; color: ">' +
+                                //     groupsMap[groupName]['sum'] +
+                                //     '</span><br><span style="font-size: 9px; font-weight: bold">' +
+                                //     groupName.toUpperCase() + '</span>');
+
+                            label.listen('mouseOver', function () {
+                                document.body.style.cursor = 'pointer';
+                                var group = groupsMap[groupName];
+                                var groupIndexes = group['indexes'];
+
+                                chart.unhover();
+                                chart.hover(groupIndexes);
+                            });
+
+                            label.listen('mouseOut', function () {
+                                document.body.style.cursor = '';
+                                chart.unhover();
+                            });
+
+                            label.listen('mouseDown', function () {
+                                var group = groupsMap[groupName];
+
+                                if (explodedGroupName === groupName) {
+                                    chart.unselect();
+                                    explodedGroupName = '';
+                                } else {
+                                    var groupIndexes = group['indexes'];
+                                    explodedGroupName = groupName;
+                                    chart.select(false);
+                                    chart.select(groupIndexes, true);
+                                }
+                            });
+                        }
+                    });
+                </script>
                 <div class="round-graph__legend">
                     <div class="round-graph__rg-legend-switcher rg-legend-switcher">
                         <label class="rg-legend-switcher__item">
@@ -128,8 +320,8 @@
                                     <span class="rg-info-tooltip__caption">
                                         <span class="rg-info-tooltip__caption-text">
                                             В соответствии со ст. 36.6-1 Федерального закона от 07.05.98 №75-ФЗ "О негосударственных пенсионных фондах". Потеря Вашего
-                                            инвестиционного дохода при досрочном переходе в ПФР или другой НПФ по итогам текущего
-                                            года.
+                                            инвестиционного дохода при досрочном переходе в ПФР или другой НПФ по итогам
+                                            текущего года.
                                         </span>
                                     </span>
                                 </span>
