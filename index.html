@@ -14,39 +14,81 @@
     var data = [{
             name: 'Сумма пенсионных накоплений (ОПС) за весь период',
             color: '#8bc741',
-            y: 356015.03
+            amount: 356015.03,
+            category: 'NPF'
         },
         {
             name: 'Доход от инвестирования пенсионных накоплений за 2017г.',
             color: '#4c9d10',
-            y: 17036.56
+            amount: 17036.56,
+            category: 'NPF'
         },
         {
             name: 'Сумма накоплений по программе софинансирования',
             color: '#ceff67',
-            y: 25263.89
+            amount: 1800352,
+            category: 'NPF'
         },
         {
             name: 'Доход от инвестирования накоплений по софинансированию',
             color: '#5fb836',
-            y: 25263.89
+            amount: 25263.89,
+            category: 'NPO'
         },
         {
             name: 'Сумма пенсионных резервов (НПО) за весь период',
             color: '#ff9835',
-            y: 1800352
+            amount: 120000,
+            category: 'NPO'
         },
         {
             name: 'Доход от инвестирования пенсионных резервов за 2017г.',
             color: '#ffff66',
-            y: 25263.89
+            amount: 1596.36,
+            category: 'NPO'
+        }];
+    var data2 = [{
+        name: 'Сумма пенсионных накоплений (ОПС) за весь период',
+        color: '#8bc741',
+        amount: 356015.03,
+        category: 'NPF'
+    },
+        {
+            name: 'Доход от инвестирования пенсионных накоплений за 2017г.',
+            color: '#4c9d10',
+            amount: 17036.56,
+            category: 'NPF'
+        },
+        {
+            name: 'Сумма накоплений по программе софинансирования',
+            color: '#ceff67',
+            amount: 1800352,
+            category: 'NPF'
+        }];
+        var data3 = [{
+            name: 'Доход от инвестирования накоплений по софинансированию',
+            color: '#5fb836',
+            amount: 25263.89,
+            category: 'NPO'
+        },
+        {
+            name: 'Сумма пенсионных резервов (НПО) за весь период',
+            color: '#ff9835',
+            amount: 120000,
+            category: 'NPO'
+        },
+        {
+            name: 'Доход от инвестирования пенсионных резервов за 2017г.',
+            color: '#ffff66',
+            amount: 1596.36,
+            category: 'NPO'
         }];
     window.onload = function() {
         diagram.draw(data);
     }
 </script>
-<!--<span onclick="diagram.draw(data);">Draw diagram 1</span>-->
-<!--<span onclick="diagram.draw(data);">Draw diagram 2</span>-->
+<span onclick="diagram.draw(data2);">Draw diagram NPF</span>
+<span onclick="diagram.draw(data3);">Draw diagram NPO</span>
 
 <style>
     #container {
