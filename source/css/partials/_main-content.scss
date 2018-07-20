@@ -56,22 +56,24 @@
 }
 .round-graph {
     display: flex;
-    // align-items: flex-start;
+    align-items: flex-start;
     justify-content: space-between;
     &__diagram-block {
-        width: 50%;
+        width: 470px;
         position: relative;
         box-sizing: border-box;
     }
     &__diagram {
         position: absolute;
-        left: 0;
+        left: -10px;
         top: 0;
-        width: 456px;
-        height: 456px;
+        width: 470px;
+        height: 470px;
     }
     &__legend {
-        width: 50%;
+        box-sizing: border-box;
+        padding-left: 52px;
+        width: calc(100% - 470px);
     }
     &__rg-legend-switcher {
         margin-bottom: 44px;
@@ -238,6 +240,24 @@
         border-radius: 10px;
         display: inline-block;
         margin-right: 18px;
+    }
+}
+.rg-diagram-title {
+    &__number {
+        @extend %text;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 26px;
+        display: block;
+
+    }
+    &__description {
+        @extend %text;
+        display: block;
+        text-align: center;
+        line-height: 1.2;
+        font-size: 17px;
+        color: #777777;
     }
 }
 .rg-title {

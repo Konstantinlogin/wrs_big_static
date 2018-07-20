@@ -1,21 +1,26 @@
 window.diagram = {
     draw: function(outsideData) {
-        const MIN_SLICE_WIDTH = 0,
-            MIN_DATA_VALUE = 0;
+        const mainData = outsideData.data;
+        const MIN_SLICE_WIDTH = 0.7,
+            MIN_DATA_VALUE = 0.7;
+
+        Number.prototype.filterTitleNum = function () {
+            return this.toFixed().toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+        }
 
         Number.prototype.filterDataNum = function(n, x, s, c) {
             let re = '\\d(?=(\\d{' + (x || 3) + '})+' + (n > 0 ? '\\D' : '$') + ')',
                 num = this.toFixed(Math.max(0, ~~n));
-
             return (c ? num.replace('.', c) : num).replace(new RegExp(re, 'g'), '$&' + (s || ','));
         };
 
         let sortArray = function () {
             let array = [],
                 categories = [],
-                categoriesAmount = [];
+                categoriesAmount = [],
+                totalSumm = 0;
 
-            outsideData.forEach(function(element, key) {
+            mainData.forEach(function(element, key) {
                 if (categories.indexOf(element.category) === -1) {
                     categories.push(element.category);
                 }
@@ -26,6 +31,8 @@ window.diagram = {
                     y: element.amount,
                     category: element.category
                 });
+
+                totalSumm += element.amount;
             });
 
             categories.forEach(function(element, key) {
@@ -49,14 +56,25 @@ window.diagram = {
             });
 
             return {
+                date: outsideData.date,
                 data: array,
-                categories: categoriesAmount
+                categories: categoriesAmount,
+                total: totalSumm
             }
         };
 
         let sortedArray = sortArray();
 
-        console.log(sortedArray);
+        let titleTemplate = `
+            <div class="rg-diagram-title">
+                <div class="rg-diagram-title__number">
+                    ${(sortedArray.total.filterTitleNum())} &#8381;
+                </div>
+                <div class="rg-diagram-title__description">
+                    По состоянию на <br/>
+                    ${sortedArray.date}
+                </div>
+            </div> `;
 
         let drawChart = function() {
             Highcharts.chart('diagramContainer', {
@@ -66,15 +84,23 @@ window.diagram = {
                     spacingLeft:0,
                     spacingRight:0,
                     spacingTop:0,
+                    marginTop: 0,
+                    marginLeft: 0,
+                    marginLeft: 0
                 },
                 title: {
-                    text: 'Title'
+                    text: titleTemplate,
+                    align: 'center',
+                    x: 0,
+                    y: -20,
+                    verticalAlign: 'middle',
+                    useHTML: true,
                 },
                 plotOptions: {
                     pie: {
                         shadow: false,
                         startAngle: 180,
-                        borderWidth: 0
+                        borderWidth: 0,
                     }
                 },
                 tooltip: {
@@ -86,13 +112,21 @@ window.diagram = {
                         padding: 0,
                     },
                     formatter: function() {
-                        return '<b>' + this.point.name + '</b>: ' + (this.point.value.filterDataNum(2, 3, ' ', ',')) + ' &#8381;';
+                        return `
+                        <div class="rg-tooltip">
+                            <div class="rg-tooltip__description">
+                                ${this.point.name}
+                            </div>
+                            <div class="rg-tooltip__number">
+                                ${(this.point.value.filterDataNum(2, 3, ' ', ','))} &#8381;
+                            </div>
+                        </div> `;
                     }
                 },
                 series: [{
                     data: sortedArray.data,
                     size: '100%',
-                    innerSize: '75%',
+                    innerSize: '70%',
                     showInLegend: false,
                     dataLabels: {
                         enabled: false

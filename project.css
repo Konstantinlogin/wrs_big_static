@@ -1,4 +1,4 @@
-.b-menu__link, .b-menu__sub-link, .pension-calculator .graph__column-title, .pension-calculator .graph__column-value, .pension-calculator .graph__column-ruble, .pension-calculator .graph__column-title-text, .pension-calculator .graph__total-text, .pension-calculator .graph__number, .pension-calculator .graph__number-value, .pension-calculator .graph__ruble, .pension-calculator .legend__text, .pension-calculator .legend__sum, .pension-calculator .legend__rub, .pension-calculator__title, .pension-calculator__row-label, .pension-calculator__slider-min, .pension-calculator__slider-middle, .pension-calculator__slider-max, .pension-calculator__input, .pension-calculator-radio__text, .pension-calculator-checkbox__text, .faq-answers__title, .faq-answers__sub-list-item, .b-about-content__item-title, .b-about-content__item-text, .b-download-pdfs__title, .b-download-pdfs__file-name, .b-request-section .b-requests-table .t-Report-colHead, .b-request-section .b-requests-table .t-Report-cell, .b-profile-content__title-h3, .b-profile-content-section__title-h3, .b-profile-content-section-footer__title-h3, .round-graph__info-block-text, .rg-info-tooltip__caption-text, .rg-legend-switcher__text, .rg-legend-list__text, .rg-legend-list__num, .rg-title {
+.b-menu__link, .b-menu__sub-link, .pension-calculator .graph__column-title, .pension-calculator .graph__column-value, .pension-calculator .graph__column-ruble, .pension-calculator .graph__column-title-text, .pension-calculator .graph__total-text, .pension-calculator .graph__number, .pension-calculator .graph__number-value, .pension-calculator .graph__ruble, .pension-calculator .legend__text, .pension-calculator .legend__sum, .pension-calculator .legend__rub, .pension-calculator__title, .pension-calculator__row-label, .pension-calculator__slider-min, .pension-calculator__slider-middle, .pension-calculator__slider-max, .pension-calculator__input, .pension-calculator-radio__text, .pension-calculator-checkbox__text, .faq-answers__title, .faq-answers__sub-list-item, .b-about-content__item-title, .b-about-content__item-text, .b-download-pdfs__title, .b-download-pdfs__file-name, .b-request-section .b-requests-table .t-Report-colHead, .b-request-section .b-requests-table .t-Report-cell, .b-profile-content__title-h3, .b-profile-content-section__title-h3, .b-profile-content-section-footer__title-h3, .round-graph__info-block-text, .rg-info-tooltip__caption-text, .rg-legend-switcher__text, .rg-legend-list__text, .rg-legend-list__num, .rg-diagram-title__number, .rg-diagram-title__description, .rg-title {
   font-family: 'Montserrat', sans-serif; }
 
 .b-profile-content .t-Button, .b-profile-content-section .t-Button, .b-profile-content-section-footer .t-Button, .b-green-button {
@@ -2414,21 +2414,27 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .round-graph__diagram-block {
-    width: 50%;
+    width: 470px;
     position: relative;
     box-sizing: border-box; }
   .round-graph__diagram {
     position: absolute;
-    left: 0;
+    left: -10px;
     top: 0;
-    width: 456px;
-    height: 456px; }
+    width: 470px;
+    height: 470px; }
   .round-graph__legend {
-    width: 50%; }
+    box-sizing: border-box;
+    padding-left: 52px;
+    width: -webkit-calc(100% - 470px);
+    width: calc(100% - 470px); }
   .round-graph__rg-legend-switcher {
     margin-bottom: 44px; }
     @media screen and (min-width: 768px) {
@@ -2576,6 +2582,19 @@
     border-radius: 10px;
     display: inline-block;
     margin-right: 18px; }
+
+.rg-diagram-title__number {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 26px;
+  display: block; }
+
+.rg-diagram-title__description {
+  display: block;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 17px;
+  color: #777777; }
 
 .rg-title {
   color: #000000;
