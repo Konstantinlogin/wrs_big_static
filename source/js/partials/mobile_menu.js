@@ -25,7 +25,7 @@ let showMenu = function () {
     document.addEventListener('keydown', onKeyDown);
     document.addEventListener('click', onBodyClick);
     menuActive = false;
-}
+};
 let closeMenu = function () {
     mobileBtn.classList.remove('open');
     mobileMenu.classList.remove('open');
@@ -33,12 +33,15 @@ let closeMenu = function () {
     document.removeEventListener('keydown', onKeyDown);
     document.removeEventListener('click', onBodyClick);
     menuActive = true;
-}
-
-mobileBtn.onclick = function () {
-    if (menuActive) {
-        showMenu();
-    } else {
-        closeMenu();
-    }
 };
+
+if (mobileBtn && mobileBtn !== 'undefined') {
+    mobileBtn.onclick = function () {
+        if (menuActive) {
+            showMenu();
+        } else {
+            closeMenu();
+        }
+    };
+};
+

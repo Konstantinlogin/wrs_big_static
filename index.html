@@ -8,86 +8,61 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/variable-pie.js"></script>
-    <script>
-        var data1 = [{
-                name: 'Spain',
-                y: 50570,
-                z: 92.9
-              }, {
-                name: 'France',
-                y: 55100,
-                z: 118.7
-              }, {
-                name: 'Poland',
-                y: 2685,
-                z: 124.6
-              }, {
-                name: 'Czech Republic',
-                y: 767,
-                z: 137.5
-              }, {
-                name: 'Italy',
-                y: 41340,
-                z: 201.8
-              }, {
-                name: 'Switzerland',
-                y: 277,
-                z: 214.5
-              }, {
-                name: 'Germany',
-                y: 7022,
-                z: 235.6
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/variable-pie.js"></script>
+<script>
+    var data = [{
+            name: 'Сумма пенсионных накоплений (ОПС) за весь период',
+            color: '#8bc741',
+            y: 356015.03
+        },
+        {
+            name: 'Доход от инвестирования пенсионных накоплений за 2017г.',
+            color: '#4c9d10',
+            y: 17036.56
+        },
+        {
+            name: 'Сумма накоплений по программе софинансирования',
+            color: '#ceff67',
+            y: 25263.89
+        },
+        {
+            name: 'Доход от инвестирования накоплений по софинансированию',
+            color: '#5fb836',
+            y: 25263.89
+        },
+        {
+            name: 'Сумма пенсионных резервов (НПО) за весь период',
+            color: '#ff9835',
+            y: 1800352
+        },
+        {
+            name: 'Доход от инвестирования пенсионных резервов за 2017г.',
+            color: '#ffff66',
+            y: 25263.89
         }];
-        var data2 = [{
-                name: 'Not Spain',
-                y: 55370,
-                z: 22.9
-              }, {
-                name: 'Not France',
-                y: 51500,
-                z: 18.7
-              }, {
-                name: 'Not Poland',
-                y: 12685,
-                z: 324.6
-              }, {
-                name: 'Not Czech Republic',
-                y: 8867,
-                z: 437.5
-              }, {
-                name: 'Not Italy',
-                y: 301340,
-                z: 201.8
-              }, {
-                name: 'Not Switzerland',
-                y: 41277,
-                z: 214.5
-              }, {
-                name: 'Not Germany',
-                y: 357022,
-                z: 235.6
-        }]; 
-    </script>
-    <span onclick="diagram.draw(data1);">Draw diagram 1</span>
-    <span onclick="diagram.draw(data2);">Draw diagram 2</span>
+    window.onload = function() {
+        diagram.draw(data);
+    }
+</script>
+<!--<span onclick="diagram.draw(data);">Draw diagram 1</span>-->
+<!--<span onclick="diagram.draw(data);">Draw diagram 2</span>-->
+
 <style>
     #container {
         width: 100%;
         height: 100vh;
-        margin: 1em auto;
+        /*margin: 0 auto;*/
     }
+
     .highcharts-title {
-    fill: #434348;
-    font-weight: bold;
-    background: red;
-}
-.highcharts-subtitle {
-    font-family: 'Courier New', monospace;
-    font-style: italic;
-    fill: #7cb5ec;
-}
+
+    }
+
+    .highcharts-subtitle {
+
+    }
+
     .highcharts-credits {
         display: none;
     }
