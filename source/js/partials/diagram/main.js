@@ -59,9 +59,8 @@ window.diagram = {
         console.log(sortedArray);
 
         let drawChart = function() {
-            Highcharts.chart('container', {
+            Highcharts.chart('diagramContainer', {
                 chart: {
-                    renderTo: 'container',
                     type: 'pie',
                     spacingBottom:0,
                     spacingLeft:0,
@@ -74,12 +73,20 @@ window.diagram = {
                 plotOptions: {
                     pie: {
                         shadow: false,
-                        size: 210
+                        startAngle: 180,
+                        borderWidth: 0
                     }
                 },
                 tooltip: {
+                    backgroundColor: null,
+                    borderWidth: 0,
+                    shadow: false,
+                    useHTML: true,
+                    style: {
+                        padding: 0,
+                    },
                     formatter: function() {
-                        return '<b>' + this.point.name + '</b>: ' + (this.point.value ? this.point.value : this.y) + ' РУБ.';
+                        return '<b>' + this.point.name + '</b>: ' + (this.point.value.filterDataNum(2, 3, ' ', ',')) + ' &#8381;';
                     }
                 },
                 series: [{
