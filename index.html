@@ -1,178 +1,190 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="project.css" />
 </head>
-<body>
-<script>
-    var data = {
-        date: '01.01.2017',
-        data:[{
-            name: 'Сумма пенсионных накоплений (ОПС) за весь период',
-            color: '#8bc741',
-            amount: 356015.03,
-            category: 'OPS'
-        },
-        {
-            name: 'Доход от инвестирования пенсионных накоплений за 2017г.',
-            color: '#4c9d10',
-            amount: 17036.56,
-            category: 'OPS'
-        },
-        {
-            name: 'Сумма накоплений по программе софинансирования',
-            color: '#ceff67',
-            amount: 180352,
-            category: 'OPS'
-        },
-        {
-            name: 'Доход от инвестирования накоплений по софинансированию',
-            color: '#5fb836',
-            amount: 1596.36,
-            category: 'OPS'
-        },
-        {
-            name: 'Сумма пенсионных резервов (НПО) за весь период',
-            color: '#ff9835',
-            amount: 120000,
-            category: 'NPO'
-        },
-        {
-            name: 'Доход от инвестирования пенсионных резервов за 2017г.',
-            color: '#ffff66',
-            amount: 25263.89,
-            category: 'NPO'
-        }]
-    };
-    var opsData = {
-        date: '01.01.2017',
-        data:[{
-            name: 'Сумма пенсионных накоплений (ОПС) за весь период',
-            color: '#8bc741',
-            amount: 356015.03,
-            category: 'OPS'
-        },
-        {
-            name: 'Доход от инвестирования пенсионных накоплений за 2017г.',
-            color: '#4c9d10',
-            amount: 17036.56,
-            category: 'OPS'
-        },
-        {
-            name: 'Сумма накоплений по программе софинансирования',
-            color: '#ceff67',
-            amount: 1800352,
-            category: 'OPS'
-        },
-        {
-            name: 'Доход от инвестирования накоплений по софинансированию',
-            color: '#5fb836',
-            amount: 1596.36,
-            category: 'OPS'
-        }]
-    };
-    var npoData = {
-        date: '01.01.2017',
-        data:[
-        {
-            name: 'Сумма пенсионных резервов (НПО) за весь период',
-            color: '#ff9835',
-            amount: 0,
-            category: 'NPO'
-        },
-        {
-            name: 'Доход от инвестирования пенсионных резервов за 2017г.',
-            color: '#ffff66',
-            amount: 25263.89,
-            category: 'NPO'
-        }]
-    };
-    window.onload = function() {
-        diagram.draw(data);
-    }
-</script>
 
-<div class="b-right-section b-main-content__section">
-    <h1 class="b-title-h1 b-main-content__title-h1">
-        Сумма ваших накоплений
-    </h1>
-    <div class="b-main-content__round-graph round-graph">
-        <div class="round-graph__diagram-block" id="diagramContainerWrapper">
-            <div id="diagramContainerInner">
-                <div class="round-graph__diagram" id="diagramContainer">
+<body>
+    <script>
+        var data = {
+            date: '01.01.2017',
+            data: [{
+                name: 'Сумма пенсионных накоплений (ОПС) за весь период',
+                color: '#8bc741',
+                amount: 356015.03,
+                category: 'OPS'
+            },
+            {
+                name: 'Доход от инвестирования пенсионных накоплений за 2017г.',
+                color: '#4c9d10',
+                amount: 17036.56,
+                category: 'OPS'
+            },
+            {
+                name: 'Сумма накоплений по программе софинансирования',
+                color: '#ceff67',
+                amount: 180352,
+                category: 'OPS'
+            },
+            {
+                name: 'Доход от инвестирования накоплений по софинансированию',
+                color: '#5fb836',
+                amount: 1596.36,
+                category: 'OPS'
+            },
+            {
+                name: 'Сумма пенсионных резервов (НПО) за весь период',
+                color: '#ff9835',
+                amount: 120000,
+                category: 'NPO'
+            },
+            {
+                name: 'Доход от инвестирования пенсионных резервов за 2017г.',
+                color: '#ffff66',
+                amount: 25263.89,
+                category: 'NPO'
+            }]
+        };
+        var opsData = {
+            date: '01.01.2017',
+            data: [{
+                name: 'Сумма пенсионных накоплений (ОПС) за весь период',
+                color: '#8bc741',
+                amount: 356015.03,
+                category: 'OPS'
+            },
+            {
+                name: 'Доход от инвестирования пенсионных накоплений за 2017г.',
+                color: '#4c9d10',
+                amount: 17036.56,
+                category: 'OPS'
+            },
+            {
+                name: 'Сумма накоплений по программе софинансирования',
+                color: '#ceff67',
+                amount: 1800352,
+                category: 'OPS'
+            },
+            {
+                name: 'Доход от инвестирования накоплений по софинансированию',
+                color: '#5fb836',
+                amount: 1596.36,
+                category: 'OPS'
+            }]
+        };
+        var npoData = {
+            date: '01.01.2017',
+            data: [
+                {
+                    name: 'Сумма пенсионных резервов (НПО) за весь период',
+                    color: '#ff9835',
+                    amount: 0,
+                    category: 'NPO'
+                },
+                {
+                    name: 'Доход от инвестирования пенсионных резервов за 2017г.',
+                    color: '#ffff66',
+                    amount: 25263.89,
+                    category: 'NPO'
+                }]
+        };
+        window.onload = function () {
+            diagram.draw(data);
+        }
+    </script>
+
+    <div class="b-right-section b-main-content__section">
+        <h1 class="b-title-h1 b-main-content__title-h1">
+            Сумма ваших накоплений
+        </h1>
+        <div class="b-main-content__round-graph round-graph">
+            <div class="round-graph__diagram-block" id="diagramContainerWrapper">
+                <div id="diagramContainerInner">
+                    <div class="round-graph__diagram" id="diagramContainer">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="round-graph__legend">
-            <div class="round-graph__rg-legend-switcher rg-legend-switcher">
-                <label class="rg-legend-switcher__item">
-                    <input class="rg-legend-switcher__input" type="radio" name="rglegend" onchange="diagram.draw(data);" checked/>
-                    <span class="rg-legend-switcher__text">Пенсионный счет</span>
-                </label>
-                <label class="rg-legend-switcher__item">
-                    <input class="rg-legend-switcher__input" type="radio" onchange="diagram.draw(opsData);" name="rglegend" />
-                    <span class="rg-legend-switcher__text">ОПС</span>
-                </label>
-                <label class="rg-legend-switcher__item">
-                    <input class="rg-legend-switcher__input" type="radio" onchange="diagram.draw(npoData);" name="rglegend" />
-                    <span class="rg-legend-switcher__text"> НПО</span>
-                </label>
-            </div>
-            <ul class="round-graph__rg-legend-list rg-legend-list" id="diagramLegend"></ul>
-            <div class="round-graph__info-block">
-                <i class="round-graph__info-icon round-graph__info-icon--warning"></i>
-                <span class="round-graph__info-block-text">Потери при досрочном переходе
-                    <span class="rg-info-tooltip-wrapper" style="white-space: nowrap">
-                        100 000 рублей 
-                        <i class="rg-info-tooltip-icon"></i>
-                        <span class="rg-info-tooltip">
-                            <span class="rg-info-tooltip__caption">
-                                <span class="rg-info-tooltip__caption-text">
+            <div class="round-graph__legend">
+                <div class="round-graph__rg-legend-switcher rg-legend-switcher">
+                    <label class="rg-legend-switcher__item">
+                        <input class="rg-legend-switcher__input" type="radio" name="rglegend" onchange="diagram.draw(data);" checked/>
+                        <span class="rg-legend-switcher__text">Пенсионный счет</span>
+                    </label>
+                    <label class="rg-legend-switcher__item">
+                        <input class="rg-legend-switcher__input" type="radio" onchange="diagram.draw(opsData);" name="rglegend" />
+                        <span class="rg-legend-switcher__text">ОПС</span>
+                    </label>
+                    <label class="rg-legend-switcher__item">
+                        <input class="rg-legend-switcher__input" type="radio" onchange="diagram.draw(npoData);" name="rglegend" />
+                        <span class="rg-legend-switcher__text"> НПО</span>
+                    </label>
+                </div>
+                <ul class="round-graph__rg-legend-list rg-legend-list" id="diagramLegend"></ul>
+                <div class="round-graph__info-block">
+                    <i class="round-graph__info-icon round-graph__info-icon--warning"></i>
+                    <span class="round-graph__info-block-text">Потери при досрочном переходе
+                        <span class="rg-info-tooltip-wrapper" style="white-space: nowrap">
+                            100 000 рублей
+                            <i class="rg-info-tooltip-icon"></i>
+                            <span class="rg-info-tooltip">
+                                <span class="rg-info-tooltip__caption">
+                                    <span class="rg-info-tooltip__caption-text">
                                         В соответствии со ст. 36.6-1 Федерального закона от 07.05.98 №75-ФЗ "О негосударственных пенсионных фондах". Потеря Вашего
-                                        инвестиционного дохода при досрочном переходе в ПФР или другой НПФ по итогам
-                                        текущего года.
+                                        инвестиционного дохода при досрочном переходе в ПФР или другой НПФ по итогам текущего
+                                        года.
+                                    </span>
                                 </span>
                             </span>
                         </span>
-                    </span>  
-                </span>
+                    </span>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<style> 
-    .highcharts-credits {
-        display: none;
+    <script>
+    window.onload = function () {
+        dynamics.draw(true);
     }
-</style>
+    </script>
+    <div class="b-right-section b-main-content__section">
+        <h1 class="b-title-h1 b-main-content__title-h2">
+            Динамика доходности НПФ Большой
+        </h1>
+        <div class="dynamics">
+            <div class="dynamics__grafic-block" id="dynamicsContainerWrapper">
+                <div class="dynamics__grafic-inner" id="dynamicsContainerInner">
+                    <div class="dynamics__graphic" id="dynamicsContainer">
+                        
+                    </div>
+                </div>
+            </div>
+            <ul class="dynamics__legend">
+                <li class="dynamics__legend-item">
+                    <i style="background: #8dc73f" class="dynamics__legend-item-point"></i>
+                    <span class="dynamics__legend-text">НПФ Большой</span>
+                </li>
+                <li class="dynamics__legend-item">
+                    <i style="background: #6ed0f7" class="dynamics__legend-item-point"></i>
+                    <span class="dynamics__legend-text">ВЭБ</span>
+                </li>
+                <li class="dynamics__legend-item">
+                    <i style="background: #fe0003" class="dynamics__legend-item-point"></i>
+                    <span class="dynamics__legend-text">Инфляция</span>
+                </li>
+            </ul>
+        </div>
+        <div class="b-main-content__not-oferta">
+            Не является офертой и не гарантирует доходность в будущем
+        </div>
+    </div>
 
-<!-- <span onclick="diagram.draw(data2);">Draw diagram NPF</span>
-<span onclick="diagram.draw(data3);">Draw diagram NPO</span> -->
-
-<style>
-    #diagramContainer {
-        /* width: 100%; */
-        /* height: 100vh; */
-    }
-
-    .highcharts-title {
-    }
-
-    .highcharts-subtitle {
-    }
-
-    .highcharts-credits {
-        /* display: none; */
-    }
-</style>
-<!-- &#8381; -->
-
-<script src="js/project.js"></script>
+    <script src="js/project.js"></script>
 
 </body>
+
 </html>
