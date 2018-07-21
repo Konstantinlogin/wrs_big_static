@@ -75,11 +75,24 @@
 		background-color: #FFF;
 		box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1);
 		border-radius: 5px;
-		@media screen and (min-width: 1024px) {
+		@media screen and (min-width: 768px) {
 			padding: 62px;
 			width: 50%;
 			max-width: 426px;
 		}
+	}
+	&--col-2 {
+		.b-download-pdfs__item {
+			@media screen and (min-width: 768px) {
+				padding: 62px;
+				width: 50%;
+				max-width: 50%;
+				margin-right: 28px;
+				&:last-of-type {
+					margin-right: 0;
+				}
+			}
+		}	
 	}
 	&__file-block {
 		position: relative;
@@ -94,11 +107,19 @@
 		font-weight: 600;
 		margin-bottom: 50px;
 		line-height: 1.2;
+		&--with-sub {
+			margin-bottom: 28px;
+		}
 	}
-	&__file-name {
+	&__sub-title {
+		margin-bottom: 32px;
+	}
+	&__file-name, &__sub-title {
 		display: block;
 		@extend %text;
 		font-size: 18px;
+	}
+	&__file-name {
 		margin-bottom: 18px;
 		padding-top: 10px;
 	}

@@ -93,10 +93,79 @@
                     category: 'NPO'
                 }]
         };
+        var dynamycsData = {
+            fromYear: 2004,
+            data: [{
+                name: 'НПФ Большой',
+                data: [0, 14.90, 17.90, 6.40, 0, 28.30, 9.90, 2.82, 7.67, 7.25, 6.15, 9.34, 8.32],
+                color: '#8cc63c'
+            }, {
+                name: 'ВЭБ',
+                data: [7.33, 12.18, 5.67, 5.98, -0.46, 9.52, 7.62, 5.47, 9.21, 6.71, 17.34, 13.15, 13.15],
+                color: '#6dcff6'
+            },
+            {
+                name: 'ИНФЛЯЦИЯ',
+                data: [0, 10.90, 11.90, 4.40, 0, 22.30, 6.90, 0.82, 5.67, 2.25, 12.15, 4.34, 2.32],
+                color: '#fe0000'
+            }]
+        };
         window.onload = function () {
             diagram.draw(data);
-        }
+            dynamics.draw(dynamycsData);
+        };
     </script>
+
+    <div class="b-right-section b-main-content__section">
+        <h1 class="b-title-h1 b-main-content__title-h2">
+            Динамика доходности НПФ Большой
+        </h1>
+        <div class="dynamics">
+            <div class="dynamics__grafic-block" id="dynamicsContainerWrapper">
+                <div class="dynamics__grafic-inner" id="dynamicsContainerInner">
+                    <div class="dynamics__graphic" id="dynamicsContainer"></div>
+                </div>
+            </div>
+            <ul class="dynamics__legend" id="dynamicsLegend">
+            </ul>
+        </div>
+        <div class="b-main-content__not-oferta">
+            Не является офертой и не гарантирует доходность в будущем
+        </div>
+    </div>
+
+    <div class="b-download-pdfs b-download-pdfs--col-2 b-main-content__download-pdfs">
+        <div class="b-download-pdfs__item">
+            <span class="b-download-pdfs__title b-download-pdfs__title--with-sub">
+                Обязательное пенсионное страхование
+            </span>
+            <span class="b-download-pdfs__sub-title">
+                Договор № 123-156-289-00 от 04.07.2018
+            </span>
+            <div class="b-download-pdfs__file-block">
+                <i class="b-download-pdfs__file-pdf"></i>
+                <span class="b-download-pdfs__file-name">
+                    ОПС-БПФ.pdf
+                </span>
+                <a class="b-green-link b-download-pdfs__download-link" href="#">Скачать реквизиты</a>
+            </div>
+        </div>
+        <div class="b-download-pdfs__item">
+            <span class="b-download-pdfs__title b-download-pdfs__title--with-sub">
+                Обязательное пенсионное страхование
+            </span>
+            <span class="b-download-pdfs__sub-title">
+                Договор № 123-156-289-00 от 04.07.2018
+            </span>
+            <div class="b-download-pdfs__file-block">
+                <i class="b-download-pdfs__file-pdf"></i>
+                <span class="b-download-pdfs__file-name">
+                    ОПС-БПФ.pdf
+                </span>
+                <a class="b-green-link b-download-pdfs__download-link" href="#">Скачать реквизиты</a>
+            </div>
+        </div>
+    </div>
 
     <div class="b-right-section b-main-content__section">
         <h1 class="b-title-h1 b-main-content__title-h1">
@@ -146,45 +215,7 @@
             </div>
         </div>
     </div>
-    <script>
-    window.onload = function () {
-        dynamics.draw(true);
-    }
-    </script>
-    <div class="b-right-section b-main-content__section">
-        <h1 class="b-title-h1 b-main-content__title-h2">
-            Динамика доходности НПФ Большой
-        </h1>
-        <div class="dynamics">
-            <div class="dynamics__grafic-block" id="dynamicsContainerWrapper">
-                <div class="dynamics__grafic-inner" id="dynamicsContainerInner">
-                    <div class="dynamics__graphic" id="dynamicsContainer">
-                        
-                    </div>
-                </div>
-            </div>
-            <ul class="dynamics__legend">
-                <li class="dynamics__legend-item">
-                    <i style="background: #8dc73f" class="dynamics__legend-item-point"></i>
-                    <span class="dynamics__legend-text">НПФ Большой</span>
-                </li>
-                <li class="dynamics__legend-item">
-                    <i style="background: #6ed0f7" class="dynamics__legend-item-point"></i>
-                    <span class="dynamics__legend-text">ВЭБ</span>
-                </li>
-                <li class="dynamics__legend-item">
-                    <i style="background: #fe0003" class="dynamics__legend-item-point"></i>
-                    <span class="dynamics__legend-text">Инфляция</span>
-                </li>
-            </ul>
-        </div>
-        <div class="b-main-content__not-oferta">
-            Не является офертой и не гарантирует доходность в будущем
-        </div>
-    </div>
-
     <script src="js/project.js"></script>
-
 </body>
 
 </html>
