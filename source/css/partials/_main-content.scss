@@ -59,7 +59,8 @@
     align-items: flex-start;
     justify-content: space-between;
     &__diagram-block {
-        width: 470px;
+        width: 35%;
+        min-height: 470px;
         position: relative;
         box-sizing: border-box;
     }
@@ -73,7 +74,8 @@
     &__legend {
         box-sizing: border-box;
         padding-left: 52px;
-        width: calc(100% - 470px);
+        width: 65%;
+        max-width: 613px;
     }
     &__rg-legend-switcher {
         margin-bottom: 44px;

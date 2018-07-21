@@ -14,11 +14,24 @@ window.diagram = {
             return (c ? num.replace('.', c) : num).replace(new RegExp(re, 'g'), '$&' + (s || ','));
         };
 
+        let generateLegendSection = function (color, text, value) {
+            return `
+                <li class="rg-legend-list__item">
+                    <i style="background:${color}" class="rg-legend-list__leg-color"></i>
+                    <span class="rg-legend-list__text">${text}</span>
+                    <span class="rg-legend-list__num">
+                        <span>${value.filterDataNum(2, 3, ' ', ',')}</span> &#8381;
+                    </span>
+                </li>
+            `;
+        };
+
         let sortArray = function () {
             let array = [],
                 categories = [],
                 categoriesAmount = [],
-                totalSumm = 0;
+                totalSumm = 0,
+                legendSections = [];
 
             mainData.forEach(function(element, key) {
                 if (categories.indexOf(element.category) === -1) {
@@ -31,6 +44,8 @@ window.diagram = {
                     y: element.amount,
                     category: element.category
                 });
+
+                legendSections.push(generateLegendSection(element.color, element.name, element.amount));
 
                 totalSumm += element.amount;
             });
@@ -59,11 +74,18 @@ window.diagram = {
                 date: outsideData.date,
                 data: array,
                 categories: categoriesAmount,
-                total: totalSumm
+                total: totalSumm,
+                sections: legendSections
             }
         };
 
         let sortedArray = sortArray();
+
+        console.log(sortedArray);
+
+        let drawLegend = function () {
+            document.getElementById('diagramLegend').innerHTML = sortedArray.sections.join(' ');
+        };
 
         let titleTemplate = `
             <div class="rg-diagram-title">
@@ -134,6 +156,9 @@ window.diagram = {
                 }]
             });
         };
-        drawChart();
+        setTimeout(function() { 
+            drawChart();
+            drawLegend();
+         }, 100);
     }
 };
