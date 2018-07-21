@@ -10,7 +10,7 @@
 </head>
 <body>
 <script>
-    var allData = {
+    var data = {
         date: '01.01.2017',
         data:[{
             name: 'Сумма пенсионных накоплений (ОПС) за весь период',
@@ -27,7 +27,7 @@
         {
             name: 'Сумма накоплений по программе софинансирования',
             color: '#ceff67',
-            amount: 1800352,
+            amount: 180352,
             category: 'OPS'
         },
         {
@@ -93,7 +93,7 @@
         }]
     };
     window.onload = function() {
-        diagram.draw(allData);
+        diagram.draw(data);
     }
 </script>
 
@@ -111,7 +111,7 @@
         <div class="round-graph__legend">
             <div class="round-graph__rg-legend-switcher rg-legend-switcher">
                 <label class="rg-legend-switcher__item">
-                    <input class="rg-legend-switcher__input" type="radio" name="rglegend" onchange="diagram.draw(allData);" checked/>
+                    <input class="rg-legend-switcher__input" type="radio" name="rglegend" onchange="diagram.draw(data);" checked/>
                     <span class="rg-legend-switcher__text">Пенсионный счет</span>
                 </label>
                 <label class="rg-legend-switcher__item">

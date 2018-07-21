@@ -1,5 +1,8 @@
 window.diagram = {
     draw: function (outsideData) {
+
+        window.removeEventListener('resize', onWindowResize);
+
         const mainData = outsideData.data;
         const MIN_SLICE_WIDTH = 0.7,
             MIN_DATA_VALUE = 0.7,
@@ -7,13 +10,13 @@ window.diagram = {
             DIAGRAM_CONTAINER_WRAPPER_ID = 'diagramContainerWrapper',
             DIAGRAM_CONTAINER_INNER_ID = 'diagramContainerInner';
 
-        Number.prototype.filterTitleNum = function () {
-            return this.toFixed().toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-        }
-
-        Number.prototype.filterDataNum = function (n, x, s, c) {
+        function filterDataNum(value) {
+            let n = 2,
+                x = 3,
+                s = ' ',
+                c = ','
             let re = '\\d(?=(\\d{' + (x || 3) + '})+' + (n > 0 ? '\\D' : '$') + ')',
-                num = this.toFixed(Math.max(0, ~~n));
+                num = value.toFixed(Math.max(0, ~~n));
             return (c ? num.replace('.', c) : num).replace(new RegExp(re, 'g'), '$&' + (s || ','));
         };
 
@@ -23,7 +26,7 @@ window.diagram = {
                     <i style="background:${color}" class="rg-legend-list__leg-color"></i>
                     <span class="rg-legend-list__text">${text}</span>
                     <span class="rg-legend-list__num">
-                        <span>${value.filterDataNum(2, 3, ' ', ',')}</span> &#8381;
+                        <span>${filterDataNum(value)}</span> &#8381;
                     </span>
                 </li>
             `;
@@ -34,42 +37,60 @@ window.diagram = {
                 categories = [],
                 categoriesAmount = [],
                 totalSumm = 0,
-                legendSections = [];
+                legendSections = '';
 
-            mainData.forEach(function (element, key) {
-                if (categories.indexOf(element.category) === -1) {
-                    categories.push(element.category);
-                }
-                array.push({
-                    name: element.name,
-                    color: element.color,
-                    value: element.amount,
-                    y: element.amount,
-                    category: element.category
-                });
-
-                legendSections.push(generateLegendSection(element.color, element.name, element.amount));
-
-                totalSumm += element.amount;
-            });
-
-            categories.forEach(function (element, key) {
-                categoriesAmount.push({ category: element, amount: 0 });
-                array.forEach(function (innerElement, innerKey) {
-                    if (element === innerElement.category) {
-                        categoriesAmount[key].amount += innerElement.value
+            function sortBaseData (callback) {
+                mainData.forEach(function (element, key) {
+                    if (categories.indexOf(element.category) === -1) {
+                        categories.push(element.category);
                     }
-                });
-            });
+                    array.push({
+                        name: element.name,
+                        color: element.color,
+                        value: element.amount,
+                        y: element.amount,
+                        category: element.category
+                    });
 
-            let percentageFromCategory = 0;
-
-            array.forEach(function (element, key) {
-                categoriesAmount.forEach(function (innerElement, innerKey) {
-                    if (element.category === innerElement.category) {
-                        percentageFromCategory = (array[key].value / innerElement.amount) * 100;
-                        array[key].y = percentageFromCategory <= MIN_DATA_VALUE ? MIN_SLICE_WIDTH : percentageFromCategory;
+                    if (element.amount > 0) {
+                        legendSections += generateLegendSection(element.color, element.name, element.amount);
                     }
+                    totalSumm += element.amount;
+                });
+                callback();
+            };
+
+            function sortByCategories(callback) {
+                categories.forEach(function (element, key) {
+                    categoriesAmount.push({ category: element, amount: 0 });
+                    array.forEach(function (innerElement, innerKey) {
+                        if (element === innerElement.category) {
+                            categoriesAmount[key].amount += innerElement.value
+                        }
+                    });
+                });
+                callback();
+            };
+
+            function sortByPercentageOfCategory () {
+                let percentageFromCategory = 0;
+                array.forEach(function (element, key) {
+                    categoriesAmount.forEach(function (innerElement, innerKey) {
+                        if (element.category === innerElement.category) {
+                            percentageFromCategory = (array[key].value / innerElement.amount) * 100;
+                            if (percentageFromCategory <= 0) {
+                                array[key].y = 0; 
+                            } else {
+                                array[key].y = percentageFromCategory <= MIN_DATA_VALUE ? MIN_SLICE_WIDTH : percentageFromCategory;
+                            }
+                        }
+                    });
+                });
+            };
+
+            sortBaseData(function(){
+                sortByCategories(function(){
+                    sortByPercentageOfCategory();
                 });
             });
 
@@ -85,13 +106,13 @@ window.diagram = {
         let sortedArray = sortArray();
 
         let drawLegend = function () {
-            document.getElementById('diagramLegend').innerHTML = sortedArray.sections.join(' ');
+            document.getElementById('diagramLegend').innerHTML = sortedArray.sections;
         };
 
         let titleTemplate = `
             <div class="rg-diagram-title">
                 <div class="rg-diagram-title__number">
-                    ${(sortedArray.total.filterTitleNum())} &#8381;
+                    ${filterDataNum(sortedArray.total)} &#8381;
                 </div>
                 <div class="rg-diagram-title__description">
                     По состоянию на <br/>
@@ -109,6 +130,8 @@ window.diagram = {
             resizeDiagram();
         };
         resizeDiagram();
+
+        console.log(sortedArray.data);
 
         let drawChart = function () {
             window.addEventListener('resize', onWindowResize);
@@ -156,7 +179,7 @@ window.diagram = {
                                 ${this.point.name}
                             </div>
                             <div class="rg-tooltip__number">
-                                ${(this.point.value.filterDataNum(2, 3, ' ', ','))} &#8381;
+                                ${filterDataNum(this.point.value)} &#8381;
                             </div>
                         </div> `;
                     }
