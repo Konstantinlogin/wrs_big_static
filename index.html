@@ -82,7 +82,7 @@
         {
             name: 'Сумма пенсионных резервов (НПО) за весь период',
             color: '#ff9835',
-            amount: 120000,
+            amount: 0,
             category: 'NPO'
         },
         {
@@ -102,9 +102,11 @@
         Сумма ваших накоплений
     </h1>
     <div class="b-main-content__round-graph round-graph">
-        <div class="round-graph__diagram-block">
+        <div class="round-graph__diagram-block" id="diagramContainerWrapper">
+            <div id="diagramContainerInner">
                 <div class="round-graph__diagram" id="diagramContainer">
                 </div>
+            </div>
         </div>
         <div class="round-graph__legend">
             <div class="round-graph__rg-legend-switcher rg-legend-switcher">

@@ -79,8 +79,8 @@
     }
     &__diagram-block {
         width: 100%;
-        margin-bottom: 52px;
         height: 100%;
+        margin-bottom: 52px;
         // min-height: 470px;
         @media screen and (min-width: 1280px) {
             margin-bottom: 0;
@@ -95,20 +95,12 @@
         box-sizing: border-box;
     }
     &__diagram {
-        width: 240px;
-        height: 240px;
+        width: 100%;
+        height: 100%;
         margin: auto;
-        @media screen and (min-width: 380px) {
-            width: 320px;
-            height: 320px;
-        }
-        @media screen and (min-width: 480px) {
-            width: 100%;
-            height: 100%;
-        }
         @media screen and (min-width: 1690px) {
             top: 0;
-            position: absolute;
+            position: relative;
             left: -10px;
             width: 470px;
             height: 470px;

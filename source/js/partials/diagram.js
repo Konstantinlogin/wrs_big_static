@@ -1,14 +1,17 @@
 window.diagram = {
-    draw: function(outsideData) {
+    draw: function (outsideData) {
         const mainData = outsideData.data;
         const MIN_SLICE_WIDTH = 0.7,
-            MIN_DATA_VALUE = 0.7;
+            MIN_DATA_VALUE = 0.7,
+            DIAGRAM_CONTAINER_ID = 'diagramContainer',
+            DIAGRAM_CONTAINER_WRAPPER_ID = 'diagramContainerWrapper',
+            DIAGRAM_CONTAINER_INNER_ID = 'diagramContainerInner';
 
         Number.prototype.filterTitleNum = function () {
             return this.toFixed().toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
         }
 
-        Number.prototype.filterDataNum = function(n, x, s, c) {
+        Number.prototype.filterDataNum = function (n, x, s, c) {
             let re = '\\d(?=(\\d{' + (x || 3) + '})+' + (n > 0 ? '\\D' : '$') + ')',
                 num = this.toFixed(Math.max(0, ~~n));
             return (c ? num.replace('.', c) : num).replace(new RegExp(re, 'g'), '$&' + (s || ','));
@@ -33,7 +36,7 @@ window.diagram = {
                 totalSumm = 0,
                 legendSections = [];
 
-            mainData.forEach(function(element, key) {
+            mainData.forEach(function (element, key) {
                 if (categories.indexOf(element.category) === -1) {
                     categories.push(element.category);
                 }
@@ -50,9 +53,9 @@ window.diagram = {
                 totalSumm += element.amount;
             });
 
-            categories.forEach(function(element, key) {
-                categoriesAmount.push({category: element, amount: 0});
-                array.forEach(function(innerElement, innerKey) {
+            categories.forEach(function (element, key) {
+                categoriesAmount.push({ category: element, amount: 0 });
+                array.forEach(function (innerElement, innerKey) {
                     if (element === innerElement.category) {
                         categoriesAmount[key].amount += innerElement.value
                     }
@@ -61,10 +64,10 @@ window.diagram = {
 
             let percentageFromCategory = 0;
 
-            array.forEach(function(element, key) {
-                categoriesAmount.forEach(function(innerElement, innerKey) {
+            array.forEach(function (element, key) {
+                categoriesAmount.forEach(function (innerElement, innerKey) {
                     if (element.category === innerElement.category) {
-                        percentageFromCategory = (array[key].value / innerElement.amount)*100;
+                        percentageFromCategory = (array[key].value / innerElement.amount) * 100;
                         array[key].y = percentageFromCategory <= MIN_DATA_VALUE ? MIN_SLICE_WIDTH : percentageFromCategory;
                     }
                 });
@@ -96,14 +99,26 @@ window.diagram = {
                 </div>
             </div> `;
 
-        let drawChart = function() {
-            Highcharts.chart('diagramContainer', {
+        let resizeDiagram = function () {
+            let wrapperWidth = document.getElementById(DIAGRAM_CONTAINER_WRAPPER_ID).offsetWidth;
+            let inner = document.getElementById(DIAGRAM_CONTAINER_INNER_ID);
+            inner.style.width = wrapperWidth + 'px';
+            inner.style.height = wrapperWidth + 'px';
+        };
+        let onWindowResize = function (evt) {
+            resizeDiagram();
+        };
+        resizeDiagram();
+
+        let drawChart = function () {
+            window.addEventListener('resize', onWindowResize);
+            Highcharts.chart(DIAGRAM_CONTAINER_ID, {
                 chart: {
                     type: 'pie',
-                    spacingBottom:0,
-                    spacingLeft:0,
-                    spacingRight:0,
-                    spacingTop:0,
+                    spacingBottom: 0,
+                    spacingLeft: 0,
+                    spacingRight: 0,
+                    spacingTop: 0,
                     marginTop: 0,
                     marginLeft: 0,
                     marginLeft: 0
@@ -134,7 +149,7 @@ window.diagram = {
                     style: {
                         padding: 0,
                     },
-                    formatter: function() {
+                    formatter: function () {
                         return `
                         <div class="rg-tooltip">
                             <div class="rg-tooltip__description" style="border-color: ${this.point.color}">
@@ -157,9 +172,9 @@ window.diagram = {
                 }]
             });
         };
-        setTimeout(function() { 
+        setTimeout(function () {
             drawChart();
             drawLegend();
-         }, 100);
+        }, 100);
     }
 };
