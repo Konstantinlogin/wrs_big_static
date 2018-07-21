@@ -81,8 +81,6 @@ window.diagram = {
 
         let sortedArray = sortArray();
 
-        console.log(sortedArray);
-
         let drawLegend = function () {
             document.getElementById('diagramLegend').innerHTML = sortedArray.sections.join(' ');
         };
@@ -118,6 +116,9 @@ window.diagram = {
                     verticalAlign: 'middle',
                     useHTML: true,
                 },
+                credits: {
+                    enabled: false
+                },
                 plotOptions: {
                     pie: {
                         shadow: false,
@@ -136,7 +137,7 @@ window.diagram = {
                     formatter: function() {
                         return `
                         <div class="rg-tooltip">
-                            <div class="rg-tooltip__description">
+                            <div class="rg-tooltip__description" style="border-color: ${this.point.color}">
                                 ${this.point.name}
                             </div>
                             <div class="rg-tooltip__number">
