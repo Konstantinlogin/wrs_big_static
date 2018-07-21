@@ -109,9 +109,9 @@
     &__legend {
         box-sizing: border-box;
         width: 100%;
-        @media screen and (min-width: 1280px) { 
+        @media screen and (min-width: 1280px) {
+            padding-left: 100px;
             width: 50%;
-            max-width: 613px;
         }
         @media screen and (min-width: 1690px) { 
             width: 65%;
@@ -122,6 +122,9 @@
         @media screen and (min-width: 768px) {
             margin-bottom: 88px;
         }
+    }
+    &__rg-legend-list, &__info-block {
+        max-width: 608px;
     }
     &__rg-legend-list {
         // margin-top: 0;
@@ -151,39 +154,28 @@
         @include makeSprite(46px, 39px, 'ic_warning.png');
     }
 }
-.rg-info-tooltip {
+.rg-info-tooltip-icon {
+    display: inline-block;
     outline: none;
     position: relative;
     cursor: pointer;
-    width: 13px;
-    height: 13px;
+    @include makeSprite(13px, 13px, 'ic_tooltip.png');
     white-space: nowrap;
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: inline-block;
-        @include makeSprite(13px, 13px, 'ic_tooltip.png')
-    }
+}
+.rg-info-tooltip-wrapper {
+    position: relative;
+}
+.rg-info-tooltip {
+    display: none;
+    position: absolute;
+    position: absolute;
+    right: -30px;
+    top: 30px;
     &__content {
         display: inline-block;
-        visibility: hidden;
         position: relative;
         width: 13px;
         height: 13px;
-        &:before {
-            content: '';
-            width: 20px;
-            height: 20px;
-            display: inline-block;
-            position: absolute;
-            top: 20px;
-            right: -6px;
-            background-color: #f1f0f0;
-            transform: rotate(45deg);
-            z-index: 1;
-        }
     }
     &:hover, &:focus {
         .rg-info-tooltip__content  {
@@ -191,18 +183,33 @@
         }
     }
     &__caption {
+        &:before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            position: absolute;
+            top: -6px;
+            right: 26px;
+            background-color: #f1f0f0;
+            transform: rotate(45deg);
+            z-index: 1;
+        }
+        position: relative;
+        display: block;
         z-index: 2;
-        width: 280px;
+        
         background-color: #f1f0f0;
         border-radius: 16px;
         padding: 12px 18px 12px 18px;
         box-sizing: border-box;
+        
+        @media screen and (min-width: 500px) {
+            width: 280px;
+        }
         @media screen and (min-width: 768px) {
             width: 405px;
         }
-        position: absolute;
-        top: 24px;
-        right: -60px;
         &-text {
             white-space: normal;
             @extend %text;
@@ -217,6 +224,9 @@
             // display: block;
         }
     }
+}
+.rg-info-tooltip-icon:hover ~ .rg-info-tooltip {
+    display: inline-block;
 }
 .rg-legend-switcher {
     display: flex;
@@ -261,7 +271,7 @@
         @media screen and (min-width: 500px) { 
             padding-right: 120px;
             display: flex;
-            align-items: center;
+            align-items: top;
         }
         line-height: 1.5;
         position: relative;
@@ -298,6 +308,10 @@
         min-height: 10px;
         border-radius: 10px;
         display: inline-block;
+        @media screen and (min-width: 500px) { 
+            position: relative;
+            top: 5px;
+        }
         margin-right: 18px;
     }
 }
