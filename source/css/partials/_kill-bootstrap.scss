@@ -1,0 +1,12 @@
+&.kill-bootstrap {
+    .col, .col-1, .col-2, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12
+    &.col, &.col-1, &.col-2, &.col-4, &.col-5, &.col-6, &.col-7, &.col-8, &.col-9, &.col-10, &.col-11, &.col-12 {
+        float: none$i;
+        padding-left: 0$i;
+        padding-right: 0$i;
+        width: 100%$i;
+    }
+    .row {
+        margin: auto;
+    }
+}

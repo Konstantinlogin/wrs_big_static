@@ -1,0 +1,109 @@
+.gr-form {
+    padding: 20px;
+	@media screen and (min-width: 968px) {
+		padding: 62px;
+	}
+    @import "_form-resets-1";
+    @import "_form-resets-2";
+    &__input-section, .gr-form__input-col {
+        .display_only, .apex-item-display-only {
+            font-weight: 100$i;
+        }
+    }
+    &__center-block {
+        @media screen and (min-width: 1200px) {
+            padding-right: 92px; 
+        }
+    }
+}
+.gr-form-title {
+    margin-bottom: 20px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 16.6666666667%;
+        margin-bottom: 55px;
+    }
+}
+.gr-avatar-block {
+    padding-right: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        transform: translateY(-50%);
+    }
+
+    @media screen and (min-width: 1581px) {
+        text-align: left;
+    }
+
+
+    &__image-block {
+        position: relative;
+        overflow: hidden;
+        width: 80px;
+        height: 80px;
+        min-width: 80px;
+        min-height: 80px;
+        border-radius: 80px;
+        display: inline-block;
+
+
+        // width: 55px;
+        // height: 55px;
+        // min-width: 55px;
+        // min-height: 55px;
+        // border-radius: 55px;
+        // margin-bottom: 20px;
+        // @media screen and (min-width: 1200px) {
+        //     width: 80px;
+        //     height: 80px;
+        //     min-width: 80px;
+        //     min-height: 80px;
+        //     border-radius: 80px;
+        // }
+        @media screen and (min-width: 1366px) {
+            width: 100px;
+            height: 100px;
+            min-width: 100px;
+            min-height: 100px;
+            border-radius: 100px;
+        }
+        @media screen and (min-width: 1581px) {
+            width: 143px;
+            height: 143px;
+            min-width: 143px;
+            min-height: 143px;
+            border-radius: 143px;
+        }
+    }
+    &__image {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    &__image-description {
+        display: block;
+        margin: 0 auto;
+        @media screen and (min-width: 1367px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        width: 100%;
+        @extend %text;
+        font-size: 9px;
+        line-height: 1.5;
+        max-width: 137px;
+        text-align: center;
+        @media screen and (min-width: 1200px) {
+            padding-left: 16px;
+            // text-align: left;
+        }
+
+    }
+}
