@@ -8,6 +8,25 @@
         padding: 62px;
         padding-bottom: 0; 
     }
+    &--last-form {
+        padding: 20px;
+        padding-top: 0;
+        @media screen and (min-width: 768px) {
+            padding: 62px;
+            padding-top: 0;
+        }   
+    }
+    &--sub-head {
+        padding: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px$i;
+        max-width: 968px;
+        @media screen and (min-width: 768px) {
+            padding: 62px;
+            padding-top: 46px;
+            padding-bottom: 30px$i;
+        } 
+    }
     &__title-h1 {
         line-height: 1.2;
         margin-bottom: 62px;
@@ -25,5 +44,41 @@
             padding-bottom: 62px; 
         }
        }
+    }
+}
+.request-submit-form {
+    .t-Form-inputContainer {
+        padding: 0;
+    }
+    padding-left: 44px;
+    max-width: 844px;
+    .b-green-button {
+        @media screen and (max-width: 480px){
+            width: calc(100% - 10px);
+            margin: 0 auto;
+            display: block;
+            font-size: 14px;
+            white-space: nowrap;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    .t-Form-inputContainer .textarea .textarea {
+        @extend %lk-textarea;
+        margin-bottom: 30px;
+    }
+}
+.page-request-messages {
+    .t-ButtonRegion {
+        box-shadow: none$i;
+        border-left-width: 0;
+        border-right-width: 0;
+        @media screen and (min-width: 768px) {
+            padding-left: 40px;
+        }
+        .t-Button  {
+            @extend %button-sm;
+            min-width: 100px;
+        }
     }
 }

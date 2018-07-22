@@ -5,6 +5,34 @@
     margin-left: auto;
     margin-right: auto;
     box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1)$i;
+    #P105_TEXT_CONTAINER {
+        text-align: center$i;
+        width: 100%$i;
+        .t-Form-fieldContainer {
+            margin-bottom: 0$i;
+            @media screen and (min-width: 768px) {
+                margin-bottom: 51px$i;    
+            }
+        }
+        .t-Form-inputContainer {
+            margin-bottom: 0;
+            text-align: center;
+            .display_only {
+                @extend %text;
+                font-weight: 400;
+                font-size: 15px;
+            }
+        }
+        padding-bottom: 0;
+    }
+    &__notice-text {
+        @extend %text;
+        text-align: center;
+        font-size: 15px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 51px;    
+        }
+    }
     &__bottom {
         width: 100%;
         text-align: center;
@@ -67,6 +95,43 @@
             &:before {
                 border: none;
                 @include makeSprite(16px, 16px, 'spr-ckbx-checked.png');
+            }
+        }
+    }
+    &---choise {
+        .t-MediaList-itemWrap {
+            color: $BLACK;
+            padding-bottom: 17px;
+            &:focus, &:active {
+                box-shadow: 0 0 0 1px $BLACK inset;
+            } 
+        }
+        .t-MediaList-title {
+            @extend %text;
+            padding-left: 9px;
+            font-size: 13px;
+        }
+        .reg-ic-mobile-register {
+            display: inline-block;
+            @include makeSprite(30px, 59px, 'ic_reg_mobile.png');
+        }
+        .reg-ic-gosuslugi {
+            display: inline-block;
+            @include makeSprite(56px, 62px, 'ic_reg_gosuslugi.png');
+            margin-top: 12px;
+            margin-left: -4px;
+        }
+        .t-MediaList-body {
+            vertical-align: middle;
+        }
+        .t-Login-header {
+            margin-bottom: 24px$i;
+        }
+        .t-MediaList-item {
+            &:first-child {
+                .t-MediaList-title { 
+                    max-width: 180px;
+                }
             }
         }
     }

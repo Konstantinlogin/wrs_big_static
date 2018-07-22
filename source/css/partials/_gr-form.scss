@@ -15,6 +15,21 @@
             padding-right: 92px; 
         }
     }
+    .gr-form__input-block--date {
+        .display_only {
+            white-space: nowrap;
+            display: inline-block;
+            &:before {
+                content: '';
+                display: inline-block;
+                @include makeSprite(18px, 18px, 'spr-calendar.png');
+                margin-right: 8px;
+                position: relative;
+                top: 2px;
+            }
+
+        }
+    }
 }
 .gr-form-title {
     margin-bottom: 20px;

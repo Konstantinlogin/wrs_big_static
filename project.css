@@ -1,8 +1,8 @@
-.b-green-link, .b-menu__link, .b-menu__sub-link, .pension-calculator .graph__column-title, .pension-calculator .graph__column-value, .pension-calculator .graph__column-ruble, .pension-calculator .graph__column-title-text, .pension-calculator .graph__total-text, .pension-calculator .graph__number, .pension-calculator .graph__number-value, .pension-calculator .graph__ruble, .pension-calculator .legend__text, .pension-calculator .legend__sum, .pension-calculator .legend__rub, .pension-calculator__title, .pension-calculator__row-label, .pension-calculator__slider-min, .pension-calculator__slider-middle, .pension-calculator__slider-max, .pension-calculator__input, .pension-calculator-radio__text, .pension-calculator-checkbox__text, .faq-answers__title, .faq-answers__sub-list-item, .b-about-content__item-title, .b-about-content__item-text, .b-download-pdfs__title, .b-download-pdfs__file-name, .b-download-pdfs__sub-title, .b-request-section .b-requests-table .t-Report-colHead, .b-request-section .b-requests-table .t-Report-cell, .b-profile-content__title-h3, .b-profile-content-section__title-h3, .b-profile-content-section-footer__title-h3, .b-main-content__not-oferta, .round-graph__info-block-text, .rg-info-tooltip__caption-text, .rg-legend-switcher__text, .rg-legend-list__text, .rg-legend-list__num, .rg-diagram-title__number, .rg-diagram-title__description, .rg-title, .rg-tooltip__description, .rg-tooltip__number, .dynamics__legend-text, .dinamics-tooltip, .renew-personal-data__title, .renew-personal-data__text, .gr-avatar-block__image-description {
+.b-green-link, .t-PageBody--login .b-register-form #P105_TEXT_CONTAINER .t-Form-inputContainer .display_only, .t-PageBody--login .b-register-form__notice-text, .t-PageBody--login .b-register-form---choise .t-MediaList-title, .b-menu__link, .b-menu__sub-link, .pension-calculator .graph__column-title, .pension-calculator .graph__column-value, .pension-calculator .graph__column-ruble, .pension-calculator .graph__column-title-text, .pension-calculator .graph__total-text, .pension-calculator .graph__number, .pension-calculator .graph__number-value, .pension-calculator .graph__ruble, .pension-calculator .legend__text, .pension-calculator .legend__sum, .pension-calculator .legend__rub, .pension-calculator__title, .pension-calculator__row-label, .pension-calculator__slider-min, .pension-calculator__slider-middle, .pension-calculator__slider-max, .pension-calculator__input, .pension-calculator-radio__text, .pension-calculator-checkbox__text, .faq-answers__title, .faq-answers__sub-list-item, .b-about-content__item-title, .b-about-content__item-text, .b-download-pdfs__title, .b-download-pdfs__file-name, .b-download-pdfs__sub-title, .b-request-section .b-requests-table .t-Report-colHead, .b-request-section .b-requests-table .t-Report-cell, .b-profile-content__title-h3, .b-profile-content-section__title-h3, .b-profile-content-section-footer__title-h3, .b-main-content__not-oferta, .round-graph__info-block-text, .rg-info-tooltip__caption-text, .rg-legend-switcher__text, .rg-legend-list__text, .rg-legend-list__num, .rg-diagram-title__number, .rg-diagram-title__description, .rg-title, .rg-tooltip__description, .rg-tooltip__number, .dynamics__legend-text, .dinamics-tooltip, .renew-personal-data__title, .renew-personal-data__text, .gr-avatar-block__image-description {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.2; }
 
-.b-profile-content .t-Button, .b-profile-content-section .t-Button, .b-profile-content-section-footer .t-Button, .b-green-button {
+.page-request-messages .t-ButtonRegion .t-Button, .b-profile-content .t-Button, .b-profile-content-section .t-Button, .b-profile-content-section-footer .t-Button, .b-green-button {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -18,10 +18,10 @@
   background-image: -webkit-linear-gradient(-90deg, #8fda0b 0%, #4ca00d 100%);
   background-image: -ms-linear-gradient(-90deg, #8fda0b 0%, #4ca00d 100%);
   outline: none; }
-  .b-profile-content .t-Button:focus, .b-profile-content-section .t-Button:focus, .b-profile-content-section-footer .t-Button:focus, .b-green-button:focus {
+  .page-request-messages .t-ButtonRegion .t-Button:focus, .b-profile-content .t-Button:focus, .b-profile-content-section .t-Button:focus, .b-profile-content-section-footer .t-Button:focus, .b-green-button:focus {
     box-shadow: 0 0 0 1px #010101 inset !important; }
 
-.b-profile-content .t-Button, .b-profile-content-section .t-Button, .b-profile-content-section-footer .t-Button {
+.page-request-messages .t-ButtonRegion .t-Button, .b-profile-content .t-Button, .b-profile-content-section .t-Button, .b-profile-content-section-footer .t-Button {
   height: 40px;
   line-height: 40px;
   padding-top: 0;
@@ -107,10 +107,10 @@
   text-decoration: none;
   border: none; }
 
-.b-request-section .b-request-form .textarea .textarea, .b-profile-content .b-profile-form .textarea .textarea, .b-profile-content-section .b-profile-form .textarea .textarea, .b-profile-content-section-footer .b-profile-form .textarea .textarea, .gr-form .textarea .textarea {
+.b-request-section .b-request-form .textarea .textarea, .request-submit-form .t-Form-inputContainer .textarea .textarea, .b-profile-content .b-profile-form .textarea .textarea, .b-profile-content-section .b-profile-form .textarea .textarea, .b-profile-content-section-footer .b-profile-form .textarea .textarea, .gr-form .textarea .textarea {
   border: 1px solid #c8c8c8 !important;
   padding: 20px !important; }
-  .b-request-section .b-request-form .textarea .textarea:focus, .b-profile-content .b-profile-form .textarea .textarea:focus, .b-profile-content-section .b-profile-form .textarea .textarea:focus, .b-profile-content-section-footer .b-profile-form .textarea .textarea:focus, .gr-form .textarea .textarea:focus {
+  .b-request-section .b-request-form .textarea .textarea:focus, .request-submit-form .t-Form-inputContainer .textarea .textarea:focus, .b-profile-content .b-profile-form .textarea .textarea:focus, .b-profile-content-section .b-profile-form .textarea .textarea:focus, .b-profile-content-section-footer .b-profile-form .textarea .textarea:focus, .gr-form .textarea .textarea:focus {
     border-color: #010101 !important; }
 
 .b-request-section .b-requests-table .t-Report-cell a {
@@ -864,6 +864,27 @@
   margin-left: auto;
   margin-right: auto;
   box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1) !important; }
+  .t-PageBody--login .b-register-form #P105_TEXT_CONTAINER {
+    text-align: center !important;
+    width: 100% !important;
+    padding-bottom: 0; }
+    .t-PageBody--login .b-register-form #P105_TEXT_CONTAINER .t-Form-fieldContainer {
+      margin-bottom: 0 !important; }
+      @media screen and (min-width: 768px) {
+        .t-PageBody--login .b-register-form #P105_TEXT_CONTAINER .t-Form-fieldContainer {
+          margin-bottom: 51px !important; } }
+    .t-PageBody--login .b-register-form #P105_TEXT_CONTAINER .t-Form-inputContainer {
+      margin-bottom: 0;
+      text-align: center; }
+      .t-PageBody--login .b-register-form #P105_TEXT_CONTAINER .t-Form-inputContainer .display_only {
+        font-weight: 400;
+        font-size: 15px; }
+  .t-PageBody--login .b-register-form__notice-text {
+    text-align: center;
+    font-size: 15px; }
+    @media screen and (min-width: 768px) {
+      .t-PageBody--login .b-register-form__notice-text {
+        margin-bottom: 51px; } }
   .t-PageBody--login .b-register-form__bottom {
     width: 100%;
     text-align: center; }
@@ -914,6 +935,34 @@
       height: 16px;
       background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/spr-ckbx-checked.png") no-repeat center;
       background-size: contain; }
+  .t-PageBody--login .b-register-form---choise .t-MediaList-itemWrap {
+    color: #010101;
+    padding-bottom: 17px; }
+    .t-PageBody--login .b-register-form---choise .t-MediaList-itemWrap:focus, .t-PageBody--login .b-register-form---choise .t-MediaList-itemWrap:active {
+      box-shadow: 0 0 0 1px #010101 inset; }
+  .t-PageBody--login .b-register-form---choise .t-MediaList-title {
+    padding-left: 9px;
+    font-size: 13px; }
+  .t-PageBody--login .b-register-form---choise .reg-ic-mobile-register {
+    display: inline-block;
+    width: 30px;
+    height: 59px;
+    background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_reg_mobile.png") no-repeat center;
+    background-size: contain; }
+  .t-PageBody--login .b-register-form---choise .reg-ic-gosuslugi {
+    display: inline-block;
+    width: 56px;
+    height: 62px;
+    background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/ic_reg_gosuslugi.png") no-repeat center;
+    background-size: contain;
+    margin-top: 12px;
+    margin-left: -4px; }
+  .t-PageBody--login .b-register-form---choise .t-MediaList-body {
+    vertical-align: middle; }
+  .t-PageBody--login .b-register-form---choise .t-Login-header {
+    margin-bottom: 24px !important; }
+  .t-PageBody--login .b-register-form---choise .t-MediaList-item:first-child .t-MediaList-title {
+    max-width: 180px; }
 
 @media (max-width: 767px) {
   .t-PageBody--login .t-Login-title {
@@ -2267,6 +2316,23 @@
     .b-request-section {
       padding: 62px;
       padding-bottom: 0; } }
+  .b-request-section--last-form {
+    padding: 20px;
+    padding-top: 0; }
+    @media screen and (min-width: 768px) {
+      .b-request-section--last-form {
+        padding: 62px;
+        padding-top: 0; } }
+  .b-request-section--sub-head {
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px !important;
+    max-width: 968px; }
+    @media screen and (min-width: 768px) {
+      .b-request-section--sub-head {
+        padding: 62px;
+        padding-top: 46px;
+        padding-bottom: 30px !important; } }
   .b-request-section__title-h1 {
     line-height: 1.2;
     margin-bottom: 62px; }
@@ -2319,6 +2385,34 @@
       @media screen and (min-width: 768px) {
         .b-request-section .b-requests-table .t-Report-wrap {
           padding-bottom: 62px; } }
+
+.request-submit-form {
+  padding-left: 44px;
+  max-width: 844px; }
+  .request-submit-form .t-Form-inputContainer {
+    padding: 0; }
+  @media screen and (max-width: 480px) {
+    .request-submit-form .b-green-button {
+      width: -webkit-calc(100% - 10px);
+      width: calc(100% - 10px);
+      margin: 0 auto;
+      display: block;
+      font-size: 14px;
+      white-space: nowrap;
+      padding-left: 10px;
+      padding-right: 10px; } }
+  .request-submit-form .t-Form-inputContainer .textarea .textarea {
+    margin-bottom: 30px; }
+
+.page-request-messages .t-ButtonRegion {
+  box-shadow: none !important;
+  border-left-width: 0;
+  border-right-width: 0; }
+  @media screen and (min-width: 768px) {
+    .page-request-messages .t-ButtonRegion {
+      padding-left: 40px; } }
+  .page-request-messages .t-ButtonRegion .t-Button {
+    min-width: 100px; }
 
 .b-profile-content, .b-profile-content-section, .b-profile-content-section-footer {
   box-sizing: border-box;
@@ -2910,6 +3004,19 @@
   @media screen and (min-width: 1200px) {
     .gr-form__center-block {
       padding-right: 92px; } }
+  .gr-form .gr-form__input-block--date .display_only {
+    white-space: nowrap;
+    display: inline-block; }
+    .gr-form .gr-form__input-block--date .display_only:before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      background: url("https://biglkadmin.xsquare.ru/a/themes/theme_42_biglkpublic/xsquare/images/spr-calendar.png") no-repeat center;
+      background-size: contain;
+      margin-right: 8px;
+      position: relative;
+      top: 2px; }
 
 .gr-form-title {
   margin-bottom: 20px;
