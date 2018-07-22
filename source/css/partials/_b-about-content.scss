@@ -64,7 +64,7 @@
 	}
 }
 .b-download-pdfs {
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 1024px) {
 		display: flex;
 	}
 	&__item {
@@ -75,7 +75,7 @@
 		background-color: #FFF;
 		box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1);
 		border-radius: 5px;
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: 1024px) {
 			padding: 62px;
 			width: 50%;
 			max-width: 426px;
@@ -83,7 +83,7 @@
 	}
 	&--col-2 {
 		.b-download-pdfs__item {
-			@media screen and (min-width: 768px) {
+			@media screen and (min-width: 1024px) {
 				padding: 62px;
 				width: 50%;
 				max-width: 50%;

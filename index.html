@@ -11,7 +11,8 @@
 
 <body>
     <script>
-        var data = {
+
+        var allData = {
             date: '01.01.2017',
             data: [{
                 name: 'Сумма пенсионных накоплений (ОПС) за весь период',
@@ -28,7 +29,7 @@
             {
                 name: 'Сумма накоплений по программе софинансирования',
                 color: '#ceff67',
-                amount: 180352,
+                amount: 1800352,
                 category: 'OPS'
             },
             {
@@ -83,7 +84,7 @@
                 {
                     name: 'Сумма пенсионных резервов (НПО) за весь период',
                     color: '#ff9835',
-                    amount: 0,
+                    amount: 120000,
                     category: 'NPO'
                 },
                 {
@@ -111,7 +112,7 @@
             }]
         };
         window.onload = function () {
-            diagram.draw(data);
+            diagram.draw(allData);
             dynamics.draw(dynamycsData);
         };
     </script>
@@ -178,41 +179,44 @@
                     </div>
                 </div>
             </div>
-            <div class="round-graph__legend">
-                <div class="round-graph__rg-legend-switcher rg-legend-switcher">
-                    <label class="rg-legend-switcher__item">
-                        <input class="rg-legend-switcher__input" type="radio" name="rglegend" onchange="diagram.draw(data);" checked/>
-                        <span class="rg-legend-switcher__text">Пенсионный счет</span>
-                    </label>
-                    <label class="rg-legend-switcher__item">
-                        <input class="rg-legend-switcher__input" type="radio" onchange="diagram.draw(opsData);" name="rglegend" />
-                        <span class="rg-legend-switcher__text">ОПС</span>
-                    </label>
-                    <label class="rg-legend-switcher__item">
-                        <input class="rg-legend-switcher__input" type="radio" onchange="diagram.draw(npoData);" name="rglegend" />
-                        <span class="rg-legend-switcher__text"> НПО</span>
-                    </label>
-                </div>
-                <ul class="round-graph__rg-legend-list rg-legend-list" id="diagramLegend"></ul>
-                <div class="round-graph__info-block">
-                    <i class="round-graph__info-icon round-graph__info-icon--warning"></i>
-                    <span class="round-graph__info-block-text">Потери при досрочном переходе
-                        <span class="rg-info-tooltip-wrapper" style="white-space: nowrap">
-                            100 000 рублей
-                            <i class="rg-info-tooltip-icon"></i>
-                            <span class="rg-info-tooltip">
-                                <span class="rg-info-tooltip__caption">
-                                    <span class="rg-info-tooltip__caption-text">
-                                        В соответствии со ст. 36.6-1 Федерального закона от 07.05.98 №75-ФЗ "О негосударственных пенсионных фондах". Потеря Вашего
-                                        инвестиционного дохода при досрочном переходе в ПФР или другой НПФ по итогам текущего
-                                        года.
+            <div class="round-graph__legend-wrapper">
+                <div class="round-graph__legend">
+                    <div class="round-graph__rg-legend-switcher rg-legend-switcher">
+                        <label class="rg-legend-switcher__item">
+                            <input class="rg-legend-switcher__input" type="radio" name="rglegend" onchange="diagram.draw(allData);" checked/>
+                            <span class="rg-legend-switcher__text">Пенсионный счет</span>
+                        </label>
+                        <label class="rg-legend-switcher__item">
+                            <input class="rg-legend-switcher__input" type="radio" onchange="diagram.draw(opsData);" name="rglegend" />
+                            <span class="rg-legend-switcher__text">ОПС</span>
+                        </label>
+                        <label class="rg-legend-switcher__item">
+                            <input class="rg-legend-switcher__input" type="radio" onchange="diagram.draw(npoData);" name="rglegend" />
+                            <span class="rg-legend-switcher__text"> НПО</span>
+                        </label>
+                    </div>
+                    <ul class="round-graph__rg-legend-list rg-legend-list" id="diagramLegend"></ul>
+                    <div class="round-graph__info-block">
+                        <i class="round-graph__info-icon round-graph__info-icon--warning"></i>
+                        <span class="round-graph__info-block-text">Потери при досрочном переходе
+                            <span class="rg-info-tooltip-wrapper" style="white-space: nowrap">
+                                100 000 рублей
+                                <i class="rg-info-tooltip-icon"></i>
+                                <span class="rg-info-tooltip">
+                                    <span class="rg-info-tooltip__caption">
+                                        <span class="rg-info-tooltip__caption-text">
+                                            В соответствии со ст. 36.6-1 Федерального закона от 07.05.98 №75-ФЗ "О негосударственных пенсионных фондах". Потеря Вашего
+                                            инвестиционного дохода при досрочном переходе в ПФР или другой НПФ по итогам
+                                            текущего года.
+                                        </span>
                                     </span>
                                 </span>
                             </span>
                         </span>
-                    </span>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
     <script src="js/project.js"></script>
