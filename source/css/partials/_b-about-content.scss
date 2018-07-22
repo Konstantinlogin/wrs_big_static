@@ -111,9 +111,15 @@
 			margin-bottom: 28px;
 		}
 	}
+	&__title, &__sub-title ~ .b-download-pdfs__file-block {
+		.b-download-pdfs__file-name {
+			padding-top: 10px;
+		}
+	}
 	&__sub-title {
 		margin-bottom: 32px;
 	}
+	
 	&__file-name, &__sub-title {
 		display: block;
 		@extend %text;
@@ -121,7 +127,6 @@
 	}
 	&__file-name {
 		margin-bottom: 18px;
-		padding-top: 10px;
 	}
 	&__file-pdf {
 		display: block;

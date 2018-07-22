@@ -1,0 +1,40 @@
+.renew-personal-data {
+    padding: 20px;
+	@media screen and (min-width: 768px) {
+        padding-left: 49px;
+        padding-right: 62px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    &__title {
+        @extend %text;
+        font-weight: 600;
+        font-size: 22px;
+        margin-bottom: 38px;
+        margin-top: 0;
+    }
+    &__text {
+        margin-top: 0;
+        @extend %text;
+        font-size: 14px;
+        margin-bottom: 46px;
+        line-height: 1.5;;
+    }
+    &__download-pdfs {
+        .b-download-pdfs__item {
+            padding: 0;
+            background: transparent;
+            box-shadow: none;
+            margin-bottom: 20px;
+            @media screen and (min-width: 1024px) {
+                margin-bottom: 0;
+                padding-right: 20px;
+                max-width: 496px;
+            }
+        }
+        .b-download-pdfs__file-name {
+            margin-bottom: 8px;
+        }
+    }
+
+}
