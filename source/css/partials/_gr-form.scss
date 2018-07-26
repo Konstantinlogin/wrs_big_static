@@ -12,8 +12,24 @@
     }
     &__center-block {
         @media screen and (min-width: 1200px) {
-            padding-right: 92px; 
+            padding-right: 52px;
         }
+    }
+    &__input-col-inner {
+        &:first-child {
+            @media screen and (min-width: 641px) {
+                padding-right: 20px;
+            }
+            @media screen and (min-width: 1200px) {
+                padding-right: 52px;
+            }
+        }
+    }
+    .t-Form-label {
+        white-space: nowrap;
+    }
+    .display_only {
+        text-transform: none$i;
     }
     .gr-form__input-block--date {
         .display_only {
