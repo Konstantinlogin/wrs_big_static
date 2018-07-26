@@ -11,15 +11,15 @@
 
 <body>
     <script>
-
-        var allData = {
-            date: '01.01.2017',
-            data: [{
-                name: 'Сумма пенсионных накоплений (ОПС) за весь период',
-                color: '#8bc741',
-                amount: 356015.03,
-                category: 'OPS'
-            },
+    var allData = {
+        showWarning: true,
+        date: '01.01.2017',
+        data:[{
+            name: 'Сумма пенсионных накоплений (ОПС) за весь период',
+            color: '#8bc741',
+            amount: 356015.03,
+            category: 'OPS'
+        },
             {
                 name: 'Доход от инвестирования пенсионных накоплений за 2017г.',
                 color: '#4c9d10',
@@ -50,15 +50,16 @@
                 amount: 25263.89,
                 category: 'NPO'
             }]
-        };
-        var opsData = {
-            date: '01.01.2017',
-            data: [{
-                name: 'Сумма пенсионных накоплений (ОПС) за весь период',
-                color: '#8bc741',
-                amount: 356015.03,
-                category: 'OPS'
-            },
+    };
+    var opsData = {
+        showWarning: true,
+        date: '01.01.2017',
+        data:[{
+            name: 'Сумма пенсионных накоплений (ОПС) за весь период',
+            color: '#8bc741',
+            amount: 356015.03,
+            category: 'OPS'
+        },
             {
                 name: 'Доход от инвестирования пенсионных накоплений за 2017г.',
                 color: '#4c9d10',
@@ -77,45 +78,97 @@
                 amount: 1596.36,
                 category: 'OPS'
             }]
-        };
-        var npoData = {
-            date: '01.01.2017',
-            data: [
-                {
-                    name: 'Сумма пенсионных резервов (НПО) за весь период',
-                    color: '#ff9835',
-                    amount: 120000,
-                    category: 'NPO'
-                },
-                {
-                    name: 'Доход от инвестирования пенсионных резервов за 2017г.',
-                    color: '#ffff66',
-                    amount: 25263.89,
-                    category: 'NPO'
-                }]
-        };
-        var dynamycsData = {
-            fromYear: 2004,
-            data: [{
-                name: 'НПФ Большой',
-                data: [0, 14.90, 17.90, 6.40, 0, 28.30, 9.90, 2.82, 7.67, 7.25, 6.15, 9.34, 8.32],
-                color: '#8cc63c'
-            }, {
-                name: 'ВЭБ',
-                data: [7.33, 12.18, 5.67, 5.98, -0.46, 9.52, 7.62, 5.47, 9.21, 6.71, 17.34, 13.15, 13.15],
-                color: '#6dcff6'
+    };
+    var npoData = {
+        date: '01.01.2017',
+        data:[
+            {
+                name: 'Сумма пенсионных резервов (НПО) за весь период',
+                color: '#ff9835',
+                amount: 120000,
+                category: 'NPO'
             },
             {
+                name: 'Доход от инвестирования пенсионных резервов за 2017г.',
+                color: '#ffff66',
+                amount: 25263.89,
+                category: 'NPO'
+            }]
+    };
+    var dynamycsData = {
+        fromYear: 2005,
+        data: [{
+            name: 'НПФ Большой',
+            data: [14.90, 17.90, 6.40, 0.00, 24.40, 9.86, 1.68, 7.67, 7.25, 6.15, 11.33, 9.60, 9.77],
+            color: '#8cc63c'
+        }, {
+            name: 'ВЭБ расширенный',
+            data: [12.18, 5.67, 6.04, -0.46, 9.52, 7.62, 5.47, 9.21, 6.71, 2.68, 13.15, 10.53, 8.60],
+            color: '#6dcff6'
+        },
+            {
                 name: 'ИНФЛЯЦИЯ',
-                data: [0, 10.90, 11.90, 4.40, 0, 22.30, 6.90, 0.82, 5.67, 2.25, 12.15, 4.34, 2.32],
+                data: [10.91, 9.00, 11.87, 13.28, 8.80, 8.78, 6.10, 6.58, 6.45, 11.36, 12.91, 5.38, 2.51],
                 color: '#fe0000'
             }]
-        };
-        window.onload = function () {
-            diagram.draw(allData);
-            dynamics.draw(dynamycsData);
-        };
-    </script>
+    };
+    window.onload = function () {
+        diagram.draw(allData);
+        dynamics.draw(dynamycsData);
+    };
+</script>
+
+    <div class="b-right-section b-main-content__section">
+        <h1 class="b-title-h1 b-main-content__title-h1">
+            Сумма ваших накоплений
+        </h1>
+        <div class="b-main-content__round-graph round-graph">
+            <div class="round-graph__diagram-block" id="diagramContainerWrapper">
+                <div id="diagramContainerInner">
+                    <div class="round-graph__diagram" id="diagramContainer">
+                    </div>
+                </div>
+            </div>
+            <div class="round-graph__legend-wrapper">
+                <div class="round-graph__legend">
+                    <div class="round-graph__rg-legend-switcher rg-legend-switcher">
+                        <label class="rg-legend-switcher__item">
+                            <input class="rg-legend-switcher__input" type="radio" name="rglegend" onchange="diagram.draw(allData);" checked/>
+                            <span class="rg-legend-switcher__text">Пенсионный счет</span>
+                        </label>
+                        <label class="rg-legend-switcher__item">
+                            <input class="rg-legend-switcher__input" type="radio" onchange="diagram.draw(opsData);" name="rglegend" />
+                            <span class="rg-legend-switcher__text">ОПС</span>
+                        </label>
+                        <label class="rg-legend-switcher__item">
+                            <input class="rg-legend-switcher__input" type="radio" onchange="diagram.draw(npoData);" name="rglegend" />
+                            <span class="rg-legend-switcher__text"> НПО</span>
+                        </label>
+                    </div>
+                    <ul class="round-graph__rg-legend-list rg-legend-list" id="diagramLegend"></ul>
+                    <div class="round-graph__info-block warning-hidden" id="diagramWarning">
+                        <i class="round-graph__info-icon round-graph__info-icon--warning"></i>
+                        <span class="round-graph__info-block-text">Потери при досрочном переходе
+                            <span class="rg-info-tooltip-wrapper" style="white-space: nowrap">
+                                100 000 рублей
+                                <i class="rg-info-tooltip-icon"></i>
+                                <span class="rg-info-tooltip">
+                                    <span class="rg-info-tooltip__caption">
+                                        <span class="rg-info-tooltip__caption-text">
+                                            В соответствии со ст. 36.6-1 Федерального закона от 07.05.98 №75-ФЗ "О негосударственных пенсионных фондах". Потеря Вашего
+                                            инвестиционного дохода при досрочном переходе в ПФР или другой НПФ по итогам
+                                            текущего года.
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <div class="b-right-section b-main-content__section">
         <h1 class="b-title-h1 b-main-content__title-h2">
@@ -168,57 +221,6 @@
         </div>
     </div>
 
-    <div class="b-right-section b-main-content__section">
-        <h1 class="b-title-h1 b-main-content__title-h1">
-            Сумма ваших накоплений
-        </h1>
-        <div class="b-main-content__round-graph round-graph">
-            <div class="round-graph__diagram-block" id="diagramContainerWrapper">
-                <div id="diagramContainerInner">
-                    <div class="round-graph__diagram" id="diagramContainer">
-                    </div>
-                </div>
-            </div>
-            <div class="round-graph__legend-wrapper">
-                <div class="round-graph__legend">
-                    <div class="round-graph__rg-legend-switcher rg-legend-switcher">
-                        <label class="rg-legend-switcher__item">
-                            <input class="rg-legend-switcher__input" type="radio" name="rglegend" onchange="diagram.draw(allData);" checked/>
-                            <span class="rg-legend-switcher__text">Пенсионный счет</span>
-                        </label>
-                        <label class="rg-legend-switcher__item">
-                            <input class="rg-legend-switcher__input" type="radio" onchange="diagram.draw(opsData);" name="rglegend" />
-                            <span class="rg-legend-switcher__text">ОПС</span>
-                        </label>
-                        <label class="rg-legend-switcher__item">
-                            <input class="rg-legend-switcher__input" type="radio" onchange="diagram.draw(npoData);" name="rglegend" />
-                            <span class="rg-legend-switcher__text"> НПО</span>
-                        </label>
-                    </div>
-                    <ul class="round-graph__rg-legend-list rg-legend-list" id="diagramLegend"></ul>
-                    <div class="round-graph__info-block">
-                        <i class="round-graph__info-icon round-graph__info-icon--warning"></i>
-                        <span class="round-graph__info-block-text">Потери при досрочном переходе
-                            <span class="rg-info-tooltip-wrapper" style="white-space: nowrap">
-                                100 000 рублей
-                                <i class="rg-info-tooltip-icon"></i>
-                                <span class="rg-info-tooltip">
-                                    <span class="rg-info-tooltip__caption">
-                                        <span class="rg-info-tooltip__caption-text">
-                                            В соответствии со ст. 36.6-1 Федерального закона от 07.05.98 №75-ФЗ "О негосударственных пенсионных фондах". Потеря Вашего
-                                            инвестиционного дохода при досрочном переходе в ПФР или другой НПФ по итогам
-                                            текущего года.
-                                        </span>
-                                    </span>
-                                </span>
-                            </span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
     <script src="js/project.js"></script>
 </body>
 

@@ -94,8 +94,8 @@
         width: 100%;
         height: 100%;
         margin-bottom: 52px;
-        // min-height: 470px;
         @media screen and (min-width: 1280px) {
+            min-width: 351px;
             margin-bottom: 0;
             width: 50%;
             padding-right: 40px;
@@ -111,6 +111,9 @@
         width: 100%;
         height: 100%;
         margin: auto;
+        @media screen and (min-width: 1280px) {
+           min-width: 351px;
+        }
         @media screen and (min-width: 1690px) {
             top: 0;
             position: relative;
@@ -506,4 +509,13 @@
     &__name {
         margin-bottom: 10px;
     }
+}
+.warning-hidden {
+    visibility: hidden;
+    position: fixed;
+    z-index: -999;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
 }

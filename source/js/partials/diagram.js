@@ -8,7 +8,9 @@ window.diagram = {
             MIN_DATA_VALUE = 0.7,
             DIAGRAM_CONTAINER_ID = 'diagramContainer',
             DIAGRAM_CONTAINER_WRAPPER_ID = 'diagramContainerWrapper',
-            DIAGRAM_CONTAINER_INNER_ID = 'diagramContainerInner';
+            DIAGRAM_CONTAINER_INNER_ID = 'diagramContainerInner',
+            WARNING_CONTAINER_ID = 'diagramWarning',
+            LEGEND_CONTAINER_ID = 'diagramLegend';
 
         function filterDataNum(value) {
             let n = 2,
@@ -106,7 +108,14 @@ window.diagram = {
         let sortedArray = sortArray();
 
         let drawLegend = function () {
-            document.getElementById('diagramLegend').innerHTML = sortedArray.sections;
+            document.getElementById(LEGEND_CONTAINER_ID).innerHTML = sortedArray.sections;
+            if (outsideData.hasOwnProperty('showWarning') &&
+                outsideData.showWarning === true
+            ) {
+                document.getElementById(WARNING_CONTAINER_ID).classList.remove('warning-hidden');
+            } else {
+                document.getElementById(WARNING_CONTAINER_ID).classList.add('warning-hidden');
+            }
         };
 
         let titleTemplate = `
@@ -126,12 +135,6 @@ window.diagram = {
             inner.style.width = wrapperWidth + 'px';
             inner.style.height = wrapperWidth + 'px';
         };
-        let onWindowResize = function (evt) {
-            resizeDiagram();
-        };
-        resizeDiagram();
-
-        console.log(sortedArray.data);
 
         let drawChart = function () {
             window.addEventListener('resize', onWindowResize);
@@ -199,5 +202,11 @@ window.diagram = {
             drawChart();
             drawLegend();
         }, 100);
+        setTimeout(function () {
+            resizeDiagram();
+        }, 110);
+        let onWindowResize = function (evt) {
+            resizeDiagram();
+        };
     }
 };
