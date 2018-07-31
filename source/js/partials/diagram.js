@@ -1,8 +1,5 @@
 window.diagram = {
     draw: function (outsideData) {
-
-        window.removeEventListener('resize', onWindowResize);
-
         const mainData = outsideData.data;
         const MIN_SLICE_WIDTH = 0.7,
             MIN_DATA_VALUE = 0.7,
@@ -137,7 +134,6 @@ window.diagram = {
         };
 
         let drawChart = function () {
-            window.addEventListener('resize', onWindowResize);
             Highcharts.chart(DIAGRAM_CONTAINER_ID, {
                 chart: {
                     type: 'pie',
@@ -198,15 +194,18 @@ window.diagram = {
                 }]
             });
         };
+
+        resizeDiagram();
+        let onWindowResize = function (evt) {
+            resizeDiagram();
+        };
+        window.addEventListener('resize', onWindowResize);
+
         setTimeout(function () {
             drawChart();
             drawLegend();
         }, 100);
-        setTimeout(function () {
-            resizeDiagram();
-        }, 110);
-        let onWindowResize = function (evt) {
-            resizeDiagram();
-        };
+
+
     }
 };

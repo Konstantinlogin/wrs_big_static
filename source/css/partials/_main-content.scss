@@ -91,21 +91,37 @@
         // justify-content: space-between;
     }
     &__diagram-block {
+        position: relative;
+        box-sizing: border-box;
         width: 100%;
         height: 100%;
         margin-bottom: 52px;
+        #diagramContainerInner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        #diagramContainer {
+            @media screen and (min-width: 1280px) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
         @media screen and (min-width: 1280px) {
             min-width: 351px;
             margin-bottom: 0;
             width: 50%;
             padding-right: 40px;
         }
-        @media screen and (min-width: 1690px) {
-            padding-right: 0;
-            width: 35%;
-        }
-        position: relative;
-        box-sizing: border-box;
+        //@media screen and (min-width: 1690px) {
+        //    padding-right: 0;
+        //    width: 35%;
+        //}
+
     }
     &__diagram {
         width: 100%;
