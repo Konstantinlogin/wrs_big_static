@@ -68,7 +68,7 @@
     }
     .ic_lk {
         &:after {
-            background-image: url($IMAGE_PATH + 'ic_lk.png');
+            background-image: url($IMAGE_PATH + 'ic_lk.svg');
             background-size: 22px;
             background-position: center;
         }
@@ -76,35 +76,35 @@
     } 
     .ic_support {
         &:after { 
-            background-image: url($IMAGE_PATH + 'ic_support.png');
+            background-image: url($IMAGE_PATH + 'ic_bid.svg');
             background-size: 22px;
             background-position: center;
         }
     } 
     .ic_profile {
         &:after { 
-            background-image: url($IMAGE_PATH + 'ic_profile.png');
+            background-image: url($IMAGE_PATH + 'ic_profile.svg');
             background-size: 22px;
             background-position: center;
         }
     }
     .ic_bid {
         &:after { 
-            background-image: url($IMAGE_PATH + 'ic_bid.png');
+            background-image: url($IMAGE_PATH + 'ic_bid.svg');
             background-size: 20px;
             background-position: 25px center;
         }
     } 
     .ic_calculator {
         &:after { 
-            background-image: url($IMAGE_PATH + 'ic_calculator.png');
+            background-image: url($IMAGE_PATH + 'ic_calculator.svg');
             background-size: 20px;
             background-position: center;
         }
     }
     .ic_about {
         &:after { 
-            background-image: url($IMAGE_PATH + 'ic_about.png');
+            background-image: url($IMAGE_PATH + 'ic_about.svg');
             background-size: 22px;
             background-position: 23px center
         }
@@ -122,37 +122,35 @@
             } 
             .ic_lk {
                 &:after {
-                    background-image: url($IMAGE_PATH + 'ic_lk_active.png');
+                    background-image: url($IMAGE_PATH + 'ic_lk_active.svg');
                 }
 
             } 
             .ic_support {
                 &:after {
-                    background-image: url($IMAGE_PATH + 'ic_support_active.png');
+                    background-image: url($IMAGE_PATH + 'ic_bid_active.svg');
                 }
-
             } 
             .ic_profile {
                 &:after {
-                    background-image: url($IMAGE_PATH + 'ic_profile_active.png');
+                    background-image: url($IMAGE_PATH + 'ic_profile_active.svg');
                 }
 
             }
             .ic_bid {
                 &:after {
-                    background-image: url($IMAGE_PATH + 'ic_bid_active.png');
+                    background-image: url($IMAGE_PATH + 'ic_bid_active.svg');
                 }
-
             } 
             .ic_calculator {
                 &:after {
-                    background-image: url($IMAGE_PATH + 'ic_calculator_active.png');
+                    background-image: url($IMAGE_PATH + 'ic_calculator_active.svg');
                 }
 
             }
             .ic_about {
                 &:after {
-                    background-image: url($IMAGE_PATH + 'ic_about_active.png');
+                    background-image: url($IMAGE_PATH + 'ic_about_active.svg');
                 }
             }
         }

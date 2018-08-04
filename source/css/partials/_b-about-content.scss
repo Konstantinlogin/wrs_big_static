@@ -128,11 +128,17 @@
 	&__file-name {
 		margin-bottom: 18px;
 	}
-	&__file-pdf {
+	&__file-pdf, &__file {
 		display: block;
 		left: 0;
 		top: 0;
-		@include makeSprite(49px, 61px, 'ic_pdf.png');
 		position: absolute;
+	}
+	&__file-pdf {
+		@include makeSprite(49px, 61px, 'ic_pdf.png');
+	}
+	&__file {
+		@include makeSprite(56px, 56px, 'ic_paper.svg');
+		transform: translateX(-7px);
 	}
 }

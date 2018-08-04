@@ -195,7 +195,10 @@ window.diagram = {
             });
         };
 
-        resizeDiagram();
+        setTimeout(function () {
+            resizeDiagram();
+        }, 120);
+
         let onWindowResize = function (evt) {
             resizeDiagram();
         };
@@ -204,7 +207,7 @@ window.diagram = {
         setTimeout(function () {
             drawChart();
             drawLegend();
-        }, 100);
+        }, 140);
 
 
     }
