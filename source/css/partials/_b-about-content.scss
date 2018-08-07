@@ -128,7 +128,7 @@
 	&__file-name {
 		margin-bottom: 18px;
 	}
-	&__file-pdf, &__file {
+	&__file-pdf, &__file, &__file-doc {
 		display: block;
 		left: 0;
 		top: 0;
@@ -140,5 +140,8 @@
 	&__file {
 		@include makeSprite(56px, 56px, 'ic_paper.svg');
 		transform: translateX(-7px);
+	}
+	&__file-doc {
+		@include makeSprite(49px, 61px, 'ic_doc.svg');
 	}
 }

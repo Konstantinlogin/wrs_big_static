@@ -7,7 +7,9 @@ window.diagram = {
             DIAGRAM_CONTAINER_WRAPPER_ID = 'diagramContainerWrapper',
             DIAGRAM_CONTAINER_INNER_ID = 'diagramContainerInner',
             WARNING_CONTAINER_ID = 'diagramWarning',
-            LEGEND_CONTAINER_ID = 'diagramLegend';
+            LEGEND_CONTAINER_ID = 'diagramLegend',
+            DIAGRAM_OPS_SUM_ID = 'diagramOpsSum',
+            DIAGRAM_OPS_PROFIT_ID = 'diagramOpsProfit';
 
         function filterDataNum(value) {
             let n = 2,
@@ -106,12 +108,33 @@ window.diagram = {
 
         let drawLegend = function () {
             document.getElementById(LEGEND_CONTAINER_ID).innerHTML = sortedArray.sections;
-            if (outsideData.hasOwnProperty('showWarning') &&
-                outsideData.showWarning === true
-            ) {
-                document.getElementById(WARNING_CONTAINER_ID).classList.remove('warning-hidden');
-            } else {
-                document.getElementById(WARNING_CONTAINER_ID).classList.add('warning-hidden');
+            //TODO: Вынести эти if-ы в функцию при том что id контейнера = параметру 
+            if (!!document.getElementById(WARNING_CONTAINER_ID)) { 
+                if (outsideData.hasOwnProperty('showWarning') &&
+                    outsideData.showWarning === true
+                ) {
+                    document.getElementById(WARNING_CONTAINER_ID).classList.remove('warning-hidden');
+                } else {
+                    document.getElementById(WARNING_CONTAINER_ID).classList.add('warning-hidden');
+                }
+            }
+            if (!!document.getElementById(DIAGRAM_OPS_SUM_ID)) {
+                if (outsideData.hasOwnProperty(DIAGRAM_OPS_SUM_ID) &&
+                    outsideData[DIAGRAM_OPS_SUM_ID] === true
+                ) {
+                    document.getElementById(DIAGRAM_OPS_SUM_ID).classList.remove('warning-hidden');
+                } else {
+                    document.getElementById(DIAGRAM_OPS_SUM_ID).classList.add('warning-hidden');
+                }
+            }
+            if (!!document.getElementById(DIAGRAM_OPS_PROFIT_ID)) {
+                if (outsideData.hasOwnProperty(DIAGRAM_OPS_PROFIT_ID) &&
+                    outsideData[DIAGRAM_OPS_PROFIT_ID] === true
+                ) {
+                    document.getElementById(DIAGRAM_OPS_PROFIT_ID).classList.remove('warning-hidden');
+                } else {
+                    document.getElementById(DIAGRAM_OPS_PROFIT_ID).classList.add('warning-hidden');
+                }
             }
         };
 

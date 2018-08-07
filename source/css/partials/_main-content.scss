@@ -168,9 +168,7 @@
         max-width: 608px;
     }
     &__rg-legend-list {
-        // margin-top: 0;
         margin-bottom: 52px;
-   
     }
     &__info-block {
         display: flex;
@@ -180,6 +178,10 @@
         padding-top: 40px;
         margin-top: 40px;
         border-top: 2px solid #edf1f5;
+    }
+    &__info-block.warning-hidden + .b-main-content__not-oferta {
+        margin-top: 52px;
+        display: inline-block;  
     }
     &__info-block-text {
         @extend %text;
