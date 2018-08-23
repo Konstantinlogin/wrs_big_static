@@ -49,6 +49,7 @@
 .request-submit-form {
     .t-Form-inputContainer {
         padding: 0;
+        margin-bottom: 30px;
     }
     padding-left: 44px;
     max-width: 844px;
@@ -65,7 +66,9 @@
     }
     .t-Form-inputContainer .textarea .textarea {
         @extend %lk-textarea;
-        margin-bottom: 30px;
+    }
+    .apex-item-textarea + .t-Form-error {
+
     }
 }
 .page-request-messages {

@@ -10,6 +10,8 @@
 }
 .text_field {
     @extend %lk-input-border;
+    flex: none$i;
+    width: 100%$i;
 }
 .t-Form-inputContainer {
     margin-bottom: 40px;
