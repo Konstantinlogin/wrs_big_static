@@ -1,3 +1,46 @@
+.help-button-wrapper {
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+.help-button {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    font-size: 16px;
+    &:before {
+        content: '';
+        position: absolute;
+        left: -20px;
+        top: -6px;
+        display: inline-block;
+        width: 20px;
+        height: 60px;
+        background: url($IMAGE_PATH + 'ic_help_btn_lines.svg') no-repeat center;
+        background-size: contain;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -14px;
+        display: inline-block;
+        width: 72px;
+        height: 72px;
+        background: url($IMAGE_PATH + 'ic_help_btn_mails.svg') no-repeat center;
+        background-size: contain;
+    }
+    &__text {
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        white-space: nowrap;
+        position: relative;
+        box-sizing: border-box;
+        padding-right: 70px;
+    }
+}
 .b-header {
     width: 100%;
     box-sizing: border-box;
@@ -140,10 +183,6 @@
         overflow: hidden;
     }
     &__avatar {
-        // position: absolute;
-        // width: 100%;
-        // top: 0;
-        // left: 0;
         position: relative;
         display: inline-block;
         width: 52px;
@@ -154,5 +193,101 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;  
+    }
+}
+.b-mobile-nav__help-btn {
+    max-width: 286px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    transform: scale(0.8);
+}
+.b-body--login {
+    .b-header__help-block {
+       position: absolute;
+       right: 536px;
+       top: 50%;
+       transform: translateY(-50%);
+    }
+    @media screen and (max-width: 1658px) { 
+        .b-header__help-block {
+            right: 50px;
+        }
+    }
+
+    @media screen and (max-width: 958px) { 
+        .b-header__help-block {
+            display: none;
+        }
+    }
+
+}
+.b-body--lk {
+    .b-header__help-block {
+        margin-left: 80px;
+        position: absolute;
+        right: 800px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    @media screen and (max-width: 1852px) {
+        .b-header {
+            .b-header__logo {
+                margin-right: 10px$i;
+            }
+        }
+        .b-phone__icon {
+            margin-right: 12px;
+        }
+        .b-header__help-block {
+            margin-left: 10px;
+            right: 645px;
+        }
+        .b-header__logout-btn {
+            right: 10px;
+        }
+        .b-header__user-block {
+            right: 146px;
+        }
+        .b-phone__icon {
+            width: 30px;
+            height: 30px;
+        }
+        .b-phone__content {
+            font-size: 20px;
+        }
+        .help-button-wrapper {
+            transform: scale(0.8);
+            margin-left: -60px;
+        }
+    }
+
+    @media screen and (max-width: 1458px) {
+        .b-header__help-block {
+            position: relative;
+            right: 0;
+            top: 0;
+            transform: translateY(0) scale(0.8);
+        }
+        .help-button {
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1365px) {
+        .b-header__phone {
+            display: none$i;
+        }
+        .help-button-wrapper {
+            margin-left: -44px;
+        }
+    }
+    
+    @media screen and (max-width: 1219px) { 
+        .b-header__help-block {
+           display: none;
+        }
     }
 }
