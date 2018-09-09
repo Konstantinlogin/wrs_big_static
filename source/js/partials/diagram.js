@@ -42,21 +42,20 @@ window.diagram = {
 
             function sortBaseData (callback) {
                 mainData.forEach(function (element, key) {
-                    if (categories.indexOf(element.category) === -1) {
-                        categories.push(element.category);
-                    }
-                    array.push({
-                        name: element.name,
-                        color: element.color,
-                        value: element.amount,
-                        y: element.amount,
-                        category: element.category
-                    });
-
                     if (element.amount > 0) {
+                        if (categories.indexOf(element.category) === -1) {
+                            categories.push(element.category);
+                        }
+                        array.push({
+                            name: element.name,
+                            color: element.color,
+                            value: element.amount,
+                            y: element.amount,
+                            category: element.category
+                        });
                         legendSections += generateLegendSection(element.color, element.name, element.amount);
+                        totalSumm += element.amount;
                     }
-                    totalSumm += element.amount;
                 });
                 callback();
             };
@@ -217,7 +216,6 @@ window.diagram = {
                 }]
             });
         };
-
         setTimeout(function () {
             resizeDiagram();
         }, 120);
@@ -231,7 +229,5 @@ window.diagram = {
             drawChart();
             drawLegend();
         }, 140);
-
-
     }
 };

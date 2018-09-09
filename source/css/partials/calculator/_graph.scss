@@ -99,10 +99,11 @@
         z-index: 40;
         width: 100%;
         height: 28px;
-        background: white;
-        border: solid;
-        border-color: #c7c7c7;
-        border-width: 1px 1px 0px 1px;
+        background-image: linear-gradient(-90deg,#C0FB89,#B6F939);
+        // background: white;
+        // border: solid;
+        // border-color: #c7c7c7;
+        // border-width: 1px 1px 0px 1px;
         position: absolute;
         left: 0;
         box-sizing: border-box;
@@ -223,7 +224,7 @@
     &__current-acc-ico, &__current-sof-ico, &__current-ins-ico {
         position: absolute;
         left: 0;
-        top: 4px;
+        top: 0;
         display: inline-block;
         width: 19px;
         height: 19px;
@@ -237,7 +238,8 @@
         background-image: linear-gradient( -90deg, rgb(143,218,11) 0%, rgb(76,160,13) 100%);
     }
     &__current-ins-ico {
-        border: 1px solid #c7c7c7;
+        // border: 1px solid #c7c7c7;
+        background-image: linear-gradient(-90deg,#C0FB89,#B6F939);
     }
     &__current-sof-ico {
         background: tomato;

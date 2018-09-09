@@ -1,0 +1,59 @@
+.info-tooltip {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    width: 13px;
+    height: 13px;
+    &__icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        @include makeSprite(13px, 13px, 'ic_tooltip.png');
+        white-space: nowrap;
+    }
+    &__caption {
+        &:before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            position: absolute;
+            top: -6px;
+            right: 26px;
+            background-color: #f1f0f0;
+            transform: rotate(45deg);
+            z-index: 1;
+        }
+        position: absolute;
+        right: -30px;
+        top: 30px;
+        display: none;
+        z-index: 2;
+        
+        background-color: #f1f0f0;
+        border-radius: 16px;
+        padding: 12px 18px 12px 18px;
+        box-sizing: border-box;
+        
+        @media screen and (min-width: 500px) {
+            width: 280px;
+        }
+        @media screen and (min-width: 768px) {
+            width: 405px;
+        }
+        &-text {
+            white-space: normal;
+            @extend %text;
+            font-size: 11px;
+            line-height: 1.5;
+            display: inline-block;
+            max-width: 326px;
+        }
+    }
+    &:hover {
+        .info-tooltip__caption {
+            display: inline-block;
+        }
+    }
+}

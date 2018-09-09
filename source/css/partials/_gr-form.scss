@@ -63,6 +63,10 @@
     text-align: center;
     margin-bottom: 20px;
 
+    a {
+        color: $BLACK;
+    }
+
     @media screen and (min-width: 1200px) {
         transform: translateY(-50%);
     }
@@ -82,20 +86,10 @@
         border-radius: 80px;
         display: inline-block;
 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
 
-        // width: 55px;
-        // height: 55px;
-        // min-width: 55px;
-        // min-height: 55px;
-        // border-radius: 55px;
-        // margin-bottom: 20px;
-        // @media screen and (min-width: 1200px) {
-        //     width: 80px;
-        //     height: 80px;
-        //     min-width: 80px;
-        //     min-height: 80px;
-        //     border-radius: 80px;
-        // }
         @media screen and (min-width: 1366px) {
             width: 100px;
             height: 100px;
@@ -131,7 +125,7 @@
         line-height: 1.5;
         max-width: 137px;
         text-align: center;
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1366px) {
             padding-left: 16px;
             // text-align: left;
         }

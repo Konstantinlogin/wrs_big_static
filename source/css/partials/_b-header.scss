@@ -134,13 +134,25 @@
         position: relative;
         width: 52px;
         height: 52px;
+        min-width: 52px;
+        min-height: 52px;
         border-radius: 52px;
         overflow: hidden;
     }
     &__avatar {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
+        // position: absolute;
+        // width: 100%;
+        // top: 0;
+        // left: 0;
+        position: relative;
+        display: inline-block;
+        width: 52px;
+        min-width: 52px;
+        min-height: 52px;
+        height: 52px;
+        border-radius: 52px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
     }
 }
