@@ -1,6 +1,7 @@
 window.diagram = {
     draw: function (outsideData) {
         const mainData = outsideData.data;
+        const totalString = outsideData.total || "";
         const MIN_SLICE_WIDTH = 0.7,
             MIN_DATA_VALUE = 0.7,
             DIAGRAM_CONTAINER_ID = 'diagramContainer',
@@ -40,7 +41,7 @@ window.diagram = {
                 totalSumm = 0,
                 legendSections = '';
 
-            function sortBaseData (callback) {
+            function sortBaseData(callback) {
                 mainData.forEach(function (element, key) {
                     if (element.amount > 0) {
                         if (categories.indexOf(element.category) === -1) {
@@ -62,7 +63,10 @@ window.diagram = {
 
             function sortByCategories(callback) {
                 categories.forEach(function (element, key) {
-                    categoriesAmount.push({ category: element, amount: 0 });
+                    categoriesAmount.push({
+                        category: element,
+                        amount: 0
+                    });
                     array.forEach(function (innerElement, innerKey) {
                         if (element === innerElement.category) {
                             categoriesAmount[key].amount += innerElement.value
@@ -72,14 +76,14 @@ window.diagram = {
                 callback();
             };
 
-            function sortByPercentageOfCategory () {
+            function sortByPercentageOfCategory() {
                 let percentageFromCategory = 0;
                 array.forEach(function (element, key) {
                     categoriesAmount.forEach(function (innerElement, innerKey) {
                         if (element.category === innerElement.category) {
                             percentageFromCategory = (array[key].value / innerElement.amount) * 100;
                             if (percentageFromCategory <= 0) {
-                                array[key].y = 0; 
+                                array[key].y = 0;
                             } else {
                                 array[key].y = percentageFromCategory <= MIN_DATA_VALUE ? MIN_SLICE_WIDTH : percentageFromCategory;
                             }
@@ -88,8 +92,8 @@ window.diagram = {
                 });
             };
 
-            sortBaseData(function(){
-                sortByCategories(function(){
+            sortBaseData(function () {
+                sortByCategories(function () {
                     sortByPercentageOfCategory();
                 });
             });
@@ -108,7 +112,7 @@ window.diagram = {
         let drawLegend = function () {
             document.getElementById(LEGEND_CONTAINER_ID).innerHTML = sortedArray.sections;
             //TODO: Вынести эти if-ы в функцию при том что id контейнера = параметру 
-            if (!!document.getElementById(WARNING_CONTAINER_ID)) { 
+            if (!!document.getElementById(WARNING_CONTAINER_ID)) {
                 if (outsideData.hasOwnProperty('showWarning') &&
                     outsideData.showWarning === true
                 ) {
@@ -140,7 +144,7 @@ window.diagram = {
         let titleTemplate = `
             <div class="rg-diagram-title">
                 <div class="rg-diagram-title__number">
-                    ${filterDataNum(sortedArray.total)} &#8381;
+                    ${!!totalString ? totalString : filterDataNum(sortedArray.total)} &#8381;
                 </div>
                 <div class="rg-diagram-title__description">
                     По состоянию на <br/>
