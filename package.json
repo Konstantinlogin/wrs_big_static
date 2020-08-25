@@ -42,7 +42,7 @@
     "webpack-auto-clean-build-plugin": "^1.0.4",
     "webpack-cleanup-plugin": "^0.5.1",
     "webpack-merge": "^4.1.2",
-    "highcharts": "^6.0.2"
+    "highcharts": "^7.2.2"
   },
   "devDependencies": {
     "browser-sync": "^2.24.4",
